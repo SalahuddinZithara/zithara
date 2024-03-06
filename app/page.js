@@ -44,9 +44,7 @@ const carouselItems = [
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen w-full">
-      {/* <Navbar /> */}
-
-      <div className=" w-full flex flex-col items-center gap-2  px-12">
+      <div className=" w-full flex flex-col items-center gap-2 px-10 lg:px-12">
         <div className=" w-full flex items-center justify-center h-[80vh] ">
           <Carousel
             plugins={[

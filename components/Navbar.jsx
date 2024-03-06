@@ -26,6 +26,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 const sidebarItems = [
   {
     id: 1,
@@ -188,7 +189,7 @@ const Sidebar = () => {
                          gap-1.5"
                             >
                               {icon}
-                              <span>{name}</span>
+                              <Link href={path}>{name}</Link>
                             </NavigationMenuLink>
                           );
                         })}
