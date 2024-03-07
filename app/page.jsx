@@ -153,49 +153,55 @@ const platformItems = [
   {
     id: 1,
     name: "Customer segments & Insightful Analytics",
-    summary: "Understand, interact, and engage with every customer",
+    summary:
+      "Understand and evaluate customers; alert, update, and communicate with them ",
     icon: <Users size={20} strokeWidth={2} />,
     path: "/",
   },
   {
     id: 2,
-    name: "Marketing Automation",
-    summary: "Understand, interact, and engage with every customer",
+    name: "New age Omnichannel Lead management to bar none",
+    summary:
+      "Never lose a lead!  curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more.",
     icon: <ShoppingBag size={20} strokeWidth={2} />,
     path: "/",
   },
   {
     id: 3,
-    name: "Lead Management",
-    summary: "Understand, interact, and engage with every customer",
+    name: "AI-powered Omni channel campaigner",
+    summary:
+      "Optimize interactions and improve ROI with Zithara.AI Use multi mode communication on EMAIL, SMA or Whatsapp.",
     icon: <UserRoundCog size={20} strokeWidth={2} />,
     path: "/",
   },
   {
     id: 4,
-    name: " WhatsApp for Business API",
-    summary: "Understand, interact, and engage with every customer",
+    name: "E-commerce, App Commerce or In-store",
+    summary:
+      "Zithara.AI Enables you take your retail business to e-commerce store, App-based store and In Store.",
     icon: <Users size={20} strokeWidth={2} />,
     path: "/",
   },
   {
     id: 5,
-    name: "Rewards and Loyalty",
-    summary: "Understand, interact, and engage with every customer",
+    name: "Customer Journey Automation",
+    summary:
+      "Build relevant customer experiences at every stage using Generative AI ",
     icon: <Gift size={20} strokeWidth={2} />,
     path: "/",
   },
   {
     id: 6,
-    name: "Referrals and Feedback",
-    summary: "Understand, interact, and engage with every customer",
+    name: "New-age Reward and Redemption",
+    summary:
+      "Industry’s Most Configurable Loyalty System to Craft Programs for Ultimate Customer Delight",
     icon: <Users size={20} strokeWidth={2} />,
     path: "/",
   },
   {
     id: 7,
-    name: "Nex-Gen UPI Tech",
-    summary: "Understand, interact, and engage with every customer",
+    name: "New-age CDP",
+    summary: "A retail-focused CDP powerhouse for effortless Personalisation",
     icon: <Layers2 size={20} strokeWidth={2} />,
     path: "/",
   },
@@ -205,11 +211,12 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen w-full">
       {/* -----------HERO---SECTION------------- */}
-      <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[90vh] flex flex-col lg:flex-row items-center justify-between gap-10 px-5 lg:px-16">
-        <div className=" flex flex-col gap-5 lg:gap-7 w-full lg:w-[55%]">
-          <h2 className=" text-3xl leading-9 lg:text-5xl lg:leading-[52px] font-bold">
-            India’s fastest growing AI-driven platform maximizes your retail
-            growth
+      <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[85vh] flex flex-col lg:flex-row items-center justify-between gap-10 px-5 lg:px-16">
+        <div className=" flex flex-col gap-5 lg:gap-7 w-full lg:w-[50%]">
+          <h2 className=" text-3xl leading-9 lg:text-[44px] lg:leading-[52px] font-bold">
+            India’s <span className=" text-blue-800">fastest</span> growing{" "}
+            <span className=" text-blue-800">AI-driven</span> platform maximizes
+            your retail growth
           </h2>
           <p className=" mt-1 lg:mt-0 w-[90%]">
             Create personalized experiences to retain your most valuable
@@ -233,17 +240,17 @@ export default function Home() {
       </div>
 
       {/* -----------VERTICAL---SCROLL---SECTION------------- */}
-      <div className=" w-full flex flex-col gap-5 py-8 px-5 lg:px-28 bg-gray-100">
-        <div className=" w-full flex flex-col items-center gap-5">
-          <h2 className=" font-bold text-3xl lg:text-4xl">
+      <div className=" w-full flex flex-col gap-3 py-7 px-5 lg:px-28 bg-gray-100">
+        <div className=" w-full flex flex-col items-center gap-2">
+          <h2 className=" font-bold text-3xl lg:text-3xl">
             Where Founders and Marketers Unite
           </h2>
-          <h4 className=" font-medium text-lg">
+          <h4 className=" font-medium">
             Make your mark today by joining 1000+ industry leaders
           </h4>
 
           <div className="w-full my-8 overflow-hidden">
-            <div className="w-full flex flex-col items-center lg:px-10 gap-1 max-h-24 overflow-hidden ">
+            <div className="w-full flex flex-col items-center lg:px-10 gap-1 max-h-16 overflow-hidden ">
               <div className="carousel-content w-full lg:block hidden">
                 {equalSplitArray(carouselItems, 6).map((item, index) => {
                   return (
@@ -285,59 +292,53 @@ export default function Home() {
       </div>
 
       {/* -----------STATISTICS---SECTION------------- */}
-      <div className=" w-full my-10 lg:my-10 px-5 lg:px-16 ">
-        <div className=" w-full flex flex-col lg:flex-row items-center justify-between gap-5 lg:h-[400px]">
-          <div className=" w-full flex flex-col gap-7 items-center px-3 py-7">
+      <div className=" w-full my-5 px-5 lg:px-16 ">
+        <div className=" w-full flex flex-col lg:flex-row items-center justify-between gap-5 lg:h-[300px]">
+          <div className=" w-full flex flex-col gap-5 items-center px-3 py-7">
             <span className=" py-5">
-              <TbProgressCheck className=" text-9xl text-gray-700" />
+              <TbProgressCheck className=" text-6xl text-gray-700" />
             </span>
-            <h2 className=" text-2xl md:text-3xl font-semibold text-center text-gray-800">
+            <h2 className=" text-2xl md:text-2xl font-semibold text-center text-gray-800">
               End-customers engaged each month
             </h2>
           </div>
 
-          <span className=" h-[350px] w-0.5 bg-gray-300 lg:block hidden"></span>
+          <span className=" h-[250px] w-0.5 bg-gray-300 lg:block hidden"></span>
           <span className=" w-full h-[1px] bg-gray-300 lg:hidden"></span>
 
-          <div className=" w-full flex flex-col gap-7 items-center px-3 py-7">
+          <div className=" w-full flex flex-col gap-5 items-center px-3 py-7">
             <span className=" py-5">
-              <TbProgressCheck className=" text-9xl text-gray-700" />
+              <TbProgressCheck className=" text-6xl text-gray-700" />
             </span>
-            <h2 className=" text-2xl md:text-3xl font-semibold text-center text-gray-800">
+            <h2 className=" text-2xl md:text-2xl font-semibold text-center text-gray-800">
               Messages sent daily around the globe
             </h2>
           </div>
 
-          <span className=" h-[350px] w-0.5 bg-gray-300 lg:block hidden"></span>
+          <span className=" h-[250px] w-0.5 bg-gray-300 lg:block hidden"></span>
           <span className=" w-full h-[1px] bg-gray-300 lg:hidden"></span>
 
-          <div className=" w-full flex flex-col gap-7 items-center px-3 py-7">
+          <div className=" w-full flex flex-col gap-5 items-center px-3 py-7">
             <span className=" py-5">
-              <TbProgressCheck className=" text-9xl text-gray-700" />
+              <TbProgressCheck className=" text-6xl text-gray-700" />
             </span>
-            <h2 className=" text-2xl md:text-3xl font-semibold text-center text-gray-800">
+            <h2 className=" text-2xl md:text-2xl font-semibold text-center text-gray-800">
               Omnichannel experiences delivered monthly
             </h2>
           </div>
         </div>
       </div>
 
-      {/* -----------SCROLL--ANIMATE---SECTION------------- */}
-      <div className=" py-16 px-5 lg:px-16 bg-teal-50">
-        <ScrollAnimate />
-      </div>
-
       {/* -----------ENGAGE---SECTION------------- */}
-      <div className=" flex flex-col gap-5 w-full py-16 px-5 lg:px-16">
+      <div className=" flex flex-col gap-5 w-full py-16 px-5 lg:px-16 bg-teal-50">
         <h1 className=" text-3xl lg:text-4xl font-bold lg:text-center">
-          Lead with Insights, Engage with Heart
+          Capture the Insights, Nurture the growth
         </h1>
         <p className=" lg:text-center lg:max-w-4xl mx-auto leading-7">
-          Your perfect plot begins with a potential enquiry or a referral.
-          Script gripping tales of customer engagement, activate most effective
-          omni channel communication to transform prospects into definite
-          business. Zithara combines a compelling set of tools to segment
-          customers and engage them with personalized communication.
+          Zithara is an AI -Driven Customer Engagement platform for offline
+          retail brands, that empowers marketers and product owners with future
+          focussed insights to create omnichannel experiences that consumers
+          love.
         </p>
 
         <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
@@ -346,7 +347,7 @@ export default function Home() {
             return (
               <div
                 key={id}
-                className=" w-full flex gap-3 bg-green-50 px-3 py-4 rounded-md"
+                className=" w-full flex gap-3 bg-white px-3 py-4 rounded-md"
               >
                 <span className=" w-12 h-12 rounded-full flex items-center justify-center bg-gray-100 border text-blue-900">
                   {icon}
@@ -367,6 +368,11 @@ export default function Home() {
             );
           })}
         </div>
+      </div>
+
+      {/* -----------SCROLL--ANIMATE---SECTION------------- */}
+      <div className=" py-16 px-5 lg:px-16 ">
+        <ScrollAnimate />
       </div>
     </main>
   );

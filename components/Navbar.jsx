@@ -205,7 +205,7 @@ const Sidebar = () => {
   return (
     <div
       className={` ${
-        openMenu ? "h-screen" : "h-[10vh]"
+        openMenu ? "h-screen" : "h-[11vh]"
       } duration-200 w-full flex flex-col shadow-md`}
     >
       <div className=" w-full flex items-center justify-between px-5 md:px-12 py-3">
