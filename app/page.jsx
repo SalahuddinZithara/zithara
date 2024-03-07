@@ -139,6 +139,67 @@ import { IoCallOutline } from "react-icons/io5";
 import { TbProgressCheck } from "react-icons/tb";
 import hero from "@/public/hero1.svg";
 import ScrollAnimate from "@/components/ScrollAnimate";
+import {
+  ArrowBigRight,
+  Gift,
+  Layers2,
+  ShoppingBag,
+  UserRoundCog,
+  Users,
+} from "lucide-react";
+import Link from "next/link";
+
+const platformItems = [
+  {
+    id: 1,
+    name: "Customer segments & Insightful Analytics",
+    summary: "Understand, interact, and engage with every customer",
+    icon: <Users size={20} strokeWidth={2} />,
+    path: "/",
+  },
+  {
+    id: 2,
+    name: "Marketing Automation",
+    summary: "Understand, interact, and engage with every customer",
+    icon: <ShoppingBag size={20} strokeWidth={2} />,
+    path: "/",
+  },
+  {
+    id: 3,
+    name: "Lead Management",
+    summary: "Understand, interact, and engage with every customer",
+    icon: <UserRoundCog size={20} strokeWidth={2} />,
+    path: "/",
+  },
+  {
+    id: 4,
+    name: " WhatsApp for Business API",
+    summary: "Understand, interact, and engage with every customer",
+    icon: <Users size={20} strokeWidth={2} />,
+    path: "/",
+  },
+  {
+    id: 5,
+    name: "Rewards and Loyalty",
+    summary: "Understand, interact, and engage with every customer",
+    icon: <Gift size={20} strokeWidth={2} />,
+    path: "/",
+  },
+  {
+    id: 6,
+    name: "Referrals and Feedback",
+    summary: "Understand, interact, and engage with every customer",
+    icon: <Users size={20} strokeWidth={2} />,
+    path: "/",
+  },
+  {
+    id: 7,
+    name: "Nex-Gen UPI Tech",
+    summary: "Understand, interact, and engage with every customer",
+    icon: <Layers2 size={20} strokeWidth={2} />,
+    path: "/",
+  },
+];
 
 export default function Home() {
   return (
@@ -261,9 +322,51 @@ export default function Home() {
         </div>
       </div>
 
-      {/* -----------SCROLL__ANIMATE---SECTION------------- */}
+      {/* -----------SCROLL--ANIMATE---SECTION------------- */}
       <div className=" py-16 px-5 lg:px-16 bg-teal-50">
         <ScrollAnimate />
+      </div>
+
+      {/* -----------ENGAGE---SECTION------------- */}
+      <div className=" flex flex-col gap-5 w-full py-16 px-5 lg:px-16">
+        <h1 className=" text-3xl lg:text-4xl font-bold lg:text-center">
+          Lead with Insights, Engage with Heart
+        </h1>
+        <p className=" lg:text-center lg:max-w-4xl mx-auto leading-7">
+          Your perfect plot begins with a potential enquiry or a referral.
+          Script gripping tales of customer engagement, activate most effective
+          omni channel communication to transform prospects into definite
+          business. Zithara combines a compelling set of tools to segment
+          customers and engage them with personalized communication.
+        </p>
+
+        <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
+          {platformItems.map((item) => {
+            const { id, name, summary, icon, path } = item;
+            return (
+              <div
+                key={id}
+                className=" w-full flex gap-3 bg-green-50 px-3 py-4 rounded-md"
+              >
+                <span className=" w-12 h-12 rounded-full flex items-center justify-center bg-gray-100 border text-blue-900">
+                  {icon}
+                </span>
+                <div className=" flex flex-col gap-1.5 flex-1">
+                  <h3 className=" font-semibold text leading-5">{name}</h3>
+                  <p className=" text-sm ">{summary}</p>
+                  <Link href={path} className=" flex items-center gap-1">
+                    <p className=" text-xs border-b text-blue-800 font-medium border-b-blue-800 hover:text-black hover:border-b-black duration-200">
+                      Learn More
+                    </p>
+                    <span className=" w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
+                      <ArrowBigRight size={15} />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </main>
   );
