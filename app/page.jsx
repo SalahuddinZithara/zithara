@@ -172,7 +172,7 @@ export default function Home() {
       </div>
 
       {/* -----------VERTICAL---SCROLL---SECTION------------- */}
-      <div className=" w-full flex flex-col gap-5 py-8 lg:px-28 bg-gray-100">
+      <div className=" w-full flex flex-col gap-5 py-8 px-5 lg:px-28 bg-gray-100">
         <div className=" w-full flex flex-col items-center gap-5">
           <h2 className=" font-bold text-3xl lg:text-4xl">
             Where Founders and Marketers Unite
