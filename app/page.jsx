@@ -183,7 +183,7 @@ export default function Home() {
 
           <div className="w-full my-8 overflow-hidden">
             <div className="w-full flex flex-col items-center lg:px-10 gap-1 max-h-24 overflow-hidden ">
-              {/* <div className="carousel-content w-full lg:block hidden">
+              <div className="carousel-content w-full lg:block hidden">
                 {equalSplitArray(carouselItems, 6).map((item, index) => {
                   return (
                     <div
@@ -199,7 +199,7 @@ export default function Home() {
                     </div>
                   );
                 })}
-              </div> */}
+              </div>
 
               <div className="carousel-content w-full block lg:hidden">
                 {equalSplitArray(carouselItems, 9).map((item, index) => {
