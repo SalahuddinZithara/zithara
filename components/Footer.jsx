@@ -200,7 +200,11 @@ const Footer = () => {
               <span className=" flex flex-col gap-2 text-gray-400 h-fit text-xs">
                 {items.map(({ id, name, icon, path }) => {
                   return (
-                    <Link key={id} href={path}>
+                    <Link
+                      className="hover:text-white duration-150"
+                      key={id}
+                      href={path}
+                    >
                       {name}
                     </Link>
                   );

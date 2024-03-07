@@ -30,11 +30,11 @@ import Link from "next/link";
 const sidebarItems = [
   {
     id: 1,
-    name: "Products",
+    name: "Platform",
     items: [
       {
         id: 1,
-        name: "Customer Segmentation",
+        name: "Customer segments & Insightful Analytics",
         icon: <Users size={15} strokeWidth={2} />,
         path: "/",
       },
@@ -78,54 +78,6 @@ const sidebarItems = [
   },
   {
     id: 2,
-    name: "Resources",
-    items: [
-      {
-        id: 1,
-        name: "Blog",
-        icon: <Users size={15} strokeWidth={2} />,
-        path: "/",
-      },
-      {
-        id: 2,
-        name: "Case Studies",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
-        path: "/",
-      },
-      {
-        id: 3,
-        name: "E-book",
-        icon: <UserRoundCog size={15} strokeWidth={2} />,
-        path: "/",
-      },
-      {
-        id: 4,
-        name: "Integrations",
-        icon: <Users size={15} strokeWidth={2} />,
-        path: "/",
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Company",
-    items: [
-      {
-        id: 1,
-        name: "Investors Relation",
-        icon: <Users size={15} strokeWidth={2} />,
-        path: "/",
-      },
-      {
-        id: 2,
-        name: "News and Media",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
-        path: "/",
-      },
-    ],
-  },
-  {
-    id: 4,
     name: "Businesses",
     items: [
       {
@@ -150,6 +102,90 @@ const sidebarItems = [
         id: 4,
         name: "Luxury",
         icon: <Users size={15} strokeWidth={2} />,
+        path: "/",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Customer Stories",
+    items: [
+      {
+        id: 1,
+        name: "Overall Landing Page",
+        icon: <Users size={15} strokeWidth={2} />,
+        path: "/",
+      },
+      {
+        id: 2,
+        name: "Case Studies",
+        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        path: "/",
+      },
+      {
+        id: 3,
+        name: "Testimonials",
+        icon: <UserRoundCog size={15} strokeWidth={2} />,
+        path: "/",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Company",
+    items: [
+      {
+        id: 1,
+        name: "About Us",
+        icon: <Users size={15} strokeWidth={2} />,
+        path: "/",
+      },
+      {
+        id: 2,
+        name: "Media",
+        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        path: "/",
+      },
+      {
+        id: 3,
+        name: "Careers",
+        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        path: "/",
+      },
+      {
+        id: 4,
+        name: "Contact Us",
+        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        path: "/",
+      },
+      {
+        id: 5,
+        name: "Partners",
+        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        path: "/",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Resources",
+    items: [
+      {
+        id: 1,
+        name: "Blogs",
+        icon: <Users size={15} strokeWidth={2} />,
+        path: "/",
+      },
+      {
+        id: 2,
+        name: "E-Books",
+        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        path: "/",
+      },
+      {
+        id: 3,
+        name: "Videos",
+        icon: <ShoppingBag size={15} strokeWidth={2} />,
         path: "/",
       },
     ],
@@ -179,7 +215,7 @@ const Sidebar = () => {
                   <NavigationMenuItem key={id}>
                     <NavigationMenuTrigger>{name}</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="grid gap-4 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2 text-sm">
+                      <div className="grid gap-4 p-4 md:w-[400px] lg:w-[700px] lg:grid-cols-2 text-sm">
                         {items.map((i) => {
                           const { id, name, icon, path } = i;
                           return (
@@ -188,8 +224,12 @@ const Sidebar = () => {
                               className=" flex items-center
                          gap-1.5"
                             >
-                              {icon}
-                              <Link href={path}>{name}</Link>
+                              <span className=" w-8 h-8 rounded-full border flex items-center justify-center bg-cyan-50">
+                                {icon}
+                              </span>
+                              <Link className=" " href={path}>
+                                {name}
+                              </Link>
                             </NavigationMenuLink>
                           );
                         })}
