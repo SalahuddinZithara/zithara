@@ -156,6 +156,7 @@ import HeroCarousel from "@/components/HeroCarousel";
 import { RiUserSettingsLine } from "react-icons/ri";
 import { BsCart2 } from "react-icons/bs";
 import { IoGiftOutline } from "react-icons/io5";
+import Engagement from "@/components/Engagement";
 
 const platformItems = [
   {
@@ -316,7 +317,7 @@ export default function Home() {
           love.
         </p>
 
-        <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
+        <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
           {platformItems.map((item) => {
             const { id, name, summary, icon, path } = item;
             return (
@@ -343,6 +344,9 @@ export default function Home() {
             );
           })}
         </div>
+      </div>
+      <div className="flex flex-col gap-5 w-full py-16 lg:px-0 ">
+        <Engagement />
       </div>
 
       {/* -----------SCROLL--ANIMATE---SECTION------------- */}

@@ -46,7 +46,7 @@ export default function ScrollAnimate() {
         <h1 className=" w-full md:w-[800px] mx-auto font-montserrat text-2xl md:leading-[55px] md:text-[45px] mb-8 md:mb-32 font-bold text-center">
           The Clever All-In-One Customer Engagement Platform
         </h1>
-        <div className="hidden md:block sticky top-20 left-0 w-[70vw] mx-auto mb-20">
+        <div className="hidden md:block sticky top-20 left-0 w-[70vw] mx-auto mb-5 lg:mb-20">
           <div
             style={{ height: height }}
             className={` w-full relative mx-auto border border-dashed rounded-xl border-black min-h-[300px]`}
@@ -86,13 +86,13 @@ export default function ScrollAnimate() {
               </div>
             </div>
 
-            <div className=" absolute -left-3 top-[50%] border flex flex-col justify-center">
+            <div className=" absolute -left-3 top-[50%] flex flex-col justify-center">
               <span>
                 <BiSolidUpArrow className=" text-2xl" />
               </span>
             </div>
 
-            <div className=" absolute -right-3 top-[50%] border flex flex-col justify-center">
+            <div className=" absolute -right-3 top-[50%] flex flex-col justify-center">
               <span>
                 <BiSolidDownArrow className=" text-2xl" />
               </span>
