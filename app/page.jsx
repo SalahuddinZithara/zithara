@@ -235,7 +235,7 @@ export default function Home() {
           </p>
 
           <div className=" w-full flex items-center gap-4 mt-3 lg:mt-3">
-            <Button className=" bg-blue-800 flex w-[150px] items-center gap-1 text-white rounded-sm ">
+            <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 flex w-[150px] items-center gap-1 text-white rounded-sm ">
               <CiBookmarkCheck className=" text-xl" />
               <p className="font-semibold ">Book A Demo</p>
             </Button>
@@ -306,10 +306,10 @@ export default function Home() {
 
       {/* -----------ENGAGE---SECTION------------- */}
       <div className=" flex flex-col gap-5 w-full py-16 px-5 lg:px-16 bg-teal-50">
-        <h1 className=" text-3xl lg:text-4xl font-bold lg:text-center">
+        <h1 className=" text-3xl lg:text-4xl font-bold text-center">
           Capture the Insights, Nurture the growth
         </h1>
-        <p className=" lg:text-center lg:max-w-4xl my-1 mx-auto leading-7">
+        <p className=" text-center lg:max-w-4xl my-1 mx-auto leading-7">
           Zithara is an AI -Driven Customer Engagement platform for offline
           retail brands, that empowers marketers and product owners with future
           focussed insights to create omnichannel experiences that consumers
