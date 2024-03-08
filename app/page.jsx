@@ -136,7 +136,11 @@ const carouselItems = [
 ];
 import { CiBookmarkCheck } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
-import { TbProgressCheck } from "react-icons/tb";
+import {
+  TbBrandGoogleAnalytics,
+  TbProgressCheck,
+  TbSettingsAutomation,
+} from "react-icons/tb";
 import hero from "@/public/hero1.svg";
 import ScrollAnimate from "@/components/ScrollAnimate";
 import {
@@ -148,6 +152,10 @@ import {
   Users,
 } from "lucide-react";
 import Link from "next/link";
+import HeroCarousel from "@/components/HeroCarousel";
+import { RiUserSettingsLine } from "react-icons/ri";
+import { BsCart2 } from "react-icons/bs";
+import { IoGiftOutline } from "react-icons/io5";
 
 const platformItems = [
   {
@@ -155,7 +163,7 @@ const platformItems = [
     name: "Customer segments & Insightful Analytics",
     summary:
       "Understand and evaluate customers; alert, update, and communicate with them ",
-    icon: <Users size={20} strokeWidth={2} />,
+    icon: <TbBrandGoogleAnalytics className="text-lg" />,
     path: "/",
   },
   {
@@ -163,7 +171,7 @@ const platformItems = [
     name: "New age Omnichannel Lead management to bar none",
     summary:
       "Never lose a lead!  curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more.",
-    icon: <ShoppingBag size={20} strokeWidth={2} />,
+    icon: <RiUserSettingsLine className=" text-lg" />,
     path: "/",
   },
   {
@@ -179,7 +187,7 @@ const platformItems = [
     name: "E-commerce, App Commerce or In-store",
     summary:
       "Zithara.AI Enables you take your retail business to e-commerce store, App-based store and In Store.",
-    icon: <Users size={20} strokeWidth={2} />,
+    icon: <BsCart2 className=" text-lg" />,
     path: "/",
   },
   {
@@ -187,7 +195,7 @@ const platformItems = [
     name: "Customer Journey Automation",
     summary:
       "Build relevant customer experiences at every stage using Generative AI ",
-    icon: <Gift size={20} strokeWidth={2} />,
+    icon: <TbSettingsAutomation className=" text-lg" />,
     path: "/",
   },
   {
@@ -195,7 +203,7 @@ const platformItems = [
     name: "New-age Reward and Redemption",
     summary:
       "Industry’s Most Configurable Loyalty System to Craft Programs for Ultimate Customer Delight",
-    icon: <Users size={20} strokeWidth={2} />,
+    icon: <IoGiftOutline className=" text-lg" />,
     path: "/",
   },
   {
@@ -213,14 +221,17 @@ export default function Home() {
       {/* -----------HERO---SECTION------------- */}
       <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[85vh] flex flex-col lg:flex-row items-center justify-between gap-10 px-5 lg:px-16">
         <div className=" flex flex-col gap-5 lg:gap-7 w-full lg:w-[50%]">
-          <h2 className=" text-3xl leading-9 lg:text-[44px] lg:leading-[52px] font-bold">
+          <h2 className=" text-3xl leading-9 lg:text-[42px] lg:leading-[51px] font-bold">
             India’s <span className=" text-blue-800">fastest</span> growing{" "}
-            <span className=" text-blue-800">AI-driven</span> platform maximizes
-            your retail growth
+            <span className=" text-blue-800">AI-driven</span> platform for
+            Future Focused Retail growth
           </h2>
-          <p className=" mt-1 lg:mt-0 w-[90%]">
-            Create personalized experiences to retain your most valuable
-            customers, forever, with Zithara’s All-In-One engagement platform.
+          <p className=" mt-1 lg:mt-0">
+            {/* Create personalized experiences to retain your most valuable
+            customers, forever, with Zithara’s All-In-One engagement platform. */}
+            Unify customer data, generate insights, personalise marketing
+            communications across SMS, Email, Whatsapp & Instagram to delight
+            your loyal customers with Zithara’s All-In-One engagement platform.
           </p>
 
           <div className=" w-full flex items-center gap-4 mt-3 lg:mt-3">
@@ -239,61 +250,25 @@ export default function Home() {
         </div>
       </div>
 
-      {/* -----------VERTICAL---SCROLL---SECTION------------- */}
+      {/* -----------HORIZONTAL---SCROLL---SECTION------------- */}
       <div className=" w-full flex flex-col gap-3 py-7 px-5 lg:px-28 bg-gray-100">
         <div className=" w-full flex flex-col items-center gap-2">
-          <h2 className=" font-bold text-3xl lg:text-3xl">
+          <h2 className=" text-center lg:text-left font-bold text-[28px] leading-8 lg:text-3xl">
             Where Founders and Marketers Unite
           </h2>
-          <h4 className=" font-medium">
+          <h4 className=" font-medium text-center mt-2 text-sm lg:text-base lg:text-left">
             Make your mark today by joining 1000+ industry leaders
           </h4>
 
-          <div className="w-full my-8 overflow-hidden">
-            <div className="w-full flex flex-col items-center lg:px-10 gap-1 max-h-16 overflow-hidden ">
-              <div className="carousel-content w-full lg:block hidden">
-                {equalSplitArray(carouselItems, 6).map((item, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="w-full flex items-center justify-between"
-                    >
-                      {item.map((i) => {
-                        const { id, name, img } = i;
-                        return (
-                          <Image key={id} src={img} width={100} height={80} />
-                        );
-                      })}
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="carousel-content w-full block lg:hidden">
-                {equalSplitArray(carouselItems, 9).map((item, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="w-full flex items-center justify-between"
-                    >
-                      {item.map((i) => {
-                        const { id, name, img } = i;
-                        return (
-                          <Image key={id} src={img} width={100} height={80} />
-                        );
-                      })}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+          <div className="w-full mt-5 overflow-hidden">
+            <HeroCarousel />
           </div>
         </div>
       </div>
 
       {/* -----------STATISTICS---SECTION------------- */}
       <div className=" w-full my-5 px-5 lg:px-16 ">
-        <div className=" w-full flex flex-col lg:flex-row items-center justify-between gap-5 lg:h-[300px]">
+        <div className=" w-full flex flex-col lg:flex-row items-center justify-between gap-5 lg:h-[270px]">
           <div className=" w-full flex flex-col gap-5 items-center px-3 py-7">
             <span className=" py-5">
               <TbProgressCheck className=" text-6xl text-gray-700" />
@@ -334,27 +309,27 @@ export default function Home() {
         <h1 className=" text-3xl lg:text-4xl font-bold lg:text-center">
           Capture the Insights, Nurture the growth
         </h1>
-        <p className=" lg:text-center lg:max-w-4xl mx-auto leading-7">
+        <p className=" lg:text-center lg:max-w-4xl my-1 mx-auto leading-7">
           Zithara is an AI -Driven Customer Engagement platform for offline
           retail brands, that empowers marketers and product owners with future
           focussed insights to create omnichannel experiences that consumers
           love.
         </p>
 
-        <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
+        <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
           {platformItems.map((item) => {
             const { id, name, summary, icon, path } = item;
             return (
               <div
                 key={id}
-                className=" w-full flex gap-3 bg-white px-3 py-4 rounded-md"
+                className=" w-full flex gap-3 bg-white shadow-md px-3 py-4 rounded-md"
               >
-                <span className=" w-12 h-12 rounded-full flex items-center justify-center bg-gray-100 border text-blue-900">
+                <span className=" w-12 h-12 rounded-full flex items-center justify-center bg-gray-500 border text-white">
                   {icon}
                 </span>
                 <div className=" flex flex-col gap-1.5 flex-1">
                   <h3 className=" font-semibold text leading-5">{name}</h3>
-                  <p className=" text-sm ">{summary}</p>
+                  <p className=" text-[13px] ">{summary}</p>
                   <Link href={path} className=" flex items-center gap-1">
                     <p className=" text-xs border-b text-blue-800 font-medium border-b-blue-800 hover:text-black hover:border-b-black duration-200">
                       Learn More
@@ -371,7 +346,7 @@ export default function Home() {
       </div>
 
       {/* -----------SCROLL--ANIMATE---SECTION------------- */}
-      <div className=" py-16 px-5 lg:px-16 ">
+      <div className=" py-12 px-5 lg:px-16 ">
         <ScrollAnimate />
       </div>
     </main>

@@ -26,7 +26,29 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { RiUserSettingsLine } from "react-icons/ri";
+import { FaAmazonPay } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
+import { CiGift } from "react-icons/ci";
+import { LuUsers } from "react-icons/lu";
+import { GiHeartNecklace } from "react-icons/gi";
+import { BsPlugin } from "react-icons/bs";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { BsHouses } from "react-icons/bs";
+import { PiAlignCenterHorizontalLight } from "react-icons/pi";
+import { TbCalendarSearch } from "react-icons/tb";
+import { FaUsers } from "react-icons/fa";
+import { GoInfo } from "react-icons/go";
+import { HiOutlineUsers } from "react-icons/hi2";
+import { PiGraduationCapLight } from "react-icons/pi";
+import { RiContactsLine } from "react-icons/ri";
+import { IoVideocamOutline } from "react-icons/io5";
+import { FaBold } from "react-icons/fa6";
+import { PiNotebookLight } from "react-icons/pi";
+import { TbSettingsAutomation } from "react-icons/tb";
+
 const sidebarItems = [
   {
     id: 1,
@@ -36,49 +58,49 @@ const sidebarItems = [
         id: 1,
         name: "Customer segments & Insightful Analytics",
         summary: "Understand, interact, and engage with every customer",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <TbBrandGoogleAnalytics className=" text-lg" />,
         path: "/",
       },
       {
         id: 2,
         name: "Marketing Automation",
         summary: "Understand, interact, and engage with every customer",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <TbSettingsAutomation className=" text-lg" />,
         path: "/",
       },
       {
         id: 3,
         name: "Lead Management",
         summary: "Understand, interact, and engage with every customer",
-        icon: <UserRoundCog size={15} strokeWidth={2} />,
+        icon: <RiUserSettingsLine className=" text-lg" />,
         path: "/",
       },
       {
         id: 4,
         name: " WhatsApp for Business API",
         summary: "Understand, interact, and engage with every customer",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <FaWhatsapp className=" text-lg" />,
         path: "/",
       },
       {
         id: 5,
         name: "Rewards and Loyalty",
         summary: "Understand, interact, and engage with every customer",
-        icon: <Gift size={15} strokeWidth={2} />,
+        icon: <CiGift className=" text-lg" />,
         path: "/",
       },
       {
         id: 6,
         name: "Referrals and Feedback",
         summary: "Understand, interact, and engage with every customer",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <LuUsers className=" text-lg" />,
         path: "/",
       },
       {
         id: 7,
         name: "Nex-Gen UPI Tech",
         summary: "Understand, interact, and engage with every customer",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <FaAmazonPay className=" text-lg" />,
         path: "/",
       },
     ],
@@ -90,25 +112,25 @@ const sidebarItems = [
       {
         id: 1,
         name: "Jewellery",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <GiHeartNecklace className=" text-lg" />,
         path: "/",
       },
       {
         id: 2,
         name: "Electronics",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <BsPlugin className=" text-lg" />,
         path: "/",
       },
       {
         id: 3,
         name: "Wellness",
-        icon: <UserRoundCog size={15} strokeWidth={2} />,
+        icon: <MdOutlineHealthAndSafety className="text-lg" />,
         path: "/",
       },
       {
         id: 4,
         name: "Luxury",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <BsHouses className="text-lg" />,
         path: "/",
       },
     ],
@@ -120,19 +142,19 @@ const sidebarItems = [
       {
         id: 1,
         name: "Overall Landing Page",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <PiAlignCenterHorizontalLight className="text-lg" />,
         path: "/",
       },
       {
         id: 2,
         name: "Case Studies",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <TbCalendarSearch className="text-lg" />,
         path: "/",
       },
       {
         id: 3,
         name: "Testimonials",
-        icon: <UserRoundCog size={15} strokeWidth={2} />,
+        icon: <FaUsers className="text-lg" />,
         path: "/",
       },
     ],
@@ -144,31 +166,31 @@ const sidebarItems = [
       {
         id: 1,
         name: "About Us",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <GoInfo className="text-lg" />,
         path: "/",
       },
       {
         id: 2,
         name: "Media",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <IoVideocamOutline className="text-lg" />,
         path: "/",
       },
       {
         id: 3,
         name: "Careers",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <PiGraduationCapLight className="text-lg" />,
         path: "/",
       },
       {
         id: 4,
         name: "Contact Us",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <RiContactsLine className="text-lg" />,
         path: "/",
       },
       {
         id: 5,
         name: "Partners",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <HiOutlineUsers className="text-lg" />,
         path: "/",
       },
     ],
@@ -180,19 +202,19 @@ const sidebarItems = [
       {
         id: 1,
         name: "Blogs",
-        icon: <Users size={15} strokeWidth={2} />,
+        icon: <FaBold className="" />,
         path: "/",
       },
       {
         id: 2,
         name: "E-Books",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <PiNotebookLight className=" text-lg" />,
         path: "/",
       },
       {
         id: 3,
         name: "Videos",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        icon: <IoVideocamOutline className=" text-lg" />,
         path: "/",
       },
     ],
@@ -231,7 +253,7 @@ const Sidebar = () => {
                               className=" flex items-center
                          gap-1.5"
                             >
-                              <span className=" w-8 h-8 rounded-full border flex items-center justify-center bg-cyan-50">
+                              <span className=" w-8 h-8 rounded-full border flex items-center justify-center bg-gray-600 text-white">
                                 {icon}
                               </span>
                               <Link className=" " href={path}>
@@ -298,10 +320,6 @@ const Sidebar = () => {
           <Button className="w-full">Book A Demo</Button>
         </div>
       </div>
-
-      {/* <div>
-        <SampleSidebar />
-      </div> */}
     </div>
   );
 };

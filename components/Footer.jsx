@@ -1,177 +1,196 @@
-import { Gift, ShoppingBag, UserRoundCog, Users } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
-
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { RiUserSettingsLine } from "react-icons/ri";
+import { FaAmazonPay } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import { CiGift } from "react-icons/ci";
+import { LuUsers } from "react-icons/lu";
+import { GiHeartNecklace } from "react-icons/gi";
+import { BsPlugin } from "react-icons/bs";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { BsHouses } from "react-icons/bs";
+import { PiAlignCenterHorizontalLight } from "react-icons/pi";
+import { TbCalendarSearch } from "react-icons/tb";
+import { FaUsers } from "react-icons/fa";
+import { GoInfo } from "react-icons/go";
+import { HiOutlineUsers } from "react-icons/hi2";
+import { PiGraduationCapLight } from "react-icons/pi";
+import { RiContactsLine } from "react-icons/ri";
+import { IoVideocamOutline } from "react-icons/io5";
+import { FaBold } from "react-icons/fa6";
+import { PiNotebookLight } from "react-icons/pi";
 const footerItems = [
   {
     id: 1,
-    name: "Products",
+    name: "Platform",
     items: [
       {
         id: 1,
-        name: "Customer Segmentation",
-        icon: <Users size={15} strokeWidth={2} />,
+        name: "Customer segments & Insightful Analytics",
+        summary: "Understand, interact, and engage with every customer",
+        icon: <TbBrandGoogleAnalytics className=" text-lg" />,
         path: "/",
       },
       {
         id: 2,
         name: "Marketing Automation",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        summary: "Understand, interact, and engage with every customer",
+        icon: <RiUserSettingsLine className=" text-lg" />,
         path: "/",
       },
       {
         id: 3,
         name: "Lead Management",
-        icon: <UserRoundCog size={15} strokeWidth={2} />,
+        summary: "Understand, interact, and engage with every customer",
+        icon: <RiUserSettingsLine className=" text-lg" />,
         path: "/",
       },
       {
         id: 4,
         name: " WhatsApp for Business API",
-        icon: <Users size={15} strokeWidth={2} />,
+        summary: "Understand, interact, and engage with every customer",
+        icon: <FaWhatsapp className=" text-lg" />,
         path: "/",
       },
       {
         id: 5,
         name: "Rewards and Loyalty",
-        icon: <Gift size={15} strokeWidth={2} />,
+        summary: "Understand, interact, and engage with every customer",
+        icon: <CiGift className=" text-lg" />,
         path: "/",
       },
       {
         id: 6,
         name: "Referrals and Feedback",
-        icon: <Users size={15} strokeWidth={2} />,
+        summary: "Understand, interact, and engage with every customer",
+        icon: <LuUsers className=" text-lg" />,
         path: "/",
       },
       {
         id: 7,
         name: "Nex-Gen UPI Tech",
-        icon: <Users size={15} strokeWidth={2} />,
+        summary: "Understand, interact, and engage with every customer",
+        icon: <FaAmazonPay className=" text-lg" />,
         path: "/",
       },
     ],
   },
   {
     id: 2,
-    name: "Resources",
+    name: "Businesses",
     items: [
       {
         id: 1,
-        name: "Blog",
-        icon: <Users size={15} strokeWidth={2} />,
+        name: "Jewellery",
+        icon: <GiHeartNecklace className=" text-lg" />,
         path: "/",
       },
       {
         id: 2,
-        name: "Case Studies",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        name: "Electronics",
+        icon: <BsPlugin className=" text-lg" />,
         path: "/",
       },
       {
         id: 3,
-        name: "E-book",
-        icon: <UserRoundCog size={15} strokeWidth={2} />,
+        name: "Wellness",
+        icon: <MdOutlineHealthAndSafety className="text-lg" />,
         path: "/",
       },
       {
         id: 4,
-        name: "Integrations",
-        icon: <Users size={15} strokeWidth={2} />,
+        name: "Luxury",
+        icon: <BsHouses className="text-lg" />,
         path: "/",
       },
     ],
   },
   {
     id: 3,
+    name: "Customer Stories",
+    items: [
+      {
+        id: 1,
+        name: "Overall Landing Page",
+        icon: <PiAlignCenterHorizontalLight className="text-lg" />,
+        path: "/",
+      },
+      {
+        id: 2,
+        name: "Case Studies",
+        icon: <TbCalendarSearch className="text-lg" />,
+        path: "/",
+      },
+      {
+        id: 3,
+        name: "Testimonials",
+        icon: <FaUsers className="text-lg" />,
+        path: "/",
+      },
+    ],
+  },
+  {
+    id: 4,
     name: "Company",
     items: [
       {
         id: 1,
-        name: "Investors Relation",
-        icon: <Users size={15} strokeWidth={2} />,
+        name: "About Us",
+        icon: <GoInfo className="text-lg" />,
         path: "/",
       },
       {
         id: 2,
-        name: "News and Media",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
-        path: "/",
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "About Us",
-    items: [
-      {
-        id: 1,
-        name: "Corporate Profile",
-        icon: <Users size={15} strokeWidth={2} />,
-        path: "/",
-      },
-      {
-        id: 2,
-        name: "Leadership and Advisory Team",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        name: "Media",
+        icon: <IoVideocamOutline className="text-lg" />,
         path: "/",
       },
       {
         id: 3,
-        name: "Vision and Values",
-        icon: <UserRoundCog size={15} strokeWidth={2} />,
+        name: "Careers",
+        icon: <PiGraduationCapLight className="text-lg" />,
         path: "/",
       },
       {
         id: 4,
-        name: "Investor Relations",
-        icon: <Users size={15} strokeWidth={2} />,
+        name: "Contact Us",
+        icon: <RiContactsLine className="text-lg" />,
         path: "/",
       },
       {
         id: 5,
-        name: "Clientele",
-        icon: <Users size={15} strokeWidth={2} />,
-        path: "/",
-      },
-      {
-        id: 6,
-        name: "Testimonials",
-        icon: <Users size={15} strokeWidth={2} />,
+        name: "Partners",
+        icon: <HiOutlineUsers className="text-lg" />,
         path: "/",
       },
     ],
   },
   {
-    id: 4,
-    name: "Businesses",
+    id: 5,
+    name: "Resources",
     items: [
       {
         id: 1,
-        name: "Jewellery",
-        icon: <Users size={15} strokeWidth={2} />,
+        name: "Blogs",
+        icon: <FaBold className="" />,
         path: "/",
       },
       {
         id: 2,
-        name: "Electronics",
-        icon: <ShoppingBag size={15} strokeWidth={2} />,
+        name: "E-Books",
+        icon: <PiNotebookLight className=" text-lg" />,
         path: "/",
       },
       {
         id: 3,
-        name: "Wellness",
-        icon: <UserRoundCog size={15} strokeWidth={2} />,
-        path: "/",
-      },
-      {
-        id: 4,
-        name: "Luxury",
-        icon: <Users size={15} strokeWidth={2} />,
+        name: "Videos",
+        icon: <IoVideocamOutline className=" text-lg" />,
         path: "/",
       },
     ],

@@ -3,7 +3,6 @@ import { BiSolidRightArrow } from "react-icons/bi";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidUpArrow } from "react-icons/bi";
 import { BiSolidDownArrow } from "react-icons/bi";
-// import phoneImg from "@";
 import Image from "next/image";
 
 export default function ScrollAnimate() {
@@ -41,10 +40,10 @@ export default function ScrollAnimate() {
   return (
     <main className=" w-full min-h-screen flex flex-col gap-5 md:p-4">
       <section
-        className=" relative w-full py-5 h-auto md:h-[500vh] rounded-md md:p-5"
+        className=" relative w-full h-auto md:h-[500vh] rounded-md md:p-5"
         ref={targetRef}
       >
-        <h1 className=" w-full md:w-[800px] mx-auto font-montserrat text-2xl md:leading-[55px] md:text-5xl mb-8 md:mb-32 font-semibold text-center">
+        <h1 className=" w-full md:w-[800px] mx-auto font-montserrat text-2xl md:leading-[55px] md:text-[45px] mb-8 md:mb-32 font-bold text-center">
           The Clever All-In-One Customer Engagement Platform
         </h1>
         <div className="hidden md:block sticky top-20 left-0 w-[70vw] mx-auto mb-20">
