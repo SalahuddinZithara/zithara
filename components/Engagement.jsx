@@ -85,16 +85,16 @@ const Engagement = () => {
 
   return (
     <section className=" w-full h-auto md:h-auto rounded-md">
-      <h1 className=" text-3xl lg:text-4xl font-bold text-center">
+      <h1 className=" text-3xl lg:text-4xl font-bold text-center px-5">
         Capture the Insights, Nurture the growth
       </h1>
-      <p className=" text-center lg:max-w-4xl my-3 mx-auto leading-7">
+      <p className=" text-center lg:max-w-4xl my-3 mx-auto leading-7 px-5">
         Zithara is an AI -Driven Customer Engagement platform for offline retail
         brands, that empowers marketers and product owners with future focussed
         insights to create omnichannel experiences that consumers love.
       </p>
 
-      <div className="hidden md:flex flex-col gap-5 mt-5 w-full">
+      <div className="flex flex-col gap-5 mt-5 w-full">
         {platformItems.map((item) => {
           const { id, name, summary, icon, img, path } = item;
           return (
@@ -103,9 +103,9 @@ const Engagement = () => {
                 data-aos="fade-up"
                 className={` ${
                   id % 2 === 0 ? "flex-row-reverse" : "flex-row"
-                } w-full flex items-center sticky top-0 left-0 h-[100vh] `}
+                } w-full flex flex-col lg:flex-row items-center sticky top-0 left-0 h-[100vh] `}
               >
-                <div className="w-[50%] ">
+                <div className=" w-full lg:w-[50%] ">
                   <Image
                     width={600}
                     src={img}
@@ -114,7 +114,7 @@ const Engagement = () => {
                     alt=""
                   />
                 </div>
-                <div className=" flex flex-col gap-7 w-[50%] items-center py-5 px-12">
+                <div className=" flex flex-col gap-7 w-full md:w-[50%] items-center py-5 px-12">
                   <h3 className=" text-4xl font-bold text-center">{name}</h3>
                   <p className=" text-sm text-center">{summary}</p>
                   <Link
