@@ -243,7 +243,11 @@ export default function Home() {
             {platformItems.map((item) => {
               const { id, name, title } = item;
               return (
-                <TabsTrigger value={id} className="text-xs font-medium">
+                <TabsTrigger
+                  key={id}
+                  value={id}
+                  className="text-xs font-medium"
+                >
                   {title}
                 </TabsTrigger>
               );
@@ -269,7 +273,7 @@ export default function Home() {
                       src={img}
                       height={400}
                       className=" mx-auto object-cover"
-                      alt=""
+                      alt={name}
                     />
                   </div>
                   <div className=" flex flex-col gap-7 w-full md:w-[50%] items-center py-5 px-12">

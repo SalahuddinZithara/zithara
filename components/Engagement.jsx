@@ -111,7 +111,7 @@ const Engagement = () => {
                     src={img}
                     height={400}
                     className=" mx-auto object-cover"
-                    alt=""
+                    alt={name}
                   />
                 </div>
                 <div className=" flex flex-col gap-7 w-full md:w-[50%] items-center py-5 px-12">
