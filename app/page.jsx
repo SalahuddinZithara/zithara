@@ -182,7 +182,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* -----------ENGAGEE---SECTION------------- */}
+      {/* -----------ENGAGE---SECTION------------- */}
       <div className=" flex flex-col gap-5 w-full py-16 px-5 lg:px-16 bg-teal-50">
         <h1 className=" text-3xl lg:text-4xl font-bold text-center">
           Capture the Insights, Nurture the growth
