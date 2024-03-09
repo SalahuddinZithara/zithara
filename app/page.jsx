@@ -1,139 +1,6 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { equalSplitArray, splitArray } from "@/lib/utils";
-const carouselItems = [
-  {
-    id: 1,
-    name: "",
-    img: "/vc/vc1.png",
-  },
-  {
-    id: 2,
-    name: "",
-    img: "/vc/vc2.png",
-  },
-  {
-    id: 3,
-    name: "",
-    img: "/vc/vc3.png",
-  },
-  {
-    id: 4,
-    name: "",
-    img: "/vc/vc4.png",
-  },
-  {
-    id: 5,
-    name: "",
-    img: "/vc/vc5.png",
-  },
-  {
-    id: 6,
-    name: "",
-    img: "/vc/vc6.png",
-  },
-  {
-    id: 7,
-    name: "",
-    img: "/vc/vc7.png",
-  },
-  {
-    id: 8,
-    name: "",
-    img: "/vc/vc8.png",
-  },
-  {
-    id: 9,
-    name: "",
-    img: "/vc/vc9.png",
-  },
-  {
-    id: 10,
-    name: "",
-    img: "/vc/vc10.png",
-  },
-  {
-    id: 11,
-    name: "",
-    img: "/vc/vc11.png",
-  },
-  {
-    id: 12,
-    name: "",
-    img: "/vc/vc12.png",
-  },
-  {
-    id: 13,
-    name: "",
-    img: "/vc/vc13.png",
-  },
-  {
-    id: 14,
-    name: "",
-    img: "/vc/vc14.png",
-  },
-  {
-    id: 15,
-    name: "",
-    img: "/vc/vc15.png",
-  },
-  {
-    id: 16,
-    name: "",
-    img: "/vc/vc16.png",
-  },
-  {
-    id: 17,
-    name: "",
-    img: "/vc/vc17.png",
-  },
-  {
-    id: 18,
-    name: "",
-    img: "/vc/vc18.png",
-  },
-  {
-    id: 19,
-    name: "",
-    img: "/vc/vc19.png",
-  },
-  {
-    id: 20,
-    name: "",
-    img: "/vc/vc20.png",
-  },
-  {
-    id: 21,
-    name: "",
-    img: "/vc/vc21.png",
-  },
-  {
-    id: 22,
-    name: "",
-    img: "/vc/vc22.png",
-  },
-  {
-    id: 23,
-    name: "",
-    img: "/vc/vc23.png",
-  },
-  {
-    id: 24,
-    name: "",
-    img: "/vc/vc24.png",
-  },
-  {
-    id: 25,
-    name: "",
-    img: "/vc/vc25.png",
-  },
-  // {
-  //   id: 26,
-  //   name: "",
-  //   img: "/vc/vc26.png",
-  // },
-];
 import { CiBookmarkCheck } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import {
@@ -143,76 +10,86 @@ import {
 } from "react-icons/tb";
 import hero from "@/public/hero1.svg";
 import ScrollAnimate from "@/components/ScrollAnimate";
-import {
-  ArrowBigRight,
-  Gift,
-  Layers2,
-  ShoppingBag,
-  UserRoundCog,
-  Users,
-} from "lucide-react";
+import { ArrowBigRight, Layers2, UserRoundCog } from "lucide-react";
 import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
 import { RiUserSettingsLine } from "react-icons/ri";
 import { BsCart2 } from "react-icons/bs";
 import { IoGiftOutline } from "react-icons/io5";
 import Engagement from "@/components/Engagement";
-
+import img1 from "@/public/ec/e1.png";
+import img2 from "@/public/ec/e2.png";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { TiArrowRight } from "react-icons/ti";
 const platformItems = [
   {
     id: 1,
+    title: "Customer Segments",
     name: "Customer segments & Insightful Analytics",
     summary:
       "Understand and evaluate customers; alert, update, and communicate with them ",
     icon: <TbBrandGoogleAnalytics className="text-lg" />,
     path: "/",
+    img: img1,
   },
   {
     id: 2,
+    title: "Lead management",
     name: "New age Omnichannel Lead management to bar none",
     summary:
       "Never lose a lead!  curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more.",
     icon: <RiUserSettingsLine className=" text-lg" />,
     path: "/",
+    img: img2,
   },
   {
     id: 3,
+    title: "Campaigner",
     name: "AI-powered Omni channel campaigner",
     summary:
       "Optimize interactions and improve ROI with Zithara.AI Use multi mode communication on EMAIL, SMA or Whatsapp.",
     icon: <UserRoundCog size={20} strokeWidth={2} />,
     path: "/",
+    img: img1,
   },
   {
     id: 4,
+    title: "E-commerce, or In-store",
     name: "E-commerce, App Commerce or In-store",
     summary:
       "Zithara.AI Enables you take your retail business to e-commerce store, App-based store and In Store.",
     icon: <BsCart2 className=" text-lg" />,
     path: "/",
+    img: img2,
   },
   {
     id: 5,
+    title: "Customer Journey Automation",
     name: "Customer Journey Automation",
     summary:
       "Build relevant customer experiences at every stage using Generative AI ",
     icon: <TbSettingsAutomation className=" text-lg" />,
     path: "/",
+    img: img1,
   },
   {
     id: 6,
+    title: "Reward and Redemption",
     name: "New-age Reward and Redemption",
     summary:
       "Industry’s Most Configurable Loyalty System to Craft Programs for Ultimate Customer Delight",
     icon: <IoGiftOutline className=" text-lg" />,
     path: "/",
+    img: img2,
   },
   {
     id: 7,
+    title: "CDP",
     name: "New-age CDP",
     summary: "A retail-focused CDP powerhouse for effortless Personalisation",
     icon: <Layers2 size={20} strokeWidth={2} />,
     path: "/",
+    img: img1,
   },
 ];
 
@@ -345,12 +222,80 @@ export default function Home() {
           })}
         </div>
       </div>
-      <div className="flex flex-col gap-5 w-full py-16 lg:px-0 ">
+
+      <div className="flex flex-col gap-5 w-full py-16 lg:px-0 bg-gray-100 ">
         <Engagement />
       </div>
 
+      <div className=" hidden lg:flex w-full px-5 lg:px-16 flex-col gap-5 py-10">
+        <h1 className=" text-3xl lg:text-4xl font-bold text-center">
+          Capture the Insights, Nurture the growth
+        </h1>
+        <p className=" text-center lg:max-w-4xl my-1 mx-auto leading-7">
+          Zithara is an AI -Driven Customer Engagement platform for offline
+          retail brands, that empowers marketers and product owners with future
+          focussed insights to create omnichannel experiences that consumers
+          love.
+        </p>
+
+        <Tabs defaultValue={1} className="w-full mt-3 border rounded-sm">
+          <TabsList className="w-full flex items-center gap-2 flex-wrap bg-gray-100 px-3 rounded-sm">
+            {platformItems.map((item) => {
+              const { id, name, title } = item;
+              return (
+                <TabsTrigger value={id} className="text-xs font-medium">
+                  {title}
+                </TabsTrigger>
+              );
+            })}
+          </TabsList>
+          {platformItems.map((item) => {
+            const { id, name, summary, icon, img, path } = item;
+            return (
+              <TabsContent
+                key={id}
+                value={id}
+                className=" w-full h-[80vh] relative scroll-smooth"
+              >
+                <div
+                  data-aos="fade-up"
+                  className={` ${
+                    id % 2 === 0 ? "flex-row-reverse" : "flex-row"
+                  } w-full flex flex-col lg:flex-row items-center h-[80vh] `}
+                >
+                  <div className=" w-full lg:w-[50%] ">
+                    <Image
+                      width={550}
+                      src={img}
+                      height={400}
+                      className=" mx-auto object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div className=" flex flex-col gap-7 w-full md:w-[50%] items-center py-5 px-12">
+                    <h3 className=" text-4xl font-bold text-center">{name}</h3>
+                    <p className=" text-sm text-center">{summary}</p>
+                    <Link
+                      href={path}
+                      className=" group flex items-center gap-1.5 "
+                    >
+                      <p className=" text-sm border-b border-b-blue-800">
+                        Learn More
+                      </p>{" "}
+                      <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                        <TiArrowRight className=" text-lg" />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </TabsContent>
+            );
+          })}
+        </Tabs>
+      </div>
+
       {/* -----------SCROLL--ANIMATE---SECTION------------- */}
-      <div className=" py-12 px-5 lg:px-16 ">
+      <div className=" py-12 px-5 lg:px-16 bg-gray-100 ">
         <ScrollAnimate />
       </div>
     </main>
