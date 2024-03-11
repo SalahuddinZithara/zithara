@@ -40,13 +40,13 @@ export default function ScrollAnimate() {
   return (
     <main className=" w-full min-h-screen flex flex-col gap-5 md:p-4">
       <section
-        className=" relative w-full h-auto md:h-[500vh] rounded-md md:p-5"
+        className=" relative w-full h-auto lg:h-[500vh] rounded-md lg:p-5"
         ref={targetRef}
       >
-        <h1 className=" w-full md:w-[800px] mx-auto font-montserrat text-2xl md:leading-[55px] md:text-[45px] mb-8 md:mb-32 font-bold text-center">
+        <h1 className=" w-full lg:w-[800px] mx-auto font-montserrat text-2xl lg:leading-[55px] md:text-4xl lg:text-[45px] mb-8 md:mb-20 lg:mb-32 font-bold text-center">
           The Clever All-In-One Customer Engagement Platform
         </h1>
-        <div className="hidden md:block sticky top-20 left-0 w-[70vw] mx-auto mb-5 lg:mb-20">
+        <div className="hidden lg:block sticky top-20 left-0 w-[70vw] mx-auto mb-5 lg:mb-20">
           <div
             style={{ height: height }}
             className={` w-full relative mx-auto border border-dashed rounded-xl border-black min-h-[300px]`}
@@ -121,7 +121,7 @@ export default function ScrollAnimate() {
             width={320}
             src="/imgphone.webp"
             height={400}
-            className=" md:hidden w-80 mx-auto object-cover"
+            className=" lg:hidden w-80 mx-auto object-cover"
             alt=""
           />
         </div>

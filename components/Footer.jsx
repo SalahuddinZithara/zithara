@@ -201,7 +201,7 @@ const Footer = () => {
   return (
     <footer className=" w-full flex flex-col gap-7 px-5 md:px-14 bg-black py-10">
       <div className=" flex flex-col gap-5">
-        <Image src={"/logo-white.png"} alt="logo" width={175} height={80} />
+        <Image src={"/logo-white.png"} alt="logo" width={175} height={120} />
         <div className=" flex items-center gap-3 text-white text-3xl">
           <FaFacebookSquare />
           <FaInstagram />

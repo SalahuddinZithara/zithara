@@ -97,7 +97,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen w-full">
       {/* -----------HERO---SECTION------------- */}
-      <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[85vh] flex flex-col lg:flex-row items-center justify-between gap-10 px-5 lg:px-16">
+      <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[85vh] flex flex-col lg:flex-row items-center md:items-start lg:items-center justify-between gap-10 px-5 md:px-8 lg:px-16">
         <div className=" flex flex-col gap-5 lg:gap-7 w-full lg:w-[50%]">
           <h2 className=" text-3xl leading-9 lg:text-[42px] lg:leading-[51px] font-bold">
             India’s <span className=" text-blue-800">fastest</span> growing{" "}
@@ -112,18 +112,18 @@ export default function Home() {
             your loyal customers with Zithara’s All-In-One engagement platform.
           </p>
 
-          <div className=" w-full flex items-center gap-4 mt-3 lg:mt-3">
-            <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 flex w-[150px] items-center gap-1 text-white rounded-sm ">
+          <div className=" w-full flex items-center gap-3 md:gap-4 mt-3 lg:mt-3">
+            <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 flex w-[50%] md:w-[150px] items-center gap-1 text-white rounded-sm ">
               <CiBookmarkCheck className=" text-xl" />
               <p className="font-semibold ">Book A Demo</p>
             </Button>
-            <Button className=" bg-black flex w-[150px] items-center gap-1.5 text-white rounded-sm ">
-              <IoCallOutline className=" text-xl" />
+            <Button className=" bg-black flex md:w-[150px] w-[50%] items-center gap-1.5 text-white rounded-sm ">
+              <IoCallOutline className=" text-lg" />
               <p className="font-semibold ">Talk to Us</p>
             </Button>
           </div>
         </div>
-        <div className=" w-full md:w-[40%] mt-3">
+        <div className=" w-full md:w-[60%] lg:w-[40%] mt-3">
           <Image src={hero} width={400} height={400} />
         </div>
       </div>
@@ -145,7 +145,7 @@ export default function Home() {
       </div>
 
       {/* -----------STATISTICS---SECTION------------- */}
-      <div className=" w-full my-5 px-5 lg:px-16 ">
+      <div className=" w-full my-5 px-5 md:px-8 lg:px-16 2xl:px-28 ">
         <div className=" w-full flex flex-col lg:flex-row items-center justify-between gap-5 lg:h-[270px]">
           <div className=" w-full flex flex-col gap-5 items-center px-3 py-7">
             <span className=" py-5">
@@ -183,7 +183,7 @@ export default function Home() {
       </div>
 
       {/* -----------ENGAGE---SECTION------------- */}
-      <div className=" flex flex-col gap-5 w-full py-16 px-5 lg:px-16 bg-teal-50">
+      <div className=" flex flex-col gap-5 w-full py-16 px-5 md:px-8 lg:px-16 2xl:px-28 bg-teal-50">
         <h1 className=" text-3xl lg:text-4xl font-bold text-center">
           Capture the Insights, Nurture the growth
         </h1>
@@ -202,7 +202,7 @@ export default function Home() {
                 key={id}
                 className=" w-full flex gap-3 bg-white shadow-md px-3 py-4 rounded-md"
               >
-                <span className=" w-12 h-12 rounded-full flex items-center justify-center bg-gray-500 border text-white">
+                <span className=" w-12 h-12 rounded-full flex items-center justify-center bg-blue-800 border text-white">
                   {icon}
                 </span>
                 <div className=" flex flex-col gap-1.5 flex-1">
@@ -223,30 +223,33 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 w-full py-16 lg:px-0 bg-gray-100 ">
+      <div className="flex flex-col gap-5 w-full py-16 lg:px-0 border-y 2xl:px-28 ">
         <Engagement />
       </div>
 
-      <div className=" hidden lg:flex w-full px-5 lg:px-16 flex-col gap-5 py-10">
+      <div className=" hidden lg:flex w-full px-5 lg:px-16 flex-col gap-5 py-10 bg-gray-100 2xl:px-28">
         <h1 className=" text-3xl lg:text-4xl font-bold text-center">
           Capture the Insights, Nurture the growth
         </h1>
-        <p className=" text-center lg:max-w-4xl my-1 mx-auto leading-7">
+        <p className=" text-center lg:max-w-4xl my-1 mx-auto leading-6">
           Zithara is an AI -Driven Customer Engagement platform for offline
           retail brands, that empowers marketers and product owners with future
           focussed insights to create omnichannel experiences that consumers
           love.
         </p>
 
-        <Tabs defaultValue={1} className="w-full mt-3 border rounded-sm">
-          <TabsList className="w-full flex items-center gap-2 flex-wrap bg-gray-100 px-3 rounded-sm">
+        <Tabs
+          defaultValue={1}
+          className="w-full mt-3 rounded-sm shadow-md bg-white"
+        >
+          <TabsList className="flex items-center gap-2 mx-auto flex-wrap rounded-sm bg-white mt-3">
             {platformItems.map((item) => {
               const { id, name, title } = item;
               return (
                 <TabsTrigger
                   key={id}
                   value={id}
-                  className="text-xs font-medium"
+                  className="text-xs font-medium border"
                 >
                   {title}
                 </TabsTrigger>
@@ -276,17 +279,17 @@ export default function Home() {
                       alt={name}
                     />
                   </div>
-                  <div className=" flex flex-col gap-7 w-full md:w-[50%] items-center py-5 px-12">
-                    <h3 className=" text-4xl font-bold text-center">{name}</h3>
-                    <p className=" text-sm text-center">{summary}</p>
+                  <div className=" flex flex-col gap-7 w-full md:w-[50%] items-start max-w-lg ">
+                    <h3 className=" text-4xl font-bold">{name}</h3>
+                    <p className=" text-sm">{summary}</p>
                     <Link
                       href={path}
-                      className=" group flex items-center gap-1.5 "
+                      className=" group flex items-center gap-1.5  py-1.5 rounded-sm "
                     >
-                      <p className=" text-sm border-b border-b-blue-800">
+                      <p className=" text-xs border-b border-b-blue-800">
                         Learn More
                       </p>{" "}
-                      <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                      <span className=" w-5 rounded-full bg-gray-100 flex items-center justify-center h-5 text-black group-hover:translate-x-0.5 duration-300">
                         <TiArrowRight className=" text-lg" />
                       </span>
                     </Link>
@@ -299,7 +302,7 @@ export default function Home() {
       </div>
 
       {/* -----------SCROLL--ANIMATE---SECTION------------- */}
-      <div className=" py-12 px-5 lg:px-16 bg-gray-100 ">
+      <div className=" py-12 px-5 lg:px-16 ">
         <ScrollAnimate />
       </div>
     </main>

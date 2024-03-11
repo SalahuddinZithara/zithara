@@ -85,10 +85,10 @@ const Engagement = () => {
 
   return (
     <section className=" w-full h-auto md:h-auto rounded-md">
-      <h1 className=" text-3xl lg:text-4xl font-bold text-center px-5">
+      <h1 className=" text-3xl w-full lg:text-4xl font-bold text-center px-5">
         Capture the Insights, Nurture the growth
       </h1>
-      <p className=" text-center lg:max-w-4xl my-3 mx-auto leading-7 px-5">
+      <p className=" text-center w-full lg:max-w-4xl my-3 mx-auto leading-7 px-5">
         Zithara is an AI -Driven Customer Engagement platform for offline retail
         brands, that empowers marketers and product owners with future focussed
         insights to create omnichannel experiences that consumers love.
@@ -114,7 +114,7 @@ const Engagement = () => {
                     alt={name}
                   />
                 </div>
-                <div className=" flex flex-col gap-7 w-full md:w-[50%] items-center py-5 px-12">
+                <div className=" flex flex-col gap-7 w-full lg:w-[50%] items-center py-5 px-12 max-w-2xl">
                   <h3 className=" text-4xl font-bold text-center">{name}</h3>
                   <p className=" text-sm text-center">{summary}</p>
                   <Link

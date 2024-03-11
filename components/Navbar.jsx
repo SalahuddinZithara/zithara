@@ -227,10 +227,10 @@ const Sidebar = () => {
   return (
     <div
       className={` ${
-        openMenu ? "h-screen" : "h-[11vh]"
-      } duration-200 w-full flex flex-col shadow-md`}
+        openMenu ? "h-screen" : " h-auto"
+      } duration-200 w-full flex flex-col shadow-md lg:justify-center py-2`}
     >
-      <div className=" w-full flex items-center justify-between px-5 md:px-12 py-3">
+      <div className=" w-full flex items-center justify-between px-5 md:px-8 lg:px-12">
         <span className=" cursor-pointer">
           <Image src="/logo.png" alt="logo" width={170} height={35} priority />
         </span>
@@ -253,7 +253,7 @@ const Sidebar = () => {
                               className=" flex items-center
                          gap-1.5"
                             >
-                              <span className=" w-8 h-8 rounded-full border flex items-center justify-center bg-gray-600 text-white">
+                              <span className=" w-8 h-8 rounded-full flex items-center justify-center bg-blue-800 text-white">
                                 {icon}
                               </span>
                               <Link className=" " href={path}>
@@ -293,9 +293,9 @@ const Sidebar = () => {
       <div
         className={`${
           openMenu ? "h-[90vh]" : "h-0 opacity-0"
-        } bg-white duration-200 lg:hidden w-full flex flex-col justify-between px-5 pb-5`}
+        } bg-white duration-200 lg:hidden w-full flex flex-col justify-between px-5 md:px-8`}
       >
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-full mt-3">
           {sidebarItems.map((item) => {
             const { id, name, items } = item;
             return (
