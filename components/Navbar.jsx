@@ -229,7 +229,7 @@ const Sidebar = () => {
     <div
       className={` ${
         openMenu ? "h-screen" : " h-auto"
-      } duration-200 w-full flex flex-col shadow-md lg:justify-center py-2`}
+      } duration-200 w-full flex flex-col shadow-md lg:justify-center py-2.5`}
     >
       <div className=" w-full flex items-center justify-between px-5 md:px-8 lg:px-12 2xl:px-28">
         <span className=" cursor-pointer">
@@ -238,7 +238,7 @@ const Sidebar = () => {
             alt="logo"
             width={150}
             height={35}
-            className=" w-[150px] lg:w-[150px] lg:h-[35px]"
+            className=" w-[150px] lg:w-[150px] lg:h-[35px] object-cover"
             priority
           />
         </span>
