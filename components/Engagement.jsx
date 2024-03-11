@@ -133,7 +133,7 @@ const Engagement = () => {
                     href={path}
                     className=" group flex items-center gap-1.5 "
                   >
-                    <p className=" text-sm text-blue-800 border-b border-b-blue-800">
+                    <p className=" text-sm text-blue-800 font-medium border-b border-b-blue-800">
                       Learn More
                     </p>{" "}
                     <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">

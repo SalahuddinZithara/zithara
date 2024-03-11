@@ -21,6 +21,7 @@ import img1 from "@/public/ec/e1.png";
 import img2 from "@/public/ec/e2.png";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TiArrowRight } from "react-icons/ti";
+import EngageParallax from "@/components/EngageParallax";
 const platformItems = [
   {
     id: 1,
@@ -183,8 +184,12 @@ export default function Home() {
       </div>
 
       {/* -----------ENGAGE---SECTION------------- */}
-      <div className="flex flex-col gap-5 w-full pt-16 lg:px-0">
+      {/* <div className="flex flex-col gap-5 w-full pt-16 lg:px-0">
         <Engagement />
+      </div> */}
+
+      <div className=" w-full">
+        <EngageParallax />
       </div>
 
       {/* -----------SCROLL--ANIMATE---SECTION------------- */}
