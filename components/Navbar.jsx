@@ -236,9 +236,9 @@ const Sidebar = () => {
           <Image
             src="/logo.png"
             alt="logo"
-            width={160}
+            width={150}
             height={35}
-            className=" w-[150px] lg:w-[160px] lg:h-[35px]"
+            className=" w-[150px] lg:w-[150px] lg:h-[35px]"
             priority
           />
         </span>
