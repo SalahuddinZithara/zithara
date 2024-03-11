@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import img1 from "@/public/ec/e1.png";
-import img2 from "@/public/ec/e2.png";
+// import img1 from "@/public/ec/e1.png";
+// import img2 from "@/public/ec/e2.png";
 import Image from "next/image";
 import { TbBrandGoogleAnalytics, TbSettingsAutomation } from "react-icons/tb";
 import { RiUserSettingsLine } from "react-icons/ri";
@@ -11,6 +11,11 @@ import { TiArrowRight } from "react-icons/ti";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import img1 from "@/public/eng/cl2.webp";
+import img2 from "@/public/eng/cl3.webp";
+import img3 from "@/public/eng/cl4.webp";
+import img4 from "@/public/eng/cl5.webp";
+import img5 from "@/public/eng/cl1.webp";
 const platformItems = [
   {
     id: 1,
@@ -37,7 +42,7 @@ const platformItems = [
       "Optimize interactions and improve ROI with Zithara.AI Use multi mode communication on EMAIL, SMA or Whatsapp.",
     icon: <UserRoundCog size={20} strokeWidth={2} />,
     path: "/",
-    img: img1,
+    img: img3,
   },
   {
     id: 4,
@@ -46,7 +51,7 @@ const platformItems = [
       "Zithara.AI Enables you take your retail business to e-commerce store, App-based store and In Store.",
     icon: <BsCart2 className=" text-lg" />,
     path: "/",
-    img: img2,
+    img: img4,
   },
   {
     id: 5,
@@ -55,7 +60,7 @@ const platformItems = [
       "Build relevant customer experiences at every stage using Generative AI ",
     icon: <TbSettingsAutomation className=" text-lg" />,
     path: "/",
-    img: img1,
+    img: img5,
   },
   {
     id: 6,
@@ -64,7 +69,7 @@ const platformItems = [
       "Industry’s Most Configurable Loyalty System to Craft Programs for Ultimate Customer Delight",
     icon: <IoGiftOutline className=" text-lg" />,
     path: "/",
-    img: img2,
+    img: img1,
   },
   {
     id: 7,
@@ -72,7 +77,7 @@ const platformItems = [
     summary: "A retail-focused CDP powerhouse for effortless Personalisation",
     icon: <Layers2 size={20} strokeWidth={2} />,
     path: "/",
-    img: img1,
+    img: img2,
   },
 ];
 
@@ -85,7 +90,7 @@ const Engagement = () => {
 
   return (
     <section className=" w-full h-auto md:h-auto rounded-md">
-      <h1 className=" text-3xl w-full lg:text-4xl font-bold text-center px-5">
+      <h1 className=" text-2xl mb-2 md:text-3xl w-full lg:text-4xl font-bold text-center px-5">
         Capture the Insights, Nurture the growth
       </h1>
       <p className=" text-center w-full lg:max-w-4xl my-3 mx-auto leading-7 px-5">
@@ -94,28 +99,32 @@ const Engagement = () => {
         insights to create omnichannel experiences that consumers love.
       </p>
 
-      <div className="flex flex-col gap-5 mt-5 w-full">
-        {platformItems.map((item) => {
+      <div className="flex flex-col gap-5 mt-12 w-full">
+        {platformItems.map((item, index) => {
           const { id, name, summary, icon, img, path } = item;
           return (
             <div key={id} className=" w-full  h-[130vh] relative scroll-smooth">
               <div
                 data-aos="fade-up"
-                className={` ${
-                  id % 2 === 0 ? "flex-row-reverse" : "flex-row"
-                } w-full flex flex-col lg:flex-row items-center sticky top-0 left-0 h-[100vh] `}
+                className={`
+                w-full flex items-center sticky top-0  left-0 h-[100vh] 
+                ${id % 2 == 0 ? "lg:flex-row-reverse" : "lg:flex-row"}
+                flex-col 
+                `}
               >
-                <div className=" w-full lg:w-[50%] ">
+                <div className=" w-full lg:w-[50%]  ">
                   <Image
-                    width={600}
+                    // width={630}
                     src={img}
-                    height={400}
-                    className=" mx-auto object-cover"
+                    // height={520}
+                    className=" mx-auto object-cover h-[50vh] lg:h-[100vh] w-[100%] "
                     alt={name}
                   />
                 </div>
-                <div className=" flex flex-col gap-7 w-full lg:w-[50%] items-center py-5 px-12 max-w-2xl">
-                  <h3 className=" text-4xl font-bold text-center">{name}</h3>
+                <div className=" flex flex-col gap-7 w-full lg:w-[50%] items-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl ">
+                  <h3 className=" text-xl md:text-4xl font-bold text-center">
+                    {name}
+                  </h3>
                   <p className=" text-sm text-center">{summary}</p>
                   <Link
                     href={path}

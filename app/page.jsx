@@ -99,7 +99,7 @@ export default function Home() {
       {/* -----------HERO---SECTION------------- */}
       <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[85vh] flex flex-col lg:flex-row items-center md:items-start lg:items-center justify-between gap-10 px-5 md:px-8 lg:px-16">
         <div className=" flex flex-col gap-5 lg:gap-7 w-full lg:w-[50%]">
-          <h2 className=" text-3xl leading-9 lg:text-[42px] lg:leading-[51px] font-bold">
+          <h2 className=" text-2xl md:text-3xl leading-9 lg:text-[42px] lg:leading-[51px] font-bold">
             India’s <span className=" text-blue-800">fastest</span> growing{" "}
             <span className=" text-blue-800">AI-driven</span> platform for
             Future Focused Retail growth
@@ -131,7 +131,7 @@ export default function Home() {
       {/* -----------HORIZONTAL---SCROLL---SECTION------------- */}
       <div className=" w-full flex flex-col gap-3 py-7 px-5 lg:px-28 bg-gray-100">
         <div className=" w-full flex flex-col items-center gap-2">
-          <h2 className=" text-center lg:text-left font-bold text-[28px] leading-8 lg:text-3xl">
+          <h2 className=" text-center lg:text-left font-bold text-2xl md:text-3xl leading-8 lg:text-3xl">
             Where Founders and Marketers Unite
           </h2>
           <h4 className=" font-medium text-center mt-2 text-sm lg:text-base lg:text-left">
@@ -183,8 +183,8 @@ export default function Home() {
       </div>
 
       {/* -----------ENGAGE---SECTION------------- */}
-      <div className=" flex flex-col gap-5 w-full py-16 px-5 md:px-8 lg:px-16 2xl:px-28 bg-teal-50">
-        <h1 className=" text-3xl lg:text-4xl font-bold text-center">
+      {/* <div className=" flex flex-col gap-5 w-full py-16 px-5 md:px-8 lg:px-16 2xl:px-28 bg-teal-50">
+        <h1 className=" text-2xl md:text-3xl lg:text-4xl font-bold text-center">
           Capture the Insights, Nurture the growth
         </h1>
         <p className=" text-center lg:max-w-4xl my-1 mx-auto leading-7">
@@ -221,13 +221,13 @@ export default function Home() {
             );
           })}
         </div>
-      </div>
+      </div> */}
 
       <div className="flex flex-col gap-5 w-full py-16 lg:px-0 border-y 2xl:px-28 ">
         <Engagement />
       </div>
 
-      <div className=" hidden lg:flex w-full px-5 lg:px-16 flex-col gap-5 py-10 bg-gray-100 2xl:px-28">
+      {/* <div className=" hidden lg:flex w-full px-5 lg:px-16 flex-col gap-5 py-10 bg-gray-100 2xl:px-28 snap-proximity snap-y">
         <h1 className=" text-3xl lg:text-4xl font-bold text-center">
           Capture the Insights, Nurture the growth
         </h1>
@@ -240,7 +240,7 @@ export default function Home() {
 
         <Tabs
           defaultValue={1}
-          className="w-full mt-3 rounded-sm shadow-md bg-white"
+          className="w-full mt-3 rounded-sm shadow-md bg-white snap-center"
         >
           <TabsList className="flex items-center gap-2 mx-auto flex-wrap rounded-sm bg-white mt-3">
             {platformItems.map((item) => {
@@ -299,7 +299,7 @@ export default function Home() {
             );
           })}
         </Tabs>
-      </div>
+      </div> */}
 
       {/* -----------SCROLL--ANIMATE---SECTION------------- */}
       <div className=" py-12 px-5 lg:px-16 ">
