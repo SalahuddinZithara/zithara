@@ -43,7 +43,7 @@ export default function ScrollAnimate() {
         className=" relative w-full h-auto lg:h-[500vh] rounded-md lg:p-5"
         ref={targetRef}
       >
-        <h1 className=" w-full lg:w-[800px] mx-auto font-montserrat text-2xl lg:leading-[55px] md:text-4xl lg:text-[45px] mb-8 md:mb-20 lg:mb-32 font-bold text-center">
+        <h1 className=" w-full lg:w-[800px] mx-auto font-montserrat text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-20 lg:mb-32 font-bold text-center">
           The Clever All-In-One Customer Engagement Platform
         </h1>
         <div className="hidden lg:block sticky top-20 left-0 w-[70vw] mx-auto mb-5 lg:mb-20">

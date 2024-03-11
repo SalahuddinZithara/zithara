@@ -97,7 +97,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen w-full">
       {/* -----------HERO---SECTION------------- */}
-      <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[85vh] flex flex-col lg:flex-row items-center md:items-start lg:items-center justify-between gap-10 px-5 md:px-8 lg:px-16">
+      <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[86vh] flex flex-col lg:flex-row items-center md:items-start lg:items-center justify-between gap-10 px-5 md:px-8 lg:px-16 2xl:px-28">
         <div className=" flex flex-col gap-5 lg:gap-7 w-full lg:w-[50%]">
           <h2 className=" text-2xl md:text-3xl leading-9 lg:text-[42px] lg:leading-[51px] font-bold">
             India’s <span className=" text-blue-800">fastest</span> growing{" "}
@@ -183,123 +183,9 @@ export default function Home() {
       </div>
 
       {/* -----------ENGAGE---SECTION------------- */}
-      {/* <div className=" flex flex-col gap-5 w-full py-16 px-5 md:px-8 lg:px-16 2xl:px-28 bg-teal-50">
-        <h1 className=" text-2xl md:text-3xl lg:text-4xl font-bold text-center">
-          Capture the Insights, Nurture the growth
-        </h1>
-        <p className=" text-center lg:max-w-4xl my-1 mx-auto leading-7">
-          Zithara is an AI -Driven Customer Engagement platform for offline
-          retail brands, that empowers marketers and product owners with future
-          focussed insights to create omnichannel experiences that consumers
-          love.
-        </p>
-
-        <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
-          {platformItems.map((item) => {
-            const { id, name, summary, icon, path } = item;
-            return (
-              <div
-                key={id}
-                className=" w-full flex gap-3 bg-white shadow-md px-3 py-4 rounded-md"
-              >
-                <span className=" w-12 h-12 rounded-full flex items-center justify-center bg-blue-800 border text-white">
-                  {icon}
-                </span>
-                <div className=" flex flex-col gap-1.5 flex-1">
-                  <h3 className=" font-semibold text leading-5">{name}</h3>
-                  <p className=" text-[13px] ">{summary}</p>
-                  <Link href={path} className=" flex items-center gap-1">
-                    <p className=" text-xs border-b text-blue-800 font-medium border-b-blue-800 hover:text-black hover:border-b-black duration-200">
-                      Learn More
-                    </p>
-                    <span className=" w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
-                      <ArrowBigRight size={15} />
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
-
-      <div className="flex flex-col gap-5 w-full py-16 lg:px-0 border-y 2xl:px-28 ">
+      <div className="flex flex-col gap-5 w-full pt-16 lg:px-0">
         <Engagement />
       </div>
-
-      {/* <div className=" hidden lg:flex w-full px-5 lg:px-16 flex-col gap-5 py-10 bg-gray-100 2xl:px-28 snap-proximity snap-y">
-        <h1 className=" text-3xl lg:text-4xl font-bold text-center">
-          Capture the Insights, Nurture the growth
-        </h1>
-        <p className=" text-center lg:max-w-4xl my-1 mx-auto leading-6">
-          Zithara is an AI -Driven Customer Engagement platform for offline
-          retail brands, that empowers marketers and product owners with future
-          focussed insights to create omnichannel experiences that consumers
-          love.
-        </p>
-
-        <Tabs
-          defaultValue={1}
-          className="w-full mt-3 rounded-sm shadow-md bg-white snap-center"
-        >
-          <TabsList className="flex items-center gap-2 mx-auto flex-wrap rounded-sm bg-white mt-3">
-            {platformItems.map((item) => {
-              const { id, name, title } = item;
-              return (
-                <TabsTrigger
-                  key={id}
-                  value={id}
-                  className="text-xs font-medium border"
-                >
-                  {title}
-                </TabsTrigger>
-              );
-            })}
-          </TabsList>
-          {platformItems.map((item) => {
-            const { id, name, summary, icon, img, path } = item;
-            return (
-              <TabsContent
-                key={id}
-                value={id}
-                className=" w-full h-[80vh] relative scroll-smooth"
-              >
-                <div
-                  data-aos="fade-up"
-                  className={` ${
-                    id % 2 === 0 ? "flex-row-reverse" : "flex-row"
-                  } w-full flex flex-col lg:flex-row items-center h-[80vh] `}
-                >
-                  <div className=" w-full lg:w-[50%] ">
-                    <Image
-                      width={550}
-                      src={img}
-                      height={400}
-                      className=" mx-auto object-cover"
-                      alt={name}
-                    />
-                  </div>
-                  <div className=" flex flex-col gap-7 w-full md:w-[50%] items-start max-w-lg ">
-                    <h3 className=" text-4xl font-bold">{name}</h3>
-                    <p className=" text-sm">{summary}</p>
-                    <Link
-                      href={path}
-                      className=" group flex items-center gap-1.5  py-1.5 rounded-sm "
-                    >
-                      <p className=" text-xs border-b border-b-blue-800">
-                        Learn More
-                      </p>{" "}
-                      <span className=" w-5 rounded-full bg-gray-100 flex items-center justify-center h-5 text-black group-hover:translate-x-0.5 duration-300">
-                        <TiArrowRight className=" text-lg" />
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </TabsContent>
-            );
-          })}
-        </Tabs>
-      </div> */}
 
       {/* -----------SCROLL--ANIMATE---SECTION------------- */}
       <div className=" py-12 px-5 lg:px-16 ">

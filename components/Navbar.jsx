@@ -48,6 +48,7 @@ import { IoVideocamOutline } from "react-icons/io5";
 import { FaBold } from "react-icons/fa6";
 import { PiNotebookLight } from "react-icons/pi";
 import { TbSettingsAutomation } from "react-icons/tb";
+import { CgMenuRight } from "react-icons/cg";
 
 const sidebarItems = [
   {
@@ -230,9 +231,16 @@ const Sidebar = () => {
         openMenu ? "h-screen" : " h-auto"
       } duration-200 w-full flex flex-col shadow-md lg:justify-center py-2`}
     >
-      <div className=" w-full flex items-center justify-between px-5 md:px-8 lg:px-12">
+      <div className=" w-full flex items-center justify-between px-5 md:px-8 lg:px-12 2xl:px-28">
         <span className=" cursor-pointer">
-          <Image src="/logo.png" alt="logo" width={170} height={35} priority />
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={160}
+            height={35}
+            className=" w-[150px] lg:w-[160px] lg:h-[35px]"
+            priority
+          />
         </span>
 
         <div className="hidden lg:flex items-center">
@@ -283,7 +291,7 @@ const Sidebar = () => {
           className=" block lg:hidden"
         >
           {!openMenu ? (
-            <Menu strokeWidth={2} size={30} />
+            <CgMenuRight className="text-3xl" />
           ) : (
             <X strokeWidth={2} size={30} />
           )}

@@ -84,7 +84,7 @@ const platformItems = [
 const Engagement = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1200,
     });
   }, []);
 
@@ -103,34 +103,37 @@ const Engagement = () => {
         {platformItems.map((item, index) => {
           const { id, name, summary, icon, img, path } = item;
           return (
-            <div key={id} className=" w-full  h-[130vh] relative scroll-smooth">
+            <div
+              key={id}
+              className=" w-full h-[100vh] lg:h-[130vh] 2xl:h-[100vh] relative scroll-smooth"
+            >
               <div
                 data-aos="fade-up"
                 className={`
-                w-full flex items-center sticky top-0  left-0 h-[100vh] 
+                w-full flex items-center sticky top-0  left-0 h-[90vh] lg:h-[100vh] 2xl:h-[70vh] 
                 ${id % 2 == 0 ? "lg:flex-row-reverse" : "lg:flex-row"}
                 flex-col 
                 `}
               >
                 <div className=" w-full lg:w-[50%]  ">
                   <Image
-                    // width={630}
+                    width="auto"
                     src={img}
-                    // height={520}
-                    className=" mx-auto object-cover h-[50vh] lg:h-[100vh] w-[100%] "
+                    height="auto"
+                    className=" mx-auto object-cover h-[50vh] lg:h-[100vh] 2xl:h-[70vh] w-[100%] "
                     alt={name}
                   />
                 </div>
-                <div className=" flex flex-col gap-7 w-full lg:w-[50%] items-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl ">
-                  <h3 className=" text-xl md:text-4xl font-bold text-center">
+                <div className=" flex flex-col gap-7 w-full h-auto lg:h-auto lg:w-[50%] items-start px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl ">
+                  <h3 className=" text-xl md:text-3xl font-bold text-left">
                     {name}
                   </h3>
-                  <p className=" text-sm text-center">{summary}</p>
+                  <p className=" text-sm text-left max-w-md">{summary}</p>
                   <Link
                     href={path}
                     className=" group flex items-center gap-1.5 "
                   >
-                    <p className=" text-sm border-b border-b-blue-800">
+                    <p className=" text-sm text-blue-800 border-b border-b-blue-800">
                       Learn More
                     </p>{" "}
                     <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
