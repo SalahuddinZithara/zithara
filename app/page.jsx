@@ -3,96 +3,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
-import {
-  TbBrandGoogleAnalytics,
-  TbProgressCheck,
-  TbSettingsAutomation,
-} from "react-icons/tb";
+import { TbProgressCheck } from "react-icons/tb";
 import hero from "@/public/hero1.svg";
 import ScrollAnimate from "@/components/ScrollAnimate";
-import { ArrowBigRight, Layers2, UserRoundCog } from "lucide-react";
-import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
-import { RiUserSettingsLine } from "react-icons/ri";
-import { BsCart2 } from "react-icons/bs";
-import { IoGiftOutline } from "react-icons/io5";
-import Engagement from "@/components/Engagement";
-import img1 from "@/public/ec/e1.png";
-import img2 from "@/public/ec/e2.png";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { TiArrowRight } from "react-icons/ti";
 import EngageParallax from "@/components/EngageParallax";
-const platformItems = [
-  {
-    id: 1,
-    title: "Customer Segments",
-    name: "Customer segments & Insightful Analytics",
-    summary:
-      "Understand and evaluate customers; alert, update, and communicate with them ",
-    icon: <TbBrandGoogleAnalytics className="text-lg" />,
-    path: "/",
-    img: img1,
-  },
-  {
-    id: 2,
-    title: "Lead management",
-    name: "New age Omnichannel Lead management to bar none",
-    summary:
-      "Never lose a lead!  curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more.",
-    icon: <RiUserSettingsLine className=" text-lg" />,
-    path: "/",
-    img: img2,
-  },
-  {
-    id: 3,
-    title: "Campaigner",
-    name: "AI-powered Omni channel campaigner",
-    summary:
-      "Optimize interactions and improve ROI with Zithara.AI Use multi mode communication on EMAIL, SMA or Whatsapp.",
-    icon: <UserRoundCog size={20} strokeWidth={2} />,
-    path: "/",
-    img: img1,
-  },
-  {
-    id: 4,
-    title: "E-commerce, or In-store",
-    name: "E-commerce, App Commerce or In-store",
-    summary:
-      "Zithara.AI Enables you take your retail business to e-commerce store, App-based store and In Store.",
-    icon: <BsCart2 className=" text-lg" />,
-    path: "/",
-    img: img2,
-  },
-  {
-    id: 5,
-    title: "Customer Journey Automation",
-    name: "Customer Journey Automation",
-    summary:
-      "Build relevant customer experiences at every stage using Generative AI ",
-    icon: <TbSettingsAutomation className=" text-lg" />,
-    path: "/",
-    img: img1,
-  },
-  {
-    id: 6,
-    title: "Reward and Redemption",
-    name: "New-age Reward and Redemption",
-    summary:
-      "Industry’s Most Configurable Loyalty System to Craft Programs for Ultimate Customer Delight",
-    icon: <IoGiftOutline className=" text-lg" />,
-    path: "/",
-    img: img2,
-  },
-  {
-    id: 7,
-    title: "CDP",
-    name: "New-age CDP",
-    summary: "A retail-focused CDP powerhouse for effortless Personalisation",
-    icon: <Layers2 size={20} strokeWidth={2} />,
-    path: "/",
-    img: img1,
-  },
-];
 
 export default function Home() {
   return (
