@@ -40,15 +40,15 @@ export default function ScrollAnimate() {
       const isVisible = rect.top <= 0 && rect.bottom >= 0;
 
       if (isVisible) {
-        if (window.scrollY > lastScrollY.current && height < 550) {
+        if (window.scrollY > lastScrollY.current && height < 500) {
           // Scrolling down
-          setHeight(height + 10); // Increase height
+          setHeight(height + 3); // Increase height
           if (height > 360) {
             setOpacity(100);
           }
         } else if (window.scrollY < lastScrollY.current && height > 100) {
           // Scrolling up
-          setHeight(height - 10); // Decrease height
+          setHeight(height - 3); // Decrease height
           if (height < 370) {
             setOpacity(0);
           }
@@ -68,7 +68,7 @@ export default function ScrollAnimate() {
   }, [height]);
 
   return (
-    <main className=" w-full min-h-screen flex flex-col gap-5 md:p-4">
+    <main className=" w-full h-auto lg:min-h-screen flex flex-col gap-5 md:p-4">
       <section
         className=" relative w-full h-auto lg:h-[400vh] rounded-md lg:p-5"
         ref={targetRef}
@@ -76,10 +76,10 @@ export default function ScrollAnimate() {
         <h1 className=" w-full lg:w-[800px] mx-auto font-montserrat text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-20 lg:mb-32 font-bold text-center">
           The Clever All-In-One Customer Engagement Platform
         </h1>
-        <div className="hidden lg:block sticky top-20 left-0 w-full mx-auto mb-5 lg:mb-20">
+        <div className="hidden lg:block sticky top-32 left-0 w-full mx-auto mb-5 lg:mb-20">
           <div
             style={{ height: height }}
-            className={` w-full relative mx-auto border border-dashed rounded-xl border-black min-h-[300px] z-20 bg-white`}
+            className={` w-full relative mx-auto border border-dashed rounded-xl border-black min-h-[280px] 2xl:min-h-[320px] z-20 bg-white`}
           >
             <div
               className={` ${
@@ -185,7 +185,7 @@ export default function ScrollAnimate() {
               </span>
             </div>
 
-            <div className=" absolute -right-3 top-[30%] flex flex-col justify-center">
+            <div className=" absolute -right-3 top-[40%] flex flex-col justify-center">
               <span>
                 <BiSolidDownArrow className=" text-2xl" />
               </span>
@@ -194,7 +194,7 @@ export default function ScrollAnimate() {
             <div className="absolute -right-12 top-[60%] flex flex-col justify-center">
               <span
                 className={` ${
-                  height > 520 ? "opacity-100" : "opacity-0"
+                  height > 470 ? "opacity-100" : "opacity-0"
                 } duration-200 font-bold text-sm rotate-90 px-1 bg-white`}
               >
                 ZITHARA.AI

@@ -108,18 +108,18 @@ const EngageParallax = () => {
               className=" w-full sticky flex flex-col h-screen left-0 top-0"
             >
               <div className=" w-full h-full relative flex flex-col lg:flex-row">
-                <div className=" w-full lg:w-[50%] h-screen sticky top-0">
+                <div className=" w-full lg:w-[50%] md:h-[35vh] h-screen lg:h-screen sticky top-0">
                   <Image
                     width="auto"
                     src={img}
                     height="auto"
-                    className=" mx-auto object-cover h-[50vh] lg:h-[100vh] w-[100%] "
+                    className=" mx-auto object-cover h-[50vh] md:h-[35vh] lg:h-[100vh] w-[100%] "
                     alt={name}
                   />
                   {/* <img src="/eng/cl1.webp" alt="" className="w-full h-screen" /> */}
                 </div>
-                <div className=" w-full lg:w-[50%] sticky top-0 right-0 h-full flex flex-col gap-7 items-start justify-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 bg-white 2xl:pl-20">
-                  <h3 className=" text-xl md:text-3xl font-bold text-left 2xl:max-w-lg ">
+                <div className=" w-full lg:w-[50%] sticky top-0 right-0 h-full md:h-[40vh] lg:h-full flex flex-col gap-7 items-start justify-center px-5 py-5 md:px-8 lg:py-5 pt-10 md:pt-0 lg:px-12 bg-white 2xl:pl-20">
+                  <h3 className=" text-xl md:text-3xl font-bold text-left md:max-w-lg 2xl:max-w-lg ">
                     {name}
                   </h3>
                   <p className=" text-sm text-left max-w-md">{summary}</p>
