@@ -31,7 +31,7 @@ import { RiUserSettingsLine } from "react-icons/ri";
 import { FaAmazonPay } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-import { CiGift } from "react-icons/ci";
+import { CiBookmarkCheck, CiGift } from "react-icons/ci";
 import { LuUsers } from "react-icons/lu";
 import { GiHeartNecklace } from "react-icons/gi";
 import { BsPlugin } from "react-icons/bs";
@@ -281,7 +281,9 @@ const Sidebar = () => {
 
         <div className=" hidden lg:flex items-center gap-5">
           <Search className=" cursor-pointer" strokeWidth={1} />
-          <Button>Book A Demo</Button>
+          <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 flex w-[50%] md:w-[150px] items-center gap-1 text-white rounded-sm ">
+            <p className="font-semibold ">Book A Demo</p>
+          </Button>
         </div>
 
         <span
