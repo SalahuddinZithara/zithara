@@ -60,7 +60,7 @@ const sidebarItems = [
         name: "Customer segments & Insightful Analytics",
         summary: "Understand, interact, and engage with every customer",
         icon: <TbBrandGoogleAnalytics className=" text-lg" />,
-        path: "/",
+        path: "/customer-segments",
       },
       {
         id: 2,

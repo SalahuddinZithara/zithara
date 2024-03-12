@@ -69,7 +69,7 @@ const HeroCarousel = () => {
           delay: 2000,
         }),
       ]}
-      className=" md:w-[80%] mx-auto cursor-grab"
+      className=" md:w-[90%] mx-auto cursor-grab"
     >
       <CarouselContent>
         {carouselItems.map(({ id, name, img }) => (

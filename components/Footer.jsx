@@ -216,7 +216,7 @@ const Footer = () => {
           return (
             <div key={id} className=" w-full flex flex-col gap-3 text-white">
               <h4 className=" font-semibold">{name}</h4>
-              <span className=" flex flex-col gap-2 text-gray-400 h-fit text-xs">
+              <span className=" flex flex-row flex-wrap lg:flex-col gap-2.5 lg:gap-2 text-gray-400 h-fit text-xs">
                 {items.map(({ id, name, icon, path }) => {
                   return (
                     <Link

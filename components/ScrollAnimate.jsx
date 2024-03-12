@@ -43,7 +43,7 @@ export default function ScrollAnimate() {
         if (window.scrollY > lastScrollY.current && height < 500) {
           // Scrolling down
           setHeight(height + 3); // Increase height
-          if (height > 360) {
+          if (height > 370) {
             setOpacity(100);
           }
         } else if (window.scrollY < lastScrollY.current && height > 100) {
@@ -143,7 +143,12 @@ export default function ScrollAnimate() {
               </div>
             </div>
 
-            <div className=" w-full flex items-center gap-3 p-5 h-full justify-center">
+            <div className=" relative w-full flex items-center gap-3 p-6 h-full justify-center">
+              {height < 365 && (
+                <h1 className=" absolute top-30 left-[40%] font-bold text-4xl text-gray-600 ">
+                  ZITHARA.AI
+                </h1>
+              )}
               {data.map((item) => {
                 const { id, title, img } = item;
                 return (

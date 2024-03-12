@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { TbProgressCheck } from "react-icons/tb";
-import hero from "@/public/hero1.svg";
+import hero from "@/public/hero.svg";
 import ScrollAnimate from "@/components/ScrollAnimate";
 import HeroCarousel from "@/components/HeroCarousel";
 import EngageParallax from "@/components/EngageParallax";
