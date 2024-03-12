@@ -103,13 +103,11 @@ const EngageParallax = () => {
           const { id, name, img, path, summary } = item;
           return (
             <div
+              key={id}
               data-aos="fade-up"
               className=" w-full sticky flex flex-col h-screen left-0 top-0"
             >
-              <div
-                key={id}
-                className=" w-full h-full relative flex flex-col lg:flex-row"
-              >
+              <div className=" w-full h-full relative flex flex-col lg:flex-row">
                 <div className=" w-full lg:w-[50%] h-screen sticky top-0">
                   <Image
                     width="auto"
