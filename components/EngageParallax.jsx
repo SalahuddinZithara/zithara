@@ -82,22 +82,242 @@ const platformItems = [
 
 const EngageParallax = () => {
   return (
-    <section className=" relative w-full h-[500vh] ">
-      <div className=" w-full sticky flex flex-col h-screen  left-0 top-0">
+    <section className=" relative w-full h-[700vh] ">
+      <div className=" w-full sticky flex flex-col h-screen left-0 top-0">
         <div className=" w-full h-full relative flex">
           <div className=" w-[50%] h-screen sticky top-0">
-            <img src="/eng/cl1.webp" alt="" className="w-full h-screen" />
+            <Image
+              width="auto"
+              src={platformItems[0].img}
+              height="auto"
+              className=" mx-auto object-cover h-[50vh] lg:h-[100vh] 2xl:h-[70vh] w-[100%] "
+              alt={platformItems[0].name}
+            />
+            {/* <img src="/eng/cl1.webp" alt="" className="w-full h-screen" /> */}
           </div>
-          <div className=" w-[50%] sticky top-0 right-0 h-full flex items-center justify-center bg-indigo-200 p-5"></div>
+          <div className=" w-[50%] sticky top-0 right-0 h-full flex flex-col gap-7 items-start justify-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl bg-white">
+            <h3 className=" text-xl md:text-3xl font-bold text-left ">
+              {platformItems[0].name}
+            </h3>
+            <p className=" text-sm text-left max-w-md">
+              {platformItems[0].summary}
+            </p>
+            <Link
+              href={platformItems[0].path}
+              className=" group flex items-center gap-1.5 "
+            >
+              <p className=" text-sm text-blue-800 font-medium border-b border-b-blue-800">
+                Learn More
+              </p>{" "}
+              <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                <TiArrowRight className=" text-lg" />
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className=" sticky z-10 w-full flex flex-col h-screen  left-0 top-[100vh]">
+      <div className=" sticky z-10 w-full flex flex-col h-screen  left-0 top-0">
         <div className=" w-full h-full relative flex">
           <div className=" w-[50%] h-screen sticky top-0">
-            <img src="/eng/cl2.webp" alt="" className="w-full h-screen" />
+            <Image
+              width="auto"
+              src={platformItems[1].img}
+              height="auto"
+              className=" mx-auto object-cover h-[50vh] lg:h-[100vh] 2xl:h-[70vh] w-[100%] "
+              alt={platformItems[1].name}
+            />
+            {/* <img src="/eng/cl2.webp" alt="" className="w-full h-screen" /> */}
           </div>
-          <div className=" w-[50%] sticky top-0 right-0 h-full flex items-center justify-center bg-indigo-200 p-5"></div>
+          <div className=" w-[50%] sticky top-0 right-0 h-full flex flex-col gap-7 items-start justify-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl bg-white">
+            <h3 className=" text-xl md:text-3xl font-bold text-left ">
+              {platformItems[1].name}
+            </h3>
+            <p className=" text-sm text-left max-w-md">
+              {platformItems[1].summary}
+            </p>
+            <Link
+              href={platformItems[1].path}
+              className=" group flex items-center gap-1.5 "
+            >
+              <p className=" text-sm text-blue-800 font-medium border-b border-b-blue-800">
+                Learn More
+              </p>{" "}
+              <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                <TiArrowRight className=" text-lg" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className=" sticky z-20 w-full flex flex-col h-screen  left-0 top-0">
+        <div className=" w-full h-full relative flex">
+          <div className=" w-[50%] h-screen sticky top-0">
+            <Image
+              width="auto"
+              src={platformItems[2].img}
+              height="auto"
+              className=" mx-auto object-cover h-[50vh] lg:h-[100vh] 2xl:h-[70vh] w-[100%] "
+              alt={platformItems[2].name}
+            />
+            {/* <img src="/eng/cl3.webp" alt="" className="w-full h-screen" /> */}
+          </div>
+          <div className=" w-[50%] sticky top-0 right-0 h-full flex flex-col gap-7 items-start justify-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl bg-white">
+            <h3 className=" text-xl md:text-3xl font-bold text-left ">
+              {platformItems[2].name}
+            </h3>
+            <p className=" text-sm text-left max-w-md">
+              {platformItems[2].summary}
+            </p>
+            <Link
+              href={platformItems[2].path}
+              className=" group flex items-center gap-1.5 "
+            >
+              <p className=" text-sm text-blue-800 font-medium border-b border-b-blue-800">
+                Learn More
+              </p>{" "}
+              <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                <TiArrowRight className=" text-lg" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className=" sticky z-30 w-full flex flex-col h-screen  left-0 top-0">
+        <div className=" w-full h-full relative flex">
+          <div className=" w-[50%] h-screen sticky top-0">
+            <Image
+              width="auto"
+              src={platformItems[3].img}
+              height="auto"
+              className=" mx-auto object-cover h-[50vh] lg:h-[100vh] 2xl:h-[70vh] w-[100%] "
+              alt={platformItems[3].name}
+            />
+            {/* <img src="/eng/cl4.webp" alt="" className="w-full h-screen" /> */}
+          </div>
+          <div className=" w-[50%] sticky top-0 right-0 h-full flex flex-col gap-7 items-start justify-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl bg-white">
+            <h3 className=" text-xl md:text-3xl font-bold text-left ">
+              {platformItems[3].name}
+            </h3>
+            <p className=" text-sm text-left max-w-md">
+              {platformItems[3].summary}
+            </p>
+            <Link
+              href={platformItems[3].path}
+              className=" group flex items-center gap-1.5 "
+            >
+              <p className=" text-sm text-blue-800 font-medium border-b border-b-blue-800">
+                Learn More
+              </p>{" "}
+              <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                <TiArrowRight className=" text-lg" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className=" sticky z-40 w-full flex flex-col h-screen  left-0 top-0">
+        <div className=" w-full h-full relative flex">
+          <div className=" w-[50%] h-screen sticky top-0">
+            <Image
+              width="auto"
+              src={platformItems[4].img}
+              height="auto"
+              className=" mx-auto object-cover h-[50vh] lg:h-[100vh] 2xl:h-[70vh] w-[100%] "
+              alt={platformItems[4].name}
+            />
+            {/* <img src="/eng/cl5.webp" alt="" className="w-full h-screen" /> */}
+          </div>
+          <div className=" w-[50%] sticky top-0 right-0 h-full flex flex-col gap-7 items-start justify-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl bg-white">
+            <h3 className=" text-xl md:text-3xl font-bold text-left ">
+              {platformItems[4].name}
+            </h3>
+            <p className=" text-sm text-left max-w-md">
+              {platformItems[4].summary}
+            </p>
+            <Link
+              href={platformItems[4].path}
+              className=" group flex items-center gap-1.5 "
+            >
+              <p className=" text-sm text-blue-800 font-medium border-b border-b-blue-800">
+                Learn More
+              </p>{" "}
+              <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                <TiArrowRight className=" text-lg" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className=" sticky z-40 w-full flex flex-col h-screen  left-0 top-0">
+        <div className=" w-full h-full relative flex">
+          <div className=" w-[50%] h-screen sticky top-0">
+            <Image
+              width="auto"
+              src={platformItems[5].img}
+              height="auto"
+              className=" mx-auto object-cover h-[50vh] lg:h-[100vh] 2xl:h-[70vh] w-[100%] "
+              alt={platformItems[5].name}
+            />
+            {/* <img src="/eng/cl5.webp" alt="" className="w-full h-screen" /> */}
+          </div>
+          <div className=" w-[50%] sticky top-0 right-0 h-full flex flex-col gap-7 items-start justify-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl bg-white">
+            <h3 className=" text-xl md:text-3xl font-bold text-left ">
+              {platformItems[5].name}
+            </h3>
+            <p className=" text-sm text-left max-w-md">
+              {platformItems[5].summary}
+            </p>
+            <Link
+              href={platformItems[5].path}
+              className=" group flex items-center gap-1.5 "
+            >
+              <p className=" text-sm text-blue-800 font-medium border-b border-b-blue-800">
+                Learn More
+              </p>{" "}
+              <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                <TiArrowRight className=" text-lg" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className=" sticky z-40 w-full flex flex-col h-screen  left-0 top-0">
+        <div className=" w-full h-full relative flex">
+          <div className=" w-[50%] h-screen sticky top-0">
+            <Image
+              width="auto"
+              src={platformItems[6].img}
+              height="auto"
+              className=" mx-auto object-cover h-[50vh] lg:h-[100vh] 2xl:h-[70vh] w-[100%] "
+              alt={platformItems[6].name}
+            />
+            {/* <img src="/eng/cl5.webp" alt="" className="w-full h-screen" /> */}
+          </div>
+          <div className=" w-[50%] sticky top-0 right-0 h-full flex flex-col gap-7 items-start justify-center px-5 py-5 pt-10 lg:pt-0 lg:px-12 max-w-2xl bg-white">
+            <h3 className=" text-xl md:text-3xl font-bold text-left ">
+              {platformItems[6].name}
+            </h3>
+            <p className=" text-sm text-left max-w-md">
+              {platformItems[6].summary}
+            </p>
+            <Link
+              href={platformItems[6].path}
+              className=" group flex items-center gap-1.5 "
+            >
+              <p className=" text-sm text-blue-800 font-medium border-b border-b-blue-800">
+                Learn More
+              </p>{" "}
+              <span className=" w-6 rounded-full bg-gray-100 flex items-center justify-center h-6 text-black group-hover:translate-x-0.5 duration-300">
+                <TiArrowRight className=" text-lg" />
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
@@ -105,18 +325,3 @@ const EngageParallax = () => {
 };
 
 export default EngageParallax;
-
-{
-  {
-    /* <div className=" w-full sticky left-0 top-0 h-screen font-bold text-4xl flex items-center"> */
-    /* </div> */
-  }
-}
-{
-  /* {platformItems.map((item) => {
-        const { id, name, img, path, summary } = item;
-        return (
-            <div></div>
-        );
-      })} */
-}
