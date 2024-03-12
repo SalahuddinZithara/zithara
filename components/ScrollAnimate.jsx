@@ -5,10 +5,34 @@ import { BiSolidUpArrow } from "react-icons/bi";
 import { BiSolidDownArrow } from "react-icons/bi";
 import Image from "next/image";
 
+const data = [
+  {
+    id: 1,
+    title: "Customer data and analytics",
+    img: "/scroll/1.webp",
+  },
+  {
+    id: 2,
+    title: "Experimentation & Optimization",
+    img: "/scroll/2.webp",
+  },
+  {
+    id: 3,
+    title: "Personalization",
+    img: "/scroll/3.webp",
+  },
+  {
+    id: 4,
+    title: "Campaign Orchestration",
+    img: "/scroll/4.webp",
+  },
+];
+
 export default function ScrollAnimate() {
   const [height, setHeight] = useState(100);
   const lastScrollY = useRef(0);
   const targetRef = useRef(null);
+  const [opacity, setOpacity] = useState(0);
 
   const handleScroll = () => {
     if (targetRef.current) {
@@ -16,12 +40,18 @@ export default function ScrollAnimate() {
       const isVisible = rect.top <= 0 && rect.bottom >= 0;
 
       if (isVisible) {
-        if (window.scrollY > lastScrollY.current && height < 500) {
+        if (window.scrollY > lastScrollY.current && height < 550) {
           // Scrolling down
           setHeight(height + 10); // Increase height
+          if (height > 360) {
+            setOpacity(100);
+          }
         } else if (window.scrollY < lastScrollY.current && height > 100) {
           // Scrolling up
           setHeight(height - 10); // Decrease height
+          if (height < 370) {
+            setOpacity(0);
+          }
         }
       }
     }
@@ -40,78 +70,175 @@ export default function ScrollAnimate() {
   return (
     <main className=" w-full min-h-screen flex flex-col gap-5 md:p-4">
       <section
-        className=" relative w-full h-auto lg:h-[500vh] rounded-md lg:p-5"
+        className=" relative w-full h-auto lg:h-[400vh] rounded-md lg:p-5"
         ref={targetRef}
       >
         <h1 className=" w-full lg:w-[800px] mx-auto font-montserrat text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-20 lg:mb-32 font-bold text-center">
           The Clever All-In-One Customer Engagement Platform
         </h1>
-        <div className="hidden lg:block sticky top-20 left-0 w-[70vw] mx-auto mb-5 lg:mb-20">
+        <div className="hidden lg:block sticky top-20 left-0 w-full mx-auto mb-5 lg:mb-20">
           <div
             style={{ height: height }}
-            className={` w-full relative mx-auto border border-dashed rounded-xl border-black min-h-[300px]`}
+            className={` w-full relative mx-auto border border-dashed rounded-xl border-black min-h-[300px] z-20 bg-white`}
           >
-            <div className=" absolute z-10 -top-[60px] px-10 w-full flex items-center gap-5">
-              <div className=" bg-white w-full flex flex-col gap-2 items-center justify-center p-5 border border-gray-400 rounded-lg font-montserrat">
-                <h4 className=" text-xl font-semibold text-gray-600">
-                  Understand
-                </h4>
-                <p className=" text-sm text-center">
+            <div
+              className={` ${
+                height > 350 ? "-top-[52px]" : "-top-[30px]"
+              } duration-200 absolute z-10 px-10 w-full flex items-center gap-5`}
+            >
+              <div className=" bg-white w-full flex flex-col gap-2 items-center justify-center p-3 border border-gray-400 rounded-lg font-montserrat">
+                <h4 className=" text-xl font-bold text-black">Acquire</h4>
+                <p
+                  className={`${
+                    height < 350 ? "h-0 opacity-0" : "h-10 opacity-100"
+                  } duration-200 text-xs text-center`}
+                >
                   Acquire in-depth Customer Insights
                 </p>
               </div>
 
               <span>
-                <BiSolidRightArrow className=" text-2xl" />
+                <BiSolidRightArrow className=" text-blue-800 text-2xl" />
               </span>
 
-              <div className=" bg-white w-full flex flex-col gap-2 items-center justify-center p-5 border border-gray-400 rounded-lg font-montserrat">
-                <h4 className=" text-xl font-semibold text-gray-600">
-                  Optimize
-                </h4>
-                <p className=" text-sm text-center">
+              <div className=" bg-white w-full flex flex-col gap-2 items-center justify-center p-3 border border-gray-400 rounded-lg font-montserrat">
+                <h4 className=" text-xl font-bold text-gray-800">Engage</h4>
+                <p
+                  className={`${
+                    height < 350 ? "h-0 opacity-0" : "h-10 opacity-100"
+                  } duration-200 text-xs text-center`}
+                >
                   Experiment for Superior Customer Engagement
                 </p>
               </div>
 
               <span>
-                <BiSolidRightArrow className=" text-2xl" />
+                <BiSolidRightArrow className=" text-blue-800 text-2xl" />
               </span>
 
-              <div className=" bg-white w-full flex flex-col gap-2 items-center justify-center p-5 border border-gray-400 rounded-lg font-montserrat">
-                <h4 className=" text-xl font-semibold text-gray-600">Engage</h4>
-                <p className=" text-sm text-center">
+              <div className=" bg-white w-full flex flex-col gap-2 items-center justify-center p-3 border border-gray-400 rounded-lg font-montserrat">
+                <h4 className=" text-xl font-bold text-gray-800">Retain</h4>
+                <p
+                  className={`${
+                    height < 350 ? "h-0 opacity-0" : "h-10 opacity-100"
+                  } duration-200 text-xs text-center`}
+                >
+                  Tailor Personalized Customer Experiences
+                </p>
+              </div>
+
+              <span>
+                <BiSolidRightArrow className=" text-blue-800 text-2xl" />
+              </span>
+
+              <div className=" bg-white w-full flex flex-col gap-2 items-center justify-center p-3 border border-gray-400 rounded-lg font-montserrat">
+                <h4 className=" text-xl font-bold text-gray-800">Monetize</h4>
+                <p
+                  className={`${
+                    height < 350 ? "h-0 opacity-0" : "h-10 opacity-100"
+                  } duration-200 text-xs text-center`}
+                >
                   Tailor Personalized Customer Experiences
                 </p>
               </div>
             </div>
 
-            <div className=" absolute -left-3 top-[50%] flex flex-col justify-center">
+            <div className=" w-full flex items-center gap-3 p-5 h-full justify-center">
+              {data.map((item) => {
+                const { id, title, img } = item;
+                return (
+                  <div
+                    key={id}
+                    style={{ opacity: opacity }}
+                    className=" w-full flex flex-col duration-200 justify-between border border-gray-300 rounded-md p-3 h-[320px] z-10 py-7"
+                  >
+                    <h3 className=" font-semibold text-center text-lg">
+                      {title}
+                    </h3>
+                    <img src={img} alt={title} className=" w-40 mx-auto" />
+                  </div>
+                );
+              })}
+            </div>
+
+            <div
+              className={`absolute -left-3 ${
+                height < 350 ? "top-[50%]" : "top-[20%]"
+              } duration-200 flex flex-col justify-center`}
+            >
               <span>
                 <BiSolidUpArrow className=" text-2xl" />
               </span>
             </div>
 
-            <div className=" absolute -right-3 top-[50%] flex flex-col justify-center">
+            <div
+              className={`absolute -left-12 ${
+                height < 350 ? "top-[60%]" : "top-[40%]"
+              }  flex flex-col justify-center duration-200`}
+            >
+              <span
+                className={` ${
+                  height > 450 ? "opacity-100" : "opacity-0"
+                } duration-200 font-bold text-sm -rotate-90 px-1 bg-white`}
+              >
+                ZITHARA.AI
+              </span>
+            </div>
+
+            <div className=" absolute -right-3 top-[30%] flex flex-col justify-center">
               <span>
                 <BiSolidDownArrow className=" text-2xl" />
               </span>
             </div>
 
+            <div className="absolute -right-12 top-[60%] flex flex-col justify-center">
+              <span
+                className={` ${
+                  height > 520 ? "opacity-100" : "opacity-0"
+                } duration-200 font-bold text-sm rotate-90 px-1 bg-white`}
+              >
+                ZITHARA.AI
+              </span>
+            </div>
+
             <div className=" w-full flex justify-between items-center gap-7 px-10 absolute -bottom-[30px] z-10">
               <span>
-                <BiSolidLeftArrow className="text-2xl" />
+                <BiSolidLeftArrow className="text-2xl text-blue-800 translate-y-[2.5px]" />
               </span>
 
               <div className=" flex items-center gap-7">
-                <span className=" w-14 h-14 rounded-full bg-white border border-gray-300"></span>
-                <span className=" w-14 h-14 rounded-full bg-white border border-gray-300"></span>
-                <span className=" w-14 h-14 rounded-full bg-white border border-gray-300"></span>
-                <span className=" w-14 h-14 rounded-full bg-white border border-gray-300"></span>
+                <Image
+                  width="90"
+                  src="/scroll/ct1.webp"
+                  height="90"
+                  className=" mx-auto object-cover h-[65px] w-[65px]"
+                  alt={"person1"}
+                />
+                <Image
+                  width="90"
+                  src="/scroll/ct2.webp"
+                  height="90"
+                  className=" mx-auto object-cover h-[65px] w-[65px]"
+                  alt={"person2"}
+                />
+                <Image
+                  width="90"
+                  src="/scroll/ct3.webp"
+                  height="90"
+                  className=" mx-auto object-cover h-[65px] w-[65px]"
+                  alt={"person3"}
+                />
+                <Image
+                  width="90"
+                  src="/scroll/ct4.webp"
+                  height="90"
+                  className=" mx-auto object-cover h-[65px] w-[65px]"
+                  alt={"person4"}
+                />
               </div>
 
               <span>
-                <BiSolidLeftArrow className="text-2xl" />
+                <BiSolidLeftArrow className="text-2xl text-blue-800 translate-y-[2.2px]" />
               </span>
             </div>
           </div>

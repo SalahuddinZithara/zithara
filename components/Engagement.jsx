@@ -89,7 +89,7 @@ const Engagement = () => {
   }, []);
 
   return (
-    <section className=" w-full h-auto md:h-auto rounded-md">
+    <section className=" w-full h-auto md:h-auto rounded-md mb-20">
       <h1 className=" text-2xl mb-2 md:text-3xl w-full lg:text-4xl font-bold text-center px-5">
         Capture the Insights, Nurture the growth
       </h1>

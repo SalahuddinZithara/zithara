@@ -98,7 +98,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen w-full">
       {/* -----------HERO---SECTION------------- */}
-      <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[86vh] flex flex-col lg:flex-row items-center md:items-start lg:items-center justify-between gap-10 px-5 md:px-8 lg:px-16 2xl:px-28">
+      <div className=" w-full h-auto py-7 lg:py-0 lg:min-h-[86vh] flex flex-col lg:flex-row items-center md:items-start lg:items-center justify-between gap-10 px-5 md:px-8 lg:px-16 2xl:px-40">
         <div className=" flex flex-col gap-5 lg:gap-7 w-full lg:w-[50%]">
           <h2 className=" text-2xl md:text-3xl leading-9 lg:text-[42px] lg:leading-[51px] font-bold">
             India’s <span className=" text-blue-800">fastest</span> growing{" "}
@@ -130,7 +130,7 @@ export default function Home() {
       </div>
 
       {/* -----------HORIZONTAL---SCROLL---SECTION------------- */}
-      <div className=" w-full flex flex-col gap-3 py-7 px-5 lg:px-28 bg-gray-100">
+      <div className=" w-full flex flex-col gap-3 py-7 md:px-5 lg:px-28 bg-gray-100">
         <div className=" w-full flex flex-col items-center gap-2">
           <h2 className=" text-center lg:text-left font-bold text-2xl md:text-3xl leading-8 lg:text-3xl">
             Where Founders and Marketers Unite
@@ -184,16 +184,12 @@ export default function Home() {
       </div>
 
       {/* -----------ENGAGE---SECTION------------- */}
-      {/* <div className="flex flex-col gap-5 w-full pt-16 lg:px-0">
-        <Engagement />
-      </div> */}
-
-      <div className=" w-full">
+      <div className=" w-full bg-gray-50 pt-10 lg:pt-10 2xl:pt-14">
         <EngageParallax />
       </div>
 
       {/* -----------SCROLL--ANIMATE---SECTION------------- */}
-      <div className=" py-12 px-5 lg:px-16 ">
+      <div className=" py-12 px-5 lg:px-16 pt-32 ">
         <ScrollAnimate />
       </div>
     </main>

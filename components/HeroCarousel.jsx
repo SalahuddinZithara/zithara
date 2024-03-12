@@ -69,13 +69,13 @@ const HeroCarousel = () => {
           delay: 2000,
         }),
       ]}
-      className=" w-[80%] mx-auto cursor-grab"
+      className=" md:w-[80%] mx-auto cursor-grab"
     >
       <CarouselContent>
         {carouselItems.map(({ id, name, img }) => (
           <CarouselItem
             key={id}
-            className=" basis-1/2 md:basis-1/3 lg:basis-1/5 flex items-center gap-0"
+            className=" basis-1/3 md:basis-1/4 lg:basis-1/5 flex items-center gap-0"
           >
             <div>
               <Card className="flex items-center border-0">
