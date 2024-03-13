@@ -79,7 +79,7 @@ const Feedback = () => {
       </Link>
 
       <div
-        className={` w-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-3 gap-3 mt-7`}
+        className={` w-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-3 gap-5 lg:gap-3 mt-7`}
       >
         {testimonials.map((item) => {
           const { id, brandLogo, name, role, story, img } = item;

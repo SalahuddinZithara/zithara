@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { HiArrowNarrowRight } from "react-icons/hi";
 const solutions = [
   {
     id: 1,
@@ -50,7 +51,7 @@ const Solutions = () => {
           return (
             <div
               key={id}
-              className={`w-full sticky rounded-md shadow-sm bg-white ${
+              className={`w-full sticky rounded-md shadow-md bg-white ${
                 id === 1
                   ? "top-32"
                   : id === 2
@@ -60,11 +61,25 @@ const Solutions = () => {
                   : id === 4
                   ? "top-[320px]"
                   : ""
-              } left-0 h-[40vh] lg:h-[80vh] border flex flex-col gap-5 p-6 overflow-hidden`}
+              } left-0 h-[40vh] lg:h-[80vh] gap-5 overflow-hidden`}
             >
-              <h3 className=" font-bold text-xl text-teal-900">{name}</h3>
+              <div className=" w-full flex flex-col lg:flex-row h-full">
+                <div className=" w-full lg:w-[75%] p-6">
+                  <h3 className=" font-bold text-xl text-teal-900">{name}</h3>
+                  <img src={img} alt={name} />
+                </div>
+                <div className=" w-full hidden lg:w-[25%] h-full lg:flex flex-col items-center justify-evenly bg-[#f9f9f9] px-5 lg:px-7 py-5">
+                  <img src="/vc/10.png" className=" w-44" alt="img" />
 
-              <img src={img} alt={name} />
+                  <div className=" flex flex-col gap-5">
+                    <h1 className=" font-bold text-5xl">5x</h1>
+                    <p className=" font-medium text-lg">
+                      Boost in Retention with Advanced User Insights
+                    </p>
+                    <HiArrowNarrowRight className=" text-2xl" />
+                  </div>
+                </div>
+              </div>
             </div>
           );
         })}
