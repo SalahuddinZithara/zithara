@@ -66,6 +66,10 @@
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -87,16 +91,15 @@
 
   .carousel-content {
     display: flex;
-    flex-direction: column;
-    animation: scroll 10s linear infinite; /* Adjust duration as needed */
+    animation: scroll 20s linear infinite; /* Adjust duration as needed */
   }
 
   @keyframes scroll {
     0% {
-      transform: translateY(0);
+      transform: translatex(0);
     }
     100% {
-      transform: translateY(
+      transform: translatex(
         calc(-100% + 24px)
       ); /* Adjust 24px based on your gap and border size */
     }

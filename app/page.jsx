@@ -8,6 +8,11 @@ import hero from "@/public/hero.svg";
 import ScrollAnimate from "@/components/ScrollAnimate";
 import HeroCarousel from "@/components/HeroCarousel";
 import EngageParallax from "@/components/EngageParallax";
+import Link from "next/link";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import Feedback from "@/components/Feedback";
+import Blog from "@/components/Blog";
+import Solutions from "@/components/Solutions";
 
 export default function Home() {
   return (
@@ -107,6 +112,15 @@ export default function Home() {
       <div className=" py-12 px-5 lg:px-16 pt-32 ">
         <ScrollAnimate />
       </div>
+
+      {/* -----------FEEDBACK---SECTION------------- */}
+      <Feedback />
+
+      {/* -----------BLOGS---SECTION------------- */}
+      <Blog />
+
+      {/* -----------SOLUTIONS---SECTION------------- */}
+      <Solutions />
     </main>
   );
 }

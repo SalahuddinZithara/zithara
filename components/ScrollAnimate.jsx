@@ -42,13 +42,13 @@ export default function ScrollAnimate() {
       if (isVisible) {
         if (window.scrollY > lastScrollY.current && height < 500) {
           // Scrolling down
-          setHeight(height + 3); // Increase height
+          setHeight(height + 2); // Increase height
           if (height > 370) {
             setOpacity(100);
           }
         } else if (window.scrollY < lastScrollY.current && height > 100) {
           // Scrolling up
-          setHeight(height - 3); // Decrease height
+          setHeight(height - 2); // Decrease height
           if (height < 370) {
             setOpacity(0);
           }
@@ -68,9 +68,9 @@ export default function ScrollAnimate() {
   }, [height]);
 
   return (
-    <main className=" w-full h-auto lg:min-h-screen flex flex-col gap-5 md:p-4">
+    <main className=" w-full h-auto lg:min-h-screen flex flex-col gap-5 md:p-4 ">
       <section
-        className=" relative w-full h-auto lg:h-[400vh] rounded-md lg:p-5"
+        className=" relative w-full h-auto lg:h-[700vh] rounded-md lg:p-5"
         ref={targetRef}
       >
         <h1 className=" w-full lg:w-[800px] mx-auto font-montserrat text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-20 lg:mb-32 font-bold text-center">
