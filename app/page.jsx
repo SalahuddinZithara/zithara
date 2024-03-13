@@ -52,10 +52,10 @@ export default function Home() {
       {/* -----------HORIZONTAL---SCROLL---SECTION------------- */}
       <div className=" w-full flex flex-col gap-3 py-7 md:px-5 lg:px-28 bg-gray-100">
         <div className=" w-full flex flex-col items-center gap-2">
-          <h2 className=" text-center lg:text-left font-bold text-2xl md:text-3xl leading-8 lg:text-3xl">
+          <h2 className=" px-5 lg:px-0 text-left lg:text-left font-bold text-2xl md:text-3xl leading-8 lg:text-3xl">
             Where Founders and Marketers Unite
           </h2>
-          <h4 className=" font-medium text-center mt-2 text-sm lg:text-base lg:text-left">
+          <h4 className=" px-5 lg:px-0 font-medium text-left mt-2 text-sm lg:text-base lg:text-left">
             Make your mark today by joining 1000+ industry leaders
           </h4>
 
