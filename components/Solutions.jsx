@@ -34,7 +34,7 @@ const Solutions = () => {
         Your Industry. Our Solutions.
       </h1>
 
-      <div className=" relative w-full flex flex-col mt-3 h-[400vh]">
+      <div className=" relative w-full flex flex-col mt-3 h-fit lg:h-[400vh]">
         <div className=" sticky left-0 top-24 w-full flex items-center gap-5 flex-wrap lg:gap-28 my-5 justify-center">
           {solutions.map((item) => {
             const { id, name, path } = item;
@@ -60,7 +60,7 @@ const Solutions = () => {
                   : id === 4
                   ? "top-[320px]"
                   : ""
-              } left-0 h-[80vh] border flex flex-col gap-5 p-6 overflow-hidden`}
+              } left-0 h-[40vh] lg:h-[80vh] border flex flex-col gap-5 p-6 overflow-hidden`}
             >
               <h3 className=" font-bold text-xl text-teal-900">{name}</h3>
 
