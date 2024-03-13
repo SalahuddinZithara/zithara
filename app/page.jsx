@@ -113,14 +113,14 @@ export default function Home() {
         <ScrollAnimate />
       </div>
 
+      {/* -----------SOLUTIONS---SECTION------------- */}
+      <Solutions />
+
       {/* -----------FEEDBACK---SECTION------------- */}
       <Feedback />
 
       {/* -----------BLOGS---SECTION------------- */}
       <Blog />
-
-      {/* -----------SOLUTIONS---SECTION------------- */}
-      <Solutions />
     </main>
   );
 }

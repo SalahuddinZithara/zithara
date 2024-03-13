@@ -16,8 +16,8 @@ const solutions = [
   {
     id: 3,
     name: "Financial-Services",
-    img: "",
-    path: "/solutions/fs.webp",
+    img: "/solutions/fs.webp",
+    path: "/",
   },
   {
     id: 4,
@@ -29,13 +29,13 @@ const solutions = [
 
 const Solutions = () => {
   return (
-    <section className=" w-full flex flex-col items-center gap-5 py-12 px-5 lg:px-16 bg-[#f5f5f5]">
+    <section className=" w-full flex flex-col items-center gap-5 py-14 px-5 lg:px-16 bg-[#f5f5f5]">
       <h1 className="font-bold text-2xl lg:text-4xl text-center max-w-5xl lg:text-center text-slate-800">
         Your Industry. Our Solutions.
       </h1>
 
       <div className=" relative w-full flex flex-col mt-3 h-[400vh]">
-        <div className=" sticky left-0 top-24 w-full flex items-center gap-28 my-5 justify-center">
+        <div className=" sticky left-0 top-24 w-full flex items-center gap-5 flex-wrap lg:gap-28 my-5 justify-center">
           {solutions.map((item) => {
             const { id, name, path } = item;
             return (
@@ -49,7 +49,8 @@ const Solutions = () => {
           const { id, name, path, img } = item;
           return (
             <div
-              className={`w-full sticky rounded-md shadow-md bg-white ${
+              key={id}
+              className={`w-full sticky rounded-md shadow-sm bg-white ${
                 id === 1
                   ? "top-32"
                   : id === 2

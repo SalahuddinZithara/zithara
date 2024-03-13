@@ -63,7 +63,7 @@ const testimonials = [
 
 const Feedback = () => {
   return (
-    <div className=" w-full flex flex-col gap-4 items-center py-10 px-5 lg:px-16 bg-[#f5f5f5]">
+    <div className=" w-full flex flex-col gap-4 items-center py-12 px-5 lg:px-16 bg-[#f5f5f58d]">
       <h1 className="font-bold text-2xl lg:text-4xl text-center max-w-5xl lg:text-center text-slate-800">
         Success Stories That Speak for Themselves
       </h1>
