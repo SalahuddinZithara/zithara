@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 
-const ModalVideo = ({ id }) => {
+const ModalVid = ({ id }) => {
   const [isOpen, setOpen] = useState(false);
   return (
     <React.Fragment>
@@ -20,4 +20,4 @@ const ModalVideo = ({ id }) => {
   );
 };
 
-export default ModalVideo;
+export default ModalVid;

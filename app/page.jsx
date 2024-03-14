@@ -123,7 +123,7 @@ export default function Home() {
       {/* -----------BLOGS---SECTION------------- */}
       <Blog />
 
-      <ModalVideo />
+      {/* <ModalVideo /> */}
     </main>
   );
 }
