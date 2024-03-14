@@ -19,7 +19,7 @@ const solutions = [
   {
     id: 2,
     name: "Wellness",
-    hero: "Zithara.AI is for future focussed Spa’s and Salon’s",
+    hero: "Zithara.AI is for future focussed Spa's and Salon's",
     summary: "Enhance Customer Loyalty and drive footfalls to your business.",
     img: "/solutions/subscription.webp",
     path: "/",

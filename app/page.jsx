@@ -26,7 +26,7 @@ export default function Home() {
             platform for Visionary Retailers!
           </h2>
           <p className=" mt-1 lg:mt-0">
-            Harness the power of Zithara's All-In-One engagement platform to
+            Harness the power of Zithara’s All-In-One engagement platform to
             unify customer data, gain valuable insights, and personalize
             marketing communications across SMS, Email, Whatsapp, and Instagram.
             Delight your loyal customers with seamless, personalized
