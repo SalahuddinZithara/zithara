@@ -79,7 +79,7 @@ export default function ScrollAnimate() {
         <div className="hidden lg:block sticky top-32 left-0 w-full mx-auto mb-5 lg:mb-20">
           <div
             className={` ${
-              height > 450 ? "block p-5 bg-gray-100 rounded-lg" : " p-0"
+              height > 450 ? "block p-5 bg-gray-100 rounded-xl" : " p-0"
             } duration-200`}
           >
             <div

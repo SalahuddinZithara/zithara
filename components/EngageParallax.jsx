@@ -89,7 +89,7 @@ const EngageParallax = () => {
 
   return (
     <section className="w-full h-auto md:h-auto rounded-md">
-      <h1 className=" text-2xl md:text-3xl w-full lg:text-4xl font-bold text-left px-5 mb-3">
+      <h1 className=" text-2xl md:text-3xl w-full lg:text-4xl font-bold text-left lg:text-center px-5 mb-3">
         Capture the Insights, Nurture the growth
       </h1>
       <p className=" text-left w-full lg:max-w-4xl mb-10 mx-auto leading-7 px-5">
