@@ -29,7 +29,7 @@ const data = [
 ];
 
 export default function ScrollAnimate() {
-  const [height, setHeight] = useState(100);
+  const [height, setHeight] = useState(0);
   const lastScrollY = useRef(0);
   const targetRef = useRef(null);
   const [opacity, setOpacity] = useState(0);
@@ -42,13 +42,13 @@ export default function ScrollAnimate() {
       if (isVisible) {
         if (window.scrollY > lastScrollY.current && height < 500) {
           // Scrolling down
-          setHeight(height + 2); // Increase height
+          setHeight(height + 5); // Increase height
           if (height > 370) {
             setOpacity(100);
           }
         } else if (window.scrollY < lastScrollY.current && height > 100) {
           // Scrolling up
-          setHeight(height - 2); // Decrease height
+          setHeight(height - 5); // Decrease height
           if (height < 370) {
             setOpacity(0);
           }

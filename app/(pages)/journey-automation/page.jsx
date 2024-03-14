@@ -10,29 +10,19 @@ import Solutions from "@/components/Solutions";
 const platformItems = [
   {
     id: 1,
-    name: "Navigate Your Audience's World",
+    name: "Lifting Your Marketing Game",
     summary:
-      "AI tailors exceptional experiences for B2B and B2C clients, ensuring unique personalization.",
+      "We’re breaking the B2B and B2C boundaries to facilitate dynamic conversations that engage and convert",
     list: [
       {
         id: 1,
         listData:
-          "Pinpoint Precision: RFM filters for resonant audience targeting.",
+          "Zithara’s AI-powered WhatsApp, Emails or SMS crafts a unique journey for every customer.",
       },
       {
         id: 2,
         listData:
-          "Empathetic Messaging: Reflect preferences, foster connections.",
-      },
-      {
-        id: 3,
-        listData:
-          "Timed Perfection: Deliver messages at peak engagement moments.",
-      },
-      {
-        id: 4,
-        listData:
-          "Lasting Bonds: Forge relationships through profound resonance.",
+          "These campaigns are designed to establish authentic connections, nurture participation, and ultimately deliver significant results.",
       },
     ],
     path: "/contact",
@@ -40,19 +30,17 @@ const platformItems = [
   },
   {
     id: 2,
-    name: "360° view of customer",
-    summary:
-      "Extend your reach to new countries and customer segments and evolve sales strategies from a single platform.",
+    name: "Your Campaign, Your Way",
+    summary: "Take Your Store to WhatsApp – Where Your Shoppers Hang Out",
     list: [
       {
         id: 1,
-        listData:
-          "Immerse in a panoramic customer perspective, blending offline interactions, online behaviour, loyalty program engagement, and feedback.",
+        listData: "Tailoring Campaigns for Your Audience",
       },
       {
         id: 2,
         listData:
-          "Link the dots to foster profound connections and insights for enhanced engagement strategies.",
+          "Personalized Rewards for ever-lasting Engagement. With AI-Driven Conversations",
       },
     ],
     path: "/contact",
@@ -60,24 +48,16 @@ const platformItems = [
   },
   {
     id: 3,
-    name: "Discover Behavior Patterns",
-    summary:
-      "Use powerful developer tools and an API-first, headless solution to innovate quickly.",
+    name: "Insights that Drive Growth",
+    summary: "Your Roadmap to Data-Driven Marketing Excellence",
     list: [
       {
         id: 1,
-        listData:
-          "Quickly build customised apps and extend native capabilities with modern development tools and a server less runtime.",
+        listData: "Gain deep campaign performance insights",
       },
       {
         id: 2,
-        listData:
-          "Easily integrate or replace third-party services with a flexible API orchestration layer.",
-      },
-      {
-        id: 3,
-        listData:
-          "Build connected customer experiences across channels with a headless commerce platform.",
+        listData: "Refine strategies with data-driven analytics",
       },
     ],
     path: "/contact",
@@ -85,18 +65,21 @@ const platformItems = [
   },
   {
     id: 4,
-    name: "Targeted Campaigns",
-    summary: "Bringing Customers Together Through Segmentation",
+    name: "Simplified Automation, Maximum Impact",
+    summary:
+      "Your One-Stop Solution for Making B2B and B2C Conversations Easier",
     list: [
       {
         id: 1,
-        listData:
-          "Smoothly integrates local stores and virtual carts, enveloping customers in a single, cohesive segmentation.",
+        listData: "Zithara is for both beginners and experienced marketers",
       },
       {
         id: 2,
-        listData:
-          "Shape campaigns resonate with their journey and preferences, fostering personalized connections.",
+        listData: "It’s easy to create effective campaigns",
+      },
+      {
+        id: 3,
+        listData: "Get real-time results of your campaign",
       },
     ],
     path: "/contact",
@@ -104,16 +87,16 @@ const platformItems = [
   },
 ];
 
-const CustomerSegments = () => {
+const JourneyAutomation = () => {
   return (
     <section className=" w-full min-h-screen">
       {/* ----------HERO---SECTION--------- */}
       <div className=" w-full min-h-[65vh] lg:min-h-[90vh] flex flex-col lg:items-center justify-center gap-3 bg-[#fbfbfb] px-5">
-        <p className=" text-gray-800 font-medium lg:text-center lg:text-xl">
+        {/* <p className=" text-gray-800 font-medium lg:text-center lg:text-xl">
           Your Pass to Decode Audience Desires
-        </p>
+        </p> */}
         <h1 className=" font-bold text-[28px] leading-[35px] lg:text-5xl lg:text-center lg:max-w-5xl text-slate-800">
-          Strategic Insights Reshaping Engagement Success
+          Precision Strategies for Accelerated Success
         </h1>
 
         <div className=" mt-5">
@@ -155,4 +138,4 @@ const CustomerSegments = () => {
   );
 };
 
-export default CustomerSegments;
+export default JourneyAutomation;

@@ -10,29 +10,16 @@ import Solutions from "@/components/Solutions";
 const platformItems = [
   {
     id: 1,
-    name: "Navigate Your Audience's World",
-    summary:
-      "AI tailors exceptional experiences for B2B and B2C clients, ensuring unique personalization.",
+    name: "Realise upto 30% lost revenue",
+    summary: "Save WalkAway customers and turn them to potential customers!",
     list: [
       {
         id: 1,
-        listData:
-          "Pinpoint Precision: RFM filters for resonant audience targeting.",
+        listData: "Every lead is a potential goldmine waiting to be explored",
       },
       {
         id: 2,
-        listData:
-          "Empathetic Messaging: Reflect preferences, foster connections.",
-      },
-      {
-        id: 3,
-        listData:
-          "Timed Perfection: Deliver messages at peak engagement moments.",
-      },
-      {
-        id: 4,
-        listData:
-          "Lasting Bonds: Forge relationships through profound resonance.",
+        listData: "Prevent leads from slipping through the cracks",
       },
     ],
     path: "/contact",
@@ -40,19 +27,23 @@ const platformItems = [
   },
   {
     id: 2,
-    name: "360° view of customer",
-    summary:
-      "Extend your reach to new countries and customer segments and evolve sales strategies from a single platform.",
+    name: "Sync and Engage FB, Google Ads, Insta and instore leads",
+    summary: "Your Leads with Our Unified Platform",
     list: [
       {
         id: 1,
         listData:
-          "Immerse in a panoramic customer perspective, blending offline interactions, online behaviour, loyalty program engagement, and feedback.",
+          "Perfectly sync leads from various sources including Facebook and Instagram",
       },
       {
         id: 2,
         listData:
-          "Link the dots to foster profound connections and insights for enhanced engagement strategies.",
+          "Engage leads through multiple touchpoints, including WhatsApp and social media",
+      },
+      {
+        id: 3,
+        listData:
+          "Utilize eye-catching popups for effective engagement on socailchannels",
       },
     ],
     path: "/contact",
@@ -60,24 +51,23 @@ const platformItems = [
   },
   {
     id: 3,
-    name: "Discover Behavior Patterns",
-    summary:
-      "Use powerful developer tools and an API-first, headless solution to innovate quickly.",
+    name: "Convert Prospects into customers",
+    summary: "",
     list: [
       {
         id: 1,
         listData:
-          "Quickly build customised apps and extend native capabilities with modern development tools and a server less runtime.",
+          "Change potential leads into customers using Zithara’s personalized engagement channels",
       },
       {
         id: 2,
         listData:
-          "Easily integrate or replace third-party services with a flexible API orchestration layer.",
+          "Tailored engagement strategies to nurture leads into loyal customers",
       },
       {
         id: 3,
         listData:
-          "Build connected customer experiences across channels with a headless commerce platform.",
+          "Cultivate customers who not only value your offerings but also contribute to your overall success",
       },
     ],
     path: "/contact",
@@ -85,18 +75,23 @@ const platformItems = [
   },
   {
     id: 4,
-    name: "Targeted Campaigns",
-    summary: "Bringing Customers Together Through Segmentation",
+    name: "One Platform, Endless Opportunities",
+    summary: "",
     list: [
       {
         id: 1,
         listData:
-          "Smoothly integrates local stores and virtual carts, enveloping customers in a single, cohesive segmentation.",
+          "Experience the power of a Omni Channel paltform for all lead management activities",
       },
       {
         id: 2,
         listData:
-          "Shape campaigns resonate with their journey and preferences, fostering personalized connections.",
+          "From capturing to engaging and converting leads, everything happens in one place",
+      },
+      {
+        id: 3,
+        listData:
+          "Watch your efforts multiply and your business grow as you make the most of every opportunity",
       },
     ],
     path: "/contact",
@@ -104,17 +99,18 @@ const platformItems = [
   },
 ];
 
-const CustomerSegments = () => {
+const LeadManagement = () => {
   return (
     <section className=" w-full min-h-screen">
       {/* ----------HERO---SECTION--------- */}
       <div className=" w-full min-h-[65vh] lg:min-h-[90vh] flex flex-col lg:items-center justify-center gap-3 bg-[#fbfbfb] px-5">
-        <p className=" text-gray-800 font-medium lg:text-center lg:text-xl">
-          Your Pass to Decode Audience Desires
-        </p>
         <h1 className=" font-bold text-[28px] leading-[35px] lg:text-5xl lg:text-center lg:max-w-5xl text-slate-800">
-          Strategic Insights Reshaping Engagement Success
+          Never Lose a Lead!
         </h1>
+        <p className=" text-gray-800 font-medium lg:text-center lg:text-xl">
+          Derive value from all PPC Campaigns: Realize instant ROI with
+          Zithara’s Lead Management Platform
+        </p>
 
         <div className=" mt-5">
           <img
@@ -155,4 +151,4 @@ const CustomerSegments = () => {
   );
 };
 
-export default CustomerSegments;
+export default LeadManagement;

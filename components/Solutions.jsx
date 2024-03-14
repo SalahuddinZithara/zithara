@@ -51,7 +51,7 @@ const Solutions = () => {
   return (
     <section className=" w-full flex flex-col items-center gap-5 py-14 px-5 lg:px-16 bg-[#f5f5f5]">
       <h1 className="font-bold text-2xl lg:text-4xl text-center max-w-5xl lg:text-center text-slate-800">
-        Your Industry. Our Solutions.
+        Your Business. Our Solutions.
       </h1>
 
       <div className=" relative w-full flex flex-col mt-3 h-fit lg:h-[400vh]">
@@ -80,15 +80,14 @@ const Solutions = () => {
                   : id === 4
                   ? "top-[320px]"
                   : ""
-              } left-0 h-[40vh] lg:h-[80vh] gap-5 overflow-hidden border-t`}
+              } left-0 h-[40vh] lg:h-[80vh] gap-5 overflow-hidden border-t mb-5`}
             >
               <div className=" w-full flex flex-col lg:flex-row h-full">
                 <div className=" w-full lg:w-[75%]">
-                  <h3 className=" font-bold text-xl text-teal-900 px-6 py-5 border-b">
+                  <h3 className=" font-bold text-xl text-teal-900 px-6 py-5">
                     {name}
                   </h3>
                   <div className=" w-full px-6 py-4 h-full">
-                    <h2 className=" font-semibold text-lg">{hero}</h2>
                     <img src={img} alt={name} />
                   </div>
                 </div>

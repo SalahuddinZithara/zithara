@@ -19,7 +19,6 @@ import {
   X,
 } from "lucide-react";
 import { Button } from "./ui/button";
-import { SampleSidebar } from "./SampleSidebar";
 import {
   Accordion,
   AccordionContent,
@@ -28,11 +27,8 @@ import {
 } from "@/components/ui/accordion";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { RiUserSettingsLine } from "react-icons/ri";
-import { FaAmazonPay } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-import { CiBookmarkCheck, CiGift } from "react-icons/ci";
-import { LuUsers } from "react-icons/lu";
+import { CiGift } from "react-icons/ci";
 import { GiHeartNecklace } from "react-icons/gi";
 import { BsPlugin } from "react-icons/bs";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
@@ -49,6 +45,9 @@ import { FaBold } from "react-icons/fa6";
 import { PiNotebookLight } from "react-icons/pi";
 import { TbSettingsAutomation } from "react-icons/tb";
 import { CgMenuRight } from "react-icons/cg";
+import { IoCartOutline } from "react-icons/io5";
+import { IoIosGitNetwork } from "react-icons/io";
+import { BsDatabaseCheck } from "react-icons/bs";
 
 const sidebarItems = [
   {
@@ -57,52 +56,52 @@ const sidebarItems = [
     items: [
       {
         id: 1,
-        name: "Customer segments & Insightful Analytics",
+        name: "Customer Segmentation",
         summary: "Understand, interact, and engage with every customer",
         icon: <TbBrandGoogleAnalytics className=" text-lg" />,
         path: "/customer-segments",
       },
       {
         id: 2,
-        name: "Marketing Automation",
+        name: "Customer Journey Automation",
         summary: "Understand, interact, and engage with every customer",
         icon: <TbSettingsAutomation className=" text-lg" />,
-        path: "/",
+        path: "/journey-automation",
       },
       {
         id: 3,
         name: "Lead Management",
         summary: "Understand, interact, and engage with every customer",
         icon: <RiUserSettingsLine className=" text-lg" />,
-        path: "/",
+        path: "/lead-management",
       },
       {
         id: 4,
-        name: " WhatsApp for Business API",
+        name: "E-Commerce Website",
         summary: "Understand, interact, and engage with every customer",
-        icon: <FaWhatsapp className=" text-lg" />,
-        path: "/",
+        icon: <IoCartOutline className=" text-lg" />,
+        path: "/ecommerce-website",
       },
       {
         id: 5,
-        name: "Rewards and Loyalty",
+        name: "Rewards and Redemption",
         summary: "Understand, interact, and engage with every customer",
         icon: <CiGift className=" text-lg" />,
-        path: "/",
+        path: "/rewards",
       },
       {
         id: 6,
-        name: "Referrals and Feedback",
+        name: "Omnichannel Campaigner",
         summary: "Understand, interact, and engage with every customer",
-        icon: <LuUsers className=" text-lg" />,
-        path: "/",
+        icon: <IoIosGitNetwork className=" text-lg" />,
+        path: "/omnichannel-campaigner",
       },
       {
         id: 7,
-        name: "Nex-Gen UPI Tech",
+        name: "Customer Data Platform",
         summary: "Understand, interact, and engage with every customer",
-        icon: <FaAmazonPay className=" text-lg" />,
-        path: "/",
+        icon: <BsDatabaseCheck className=" text-lg" />,
+        path: "/cdp",
       },
     ],
   },

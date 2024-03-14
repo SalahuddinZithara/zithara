@@ -10,29 +10,23 @@ import Solutions from "@/components/Solutions";
 const platformItems = [
   {
     id: 1,
-    name: "Navigate Your Audience's World",
-    summary:
-      "AI tailors exceptional experiences for B2B and B2C clients, ensuring unique personalization.",
+    name: "Go Beyond Touch Points",
+    summary: "Enabling B2B and B2C Leads to Script Their Own Success Saga",
     list: [
       {
         id: 1,
         listData:
-          "Pinpoint Precision: RFM filters for resonant audience targeting.",
+          "Tailored Experiences: Craft personalized experiences for customers",
       },
       {
         id: 2,
         listData:
-          "Empathetic Messaging: Reflect preferences, foster connections.",
+          "Flexible Promotions: Adapt to changing market dynamics with ease",
       },
       {
         id: 3,
         listData:
-          "Timed Perfection: Deliver messages at peak engagement moments.",
-      },
-      {
-        id: 4,
-        listData:
-          "Lasting Bonds: Forge relationships through profound resonance.",
+          "Ever Lasting Connections: Build enduring brand-customer relationships",
       },
     ],
     path: "/contact",
@@ -40,19 +34,22 @@ const platformItems = [
   },
   {
     id: 2,
-    name: "360° view of customer",
-    summary:
-      "Extend your reach to new countries and customer segments and evolve sales strategies from a single platform.",
+    name: "Crafting Loyalty, Crafted for You",
+    summary: "Your Leads with Our Unified Platform",
     list: [
       {
         id: 1,
-        listData:
-          "Immerse in a panoramic customer perspective, blending offline interactions, online behaviour, loyalty program engagement, and feedback.",
+        listData: "Loyalty Tailored to You: Creating Personal Connections",
       },
       {
         id: 2,
         listData:
-          "Link the dots to foster profound connections and insights for enhanced engagement strategies.",
+          "Keeping the Joy Alive: Tailored Experiences for Ongoing Delight",
+      },
+      {
+        id: 3,
+        listData:
+          "Present and Future United: Loyalty Programs That Speak to Your Customers",
       },
     ],
     path: "/contact",
@@ -60,24 +57,21 @@ const platformItems = [
   },
   {
     id: 3,
-    name: "Discover Behavior Patterns",
-    summary:
-      "Use powerful developer tools and an API-first, headless solution to innovate quickly.",
+    name: "Flexible Promotions, Endless Possibilities",
+    summary: "",
     list: [
       {
         id: 1,
-        listData:
-          "Quickly build customised apps and extend native capabilities with modern development tools and a server less runtime.",
+        listData: "Unleash Your Imagination: Our Loyalty System Opens Doors",
       },
       {
         id: 2,
         listData:
-          "Easily integrate or replace third-party services with a flexible API orchestration layer.",
+          "Campaigns That Spark Excitement: Crafting Memorable Customer Experiences",
       },
       {
         id: 3,
-        listData:
-          "Build connected customer experiences across channels with a headless commerce platform.",
+        listData: "Leaving a Mark: Unconventional Loyalty That Stays with You",
       },
     ],
     path: "/contact",
@@ -85,18 +79,23 @@ const platformItems = [
   },
   {
     id: 4,
-    name: "Targeted Campaigns",
-    summary: "Bringing Customers Together Through Segmentation",
+    name: "Personalisation for Impact",
+    summary: "",
     list: [
       {
         id: 1,
         listData:
-          "Smoothly integrates local stores and virtual carts, enveloping customers in a single, cohesive segmentation.",
+          "Deeper Connections: Personalization that Wows Loyal Customers",
       },
       {
         id: 2,
         listData:
-          "Shape campaigns resonate with their journey and preferences, fostering personalized connections.",
+          "Speaking Their Language: Rewards that Truly Understand and Delight",
+      },
+      {
+        id: 3,
+        listData:
+          "Magic of a Personal Touch: Boosting Loyalty and Engagement with Care",
       },
     ],
     path: "/contact",
@@ -104,17 +103,18 @@ const platformItems = [
   },
 ];
 
-const CustomerSegments = () => {
+const Rewards = () => {
   return (
     <section className=" w-full min-h-screen">
       {/* ----------HERO---SECTION--------- */}
       <div className=" w-full min-h-[65vh] lg:min-h-[90vh] flex flex-col lg:items-center justify-center gap-3 bg-[#fbfbfb] px-5">
-        <p className=" text-gray-800 font-medium lg:text-center lg:text-xl">
-          Your Pass to Decode Audience Desires
-        </p>
-        <h1 className=" font-bold text-[28px] leading-[35px] lg:text-5xl lg:text-center lg:max-w-5xl text-slate-800">
-          Strategic Insights Reshaping Engagement Success
+        <h1 className=" font-bold text-[28px] leading-[37px] lg:text-5xl lg:text-center lg:max-w-5xl text-slate-800">
+          Building Ever-Lasting Relationships Beyond Touch Points
         </h1>
+        {/* <p className=" text-gray-800 font-medium lg:text-center lg:text-xl">
+          Derive value from all PPC Campaigns: Realize instant ROI with
+          Zithara’s Lead Management Platform
+        </p> */}
 
         <div className=" mt-5">
           <img
@@ -155,4 +155,4 @@ const CustomerSegments = () => {
   );
 };
 
-export default CustomerSegments;
+export default Rewards;

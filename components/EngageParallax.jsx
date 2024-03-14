@@ -22,7 +22,7 @@ const platformItems = [
     summary:
       "Understand your customers with RFM segmentation, Keep them hooked for life with the industry's one-of-a-kind platform that effortlessly analyzes data from every source, all at once.",
     icon: <TbBrandGoogleAnalytics className="text-lg" />,
-    path: "/",
+    path: "/customer-segments",
     img: img1,
   },
   {
@@ -31,7 +31,7 @@ const platformItems = [
     summary:
       "Never lose a lead! Curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more. Derive value from all PPC Campaigns: Realize instant ROI with Zithara’s Lead Management Platform.",
     icon: <RiUserSettingsLine className=" text-lg" />,
-    path: "/",
+    path: "/lead-management",
     img: img2,
   },
   {
@@ -40,7 +40,7 @@ const platformItems = [
     summary:
       "Unleash the potential of multimode communications with  EMAIL, SMS or Whatsapp. uncover the pulse of your campaigns, and supercharge your engagement with AI-driven insights. Our AI capabilities enable you to pinpoint your top-performing campaigns and optimize them instantly and drive ROI higher.",
     icon: <UserRoundCog size={20} strokeWidth={2} />,
-    path: "/",
+    path: "/omnichannel-campaigner",
     img: img3,
   },
   {
@@ -49,7 +49,7 @@ const platformItems = [
     summary:
       "Zithara.AI’s no-code visual builder lets you easily create and E-cmmerce website and see it track the movement of your customers from Offline  to Online, to finally target  each customer according to their preferences, affinities, and behavior on each channel.",
     icon: <BsCart2 className=" text-lg" />,
-    path: "/",
+    path: "/ecommerce-website",
     img: img4,
   },
   {
@@ -58,7 +58,7 @@ const platformItems = [
     summary:
       "Craft seamless omnichannel experiences with our AI-powered journey orchestration and optimization platform. Tailor unique experiences based on your customers' interactions with your brand to ensure they engage at the right time and on the right channel.",
     icon: <TbSettingsAutomation className=" text-lg" />,
-    path: "/",
+    path: "/journey-automation",
     img: img5,
   },
   {
@@ -67,16 +67,16 @@ const platformItems = [
     summary:
       "Revolutionize customer loyalty with the industry's most configurable system, designed to craft programs that delight customers. A decade ago, customers were content with fewer options and willing to wait for rewards. Today, in an era of endless choices, they crave instant gratification. Zithara.AI's rewards program is tailored for the customers of today and tomorrow",
     icon: <IoGiftOutline className=" text-lg" />,
-    path: "/",
+    path: "/rewards",
     img: img1,
   },
   {
     id: 7,
-    name: "Customer data Plaform",
+    name: "Customer Data Plaform",
     summary:
       "Zithara.AI is the ultimate retail-focused CDP powerhouse, offering seamless personalization. Everything you need is in one platform, providing an end-to-end CDP solution designed specifically for retail. Zithara.AI maximizes customer understanding, enables personalized marketing campaigns, and drives repeat sales.",
     icon: <Layers2 size={20} strokeWidth={2} />,
-    path: "/",
+    path: "/cdp",
     img: img2,
   },
 ];
