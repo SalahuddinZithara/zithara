@@ -20,16 +20,16 @@ const platformItems = [
     id: 1,
     name: "Customer segments & Insightful Analytics",
     summary:
-      "Understand and evaluate customers; alert, update, and communicate with them ",
+      "Understand your customers with RFM segmentation, Keep them hooked for life with the industry's one-of-a-kind platform that effortlessly analyzes data from every source, all at once.",
     icon: <TbBrandGoogleAnalytics className="text-lg" />,
     path: "/",
     img: img1,
   },
   {
     id: 2,
-    name: "New age Omnichannel Lead management to bar none",
+    name: "Omnichannel Lead management",
     summary:
-      "Never lose a lead!  curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more.",
+      "Never lose a lead! Curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more. Derive value from all PPC Campaigns: Realize instant ROI with Zithara’s Lead Management Platform.",
     icon: <RiUserSettingsLine className=" text-lg" />,
     path: "/",
     img: img2,
@@ -38,16 +38,16 @@ const platformItems = [
     id: 3,
     name: "AI-powered Omni channel campaigner",
     summary:
-      "Optimize interactions and improve ROI with Zithara.AI Use multi mode communication on EMAIL, SMA or Whatsapp.",
+      "Unleash the potential of multimode communications with  EMAIL, SMS or Whatsapp. uncover the pulse of your campaigns, and supercharge your engagement with AI-driven insights. Our AI capabilities enable you to pinpoint your top-performing campaigns and optimize them instantly and drive ROI higher.",
     icon: <UserRoundCog size={20} strokeWidth={2} />,
     path: "/",
     img: img3,
   },
   {
     id: 4,
-    name: "E-commerce, App Commerce or In-store",
+    name: "Ecommerce website for your Offline business",
     summary:
-      "Zithara.AI Enables you take your retail business to e-commerce store, App-based store and In Store.",
+      "Zithara.AI’s no-code visual builder lets you easily create and E-cmmerce website and see it track the movement of your customers from Offline  to Online, to finally target  each customer according to their preferences, affinities, and behavior on each channel.",
     icon: <BsCart2 className=" text-lg" />,
     path: "/",
     img: img4,
@@ -56,24 +56,25 @@ const platformItems = [
     id: 5,
     name: "Customer Journey Automation",
     summary:
-      "Build relevant customer experiences at every stage using Generative AI ",
+      "Craft seamless omnichannel experiences with our AI-powered journey orchestration and optimization platform. Tailor unique experiences based on your customers' interactions with your brand to ensure they engage at the right time and on the right channel.",
     icon: <TbSettingsAutomation className=" text-lg" />,
     path: "/",
     img: img5,
   },
   {
     id: 6,
-    name: "New-age Reward and Redemption",
+    name: "Rewards and Redemption",
     summary:
-      "Industry’s Most Configurable Loyalty System to Craft Programs for Ultimate Customer Delight",
+      "Revolutionize customer loyalty with the industry's most configurable system, designed to craft programs that delight customers. A decade ago, customers were content with fewer options and willing to wait for rewards. Today, in an era of endless choices, they crave instant gratification. Zithara.AI's rewards program is tailored for the customers of today and tomorrow",
     icon: <IoGiftOutline className=" text-lg" />,
     path: "/",
     img: img1,
   },
   {
     id: 7,
-    name: "New-age CDP",
-    summary: "A retail-focused CDP powerhouse for effortless Personalisation",
+    name: "Customer data Plaform",
+    summary:
+      "Zithara.AI is the ultimate retail-focused CDP powerhouse, offering seamless personalization. Everything you need is in one platform, providing an end-to-end CDP solution designed specifically for retail. Zithara.AI maximizes customer understanding, enables personalized marketing campaigns, and drives repeat sales.",
     icon: <Layers2 size={20} strokeWidth={2} />,
     path: "/",
     img: img2,
@@ -90,12 +91,13 @@ const EngageParallax = () => {
   return (
     <section className="w-full h-auto md:h-auto rounded-md">
       <h1 className=" text-2xl md:text-3xl w-full lg:text-4xl font-bold text-left lg:text-center px-5 mb-3">
-        Capture the Insights, Nurture the growth
+        Unlock Insights, Fuel growth
       </h1>
-      <p className=" text-left w-full lg:max-w-4xl mb-10 mx-auto leading-7 px-5">
-        Zithara is an AI -Driven Customer Engagement platform for offline retail
-        brands, that empowers marketers and product owners with future focussed
-        insights to create omnichannel experiences that consumers love.
+      <p className=" text-left lg:text-center w-full lg:max-w-4xl mb-10 mx-auto leading-7 px-5">
+        Zithara is an AI-driven Customer Engagement platform designed for
+        offline retail brands. It empowers marketers and product owners with
+        future-focused insights to create omnichannel experiences that consumers
+        love
       </p>
 
       <div className=" relative w-full h-[700vh] space-y-3 ">

@@ -22,15 +22,15 @@ export default function Home() {
         <div className=" flex flex-col gap-5 lg:gap-7 w-full lg:w-[50%]">
           <h2 className=" text-2xl md:text-3xl leading-9 lg:text-[42px] lg:leading-[51px] font-bold">
             India’s <span className=" text-blue-800">fastest</span> growing{" "}
-            <span className=" text-blue-800">AI-driven</span> platform for
-            Future Focused Retail growth
+            <span className=" text-blue-800">AI-driven</span> Customer Data
+            platform for Visionary Retailers!
           </h2>
           <p className=" mt-1 lg:mt-0">
-            {/* Create personalized experiences to retain your most valuable
-            customers, forever, with Zithara’s All-In-One engagement platform. */}
-            Unify customer data, generate insights, personalise marketing
-            communications across SMS, Email, Whatsapp & Instagram to delight
-            your loyal customers with Zithara’s All-In-One engagement platform.
+            Harness the power of Zithara's All-In-One engagement platform to
+            unify customer data, gain valuable insights, and personalize
+            marketing communications across SMS, Email, Whatsapp, and Instagram.
+            Delight your loyal customers with seamless, personalized
+            interactions across their preferred channels.
           </p>
 
           <div className=" w-full flex items-center gap-3 md:gap-4 mt-3 lg:mt-3">

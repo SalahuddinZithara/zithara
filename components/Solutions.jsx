@@ -1,30 +1,49 @@
 import Link from "next/link";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { GiDoubleNecklace } from "react-icons/gi";
+import { FaSpa } from "react-icons/fa";
+import { BsPlugin } from "react-icons/bs";
+
 const solutions = [
   {
     id: 1,
-    name: "E-Commerce",
+    name: "Jewellery",
+    hero: "Zithara.AI is for  visionary Jewellers",
+    summary:
+      "Much more than a boring CRM: Now  capture, activate, re-engage, and monetize all your customers with CDP.",
     img: "/solutions/ecommerce.webp",
     path: "/",
+    logo: "/solutions/jewels.jpg",
   },
   {
     id: 2,
-    name: "Subscriptions",
+    name: "Wellness",
+    hero: "Zithara.AI is for future focussed Spa’s and Salon’s",
+    summary: "Enhance Customer Loyalty and drive footfalls to your business.",
     img: "/solutions/subscription.webp",
     path: "/",
+    logo: "/solutions/jewels.jpg",
   },
   {
     id: 3,
-    name: "Financial-Services",
+    name: "Electronics",
+    hero: "Zithara.AI will change the face of your Electronics business",
+    summary:
+      "Acquire more customers, engage them in between purchases, monetize them even when they are not shopping with you instore.",
     img: "/solutions/fs.webp",
     path: "/",
+    logo: "/solutions/jewels.jpg",
   },
   {
     id: 4,
-    name: "Gaming",
+    name: "Luxury Retail",
+    hero: "Zithara.AI is for Luxury retail",
+    summary:
+      "Capture the interest, nurture the purchase, and keep them engaged.",
     img: "/solutions/gaming.webp",
     path: "/",
+    logo: "/solutions/jewels.jpg",
   },
 ];
 
@@ -47,7 +66,7 @@ const Solutions = () => {
           })}
         </div>
         {solutions.map((item) => {
-          const { id, name, path, img } = item;
+          const { id, name, path, img, hero, summary, logo } = item;
           return (
             <div
               key={id}
@@ -61,21 +80,24 @@ const Solutions = () => {
                   : id === 4
                   ? "top-[320px]"
                   : ""
-              } left-0 h-[40vh] lg:h-[80vh] gap-5 overflow-hidden`}
+              } left-0 h-[40vh] lg:h-[80vh] gap-5 overflow-hidden border-t`}
             >
               <div className=" w-full flex flex-col lg:flex-row h-full">
-                <div className=" w-full lg:w-[75%] p-6">
-                  <h3 className=" font-bold text-xl text-teal-900">{name}</h3>
-                  <img src={img} alt={name} />
+                <div className=" w-full lg:w-[75%]">
+                  <h3 className=" font-bold text-xl text-teal-900 px-6 py-5 border-b">
+                    {name}
+                  </h3>
+                  <div className=" w-full px-6 py-4 h-full">
+                    <h2 className=" font-semibold text-lg">{hero}</h2>
+                    <img src={img} alt={name} />
+                  </div>
                 </div>
-                <div className=" w-full hidden lg:w-[25%] h-full lg:flex flex-col items-center justify-evenly bg-[#f9f9f9] px-5 lg:px-7 py-5">
-                  <img src="/vc/10.png" className=" w-44" alt="img" />
+                <div className=" w-full hidden lg:w-[25%] h-full lg:flex flex-col items-center py-14 gap-10 bg-[#f9f9f9] px-5 lg:px-7">
+                  <img src={logo} className=" w-44 rounded-md" alt="img" />
 
                   <div className=" flex flex-col gap-5">
                     <h1 className=" font-bold text-5xl">5x</h1>
-                    <p className=" font-medium text-lg">
-                      Boost in Retention with Advanced User Insights
-                    </p>
+                    <p className=" font-medium text-sm">{summary}</p>
                     <HiArrowNarrowRight className=" text-2xl" />
                   </div>
                 </div>
