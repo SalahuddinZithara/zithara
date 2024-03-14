@@ -8,22 +8,22 @@ import Image from "next/image";
 const data = [
   {
     id: 1,
-    title: "Customer data and analytics",
+    title: "First Party Data Collection",
     img: "/scroll/1.webp",
   },
   {
     id: 2,
-    title: "Experimentation & Optimization",
+    title: "Customer Segmentation",
     img: "/scroll/2.webp",
   },
   {
     id: 3,
-    title: "Personalization",
+    title: "Reward Redemption",
     img: "/scroll/3.webp",
   },
   {
     id: 4,
-    title: "Campaign Orchestration",
+    title: "Customer CDP",
     img: "/scroll/4.webp",
   },
 ];
@@ -68,23 +68,23 @@ export default function ScrollAnimate() {
   }, [height]);
 
   return (
-    <main className=" w-full h-auto lg:min-h-screen flex flex-col gap-5 md:p-4 ">
+    <main className=" w-full h-auto lg:min-h-screen flex flex-col gap-5 py-5 md:p-4">
       <section
         className=" relative w-full h-auto lg:h-[650vh] rounded-md lg:p-5"
         ref={targetRef}
       >
-        <h1 className=" w-full lg:w-[800px] mx-auto font-montserrat text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-20 lg:mb-32 font-bold text-center">
+        <h1 className=" w-full lg:w-full mx-auto font-montserrat text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-20 lg:mb-28 max-w-3xl font-bold text-center">
           The Clever All-In-One Customer Engagement Platform
         </h1>
         <div className="hidden lg:block sticky top-32 left-0 w-full mx-auto mb-5 lg:mb-20">
           <div
             className={` ${
-              height > 450 ? "block p-5 bg-gray-100 rounded-xl" : " p-0"
+              height > 450 ? "block py-5 px-1 bg-gray-100 rounded-xl" : " p-0"
             } duration-200`}
           >
             <div
               style={{ height: height }}
-              className={` w-full relative mx-auto border border-dashed rounded-xl border-black min-h-[280px] 2xl:min-h-[320px] z-20 bg-white`}
+              className={` w-[97%] relative mx-auto border border-dashed rounded-xl border-black min-h-[280px] 2xl:min-h-[320px] z-20 bg-white`}
             >
               <div
                 className={` ${
@@ -160,9 +160,9 @@ export default function ScrollAnimate() {
                     <div
                       key={id}
                       style={{ opacity: opacity }}
-                      className=" w-full flex flex-col duration-200 justify-between border border-gray-300 rounded-md p-3 h-[320px] z-10 py-7"
+                      className=" w-full flex flex-col duration-200 justify-between border border-gray-300 rounded-md px-3 h-[320px] z-10 py-6"
                     >
-                      <h3 className=" font-semibold text-center text-lg">
+                      <h3 className=" font-medium text-center text-lg">
                         {title}
                       </h3>
                       <img src={img} alt={title} className=" w-40 mx-auto" />

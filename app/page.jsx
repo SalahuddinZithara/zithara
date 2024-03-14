@@ -13,6 +13,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import Feedback from "@/components/Feedback";
 import Blog from "@/components/Blog";
 import Solutions from "@/components/Solutions";
+import ModalVideo from "react-modal-video";
 
 export default function Home() {
   return (
@@ -121,6 +122,8 @@ export default function Home() {
 
       {/* -----------BLOGS---SECTION------------- */}
       <Blog />
+
+      <ModalVideo />
     </main>
   );
 }
