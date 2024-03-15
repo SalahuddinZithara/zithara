@@ -126,7 +126,7 @@ const Contact = () => {
             <p className="text-xs font-semibold break-words">
               I agree to{" "}
               <Link href="/" className=" text-blue-800 underline">
-                Zithara's Terms of Service
+                Zithara&apos;s Terms of Service
               </Link>{" "}
               and{" "}
               <Link href="/" className=" text-blue-800 underline">
