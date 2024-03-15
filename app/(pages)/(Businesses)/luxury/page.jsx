@@ -107,7 +107,7 @@ const Luxury = () => {
   return (
     <section className=" w-full min-h-screen">
       {/* ----------HERO---SECTION--------- */}
-      <div className=" w-full min-h-[65vh] lg:min-h-[90vh] flex flex-col lg:items-center justify-center gap-3 bg-[#fbfbfb] px-5">
+      <div className=" w-full min-h-[65vh] lg:min-h-[90vh] flex flex-col lg:items-center justify-center gap-3 bg-[#fbfbfb] px-5 py-3">
         <h1 className=" font-bold text-[28px] leading-[37px] lg:text-5xl lg:text-center lg:max-w-5xl text-slate-800">
           Zithara.AI is for Luxury retail
         </h1>

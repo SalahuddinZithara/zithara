@@ -225,18 +225,6 @@ const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const router = useRouter();
 
-  // useEffect(() => {
-  //   if (prefetch) {
-  //     router.prefetch(href);
-  //   }
-  // }, []);
-
-  const handleLinkClick = (e, path) => {
-    router.push(path);
-    setOpenMenu(false);
-    // router.push(href);
-  };
-
   return (
     <div
       className={` ${
@@ -271,18 +259,16 @@ const Sidebar = () => {
                         {items.map((i) => {
                           const { id, name, icon, path } = i;
                           return (
-                            <NavigationMenuLink key={id}>
-                              <Link
-                                href={path}
-                                onClick={(e) => handleLinkClick(e, path)}
-                                className=" flex items-center
+                            <NavigationMenuLink
+                              key={id}
+                              onClick={() => router.push(path)}
+                              className=" flex items-center
                          gap-1.5 cursor-pointer"
-                              >
-                                <span className=" w-8 h-8 rounded-full flex items-center justify-center bg-blue-800 text-white">
-                                  {icon}
-                                </span>
-                                <span className="">{name}</span>
-                              </Link>
+                            >
+                              <span className=" w-8 h-8 rounded-full flex items-center justify-center bg-blue-800 text-white">
+                                {icon}
+                              </span>
+                              <span className="">{name}</span>
                             </NavigationMenuLink>
                           );
                         })}
@@ -334,7 +320,7 @@ const Sidebar = () => {
                       <Link
                         key={id}
                         href={path}
-                        onClick={(e) => handleLinkClick(e, path)}
+                        onClick={() => setOpenMenu(false)}
                         className=" flex items-center gap-2"
                       >
                         {name}
