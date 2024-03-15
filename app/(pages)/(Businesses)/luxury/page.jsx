@@ -7,9 +7,12 @@ import img3 from "@/public/eng/cl4.webp";
 import img4 from "@/public/eng/cl5.webp";
 import Engagement from "@/components/Engagement";
 import ScrollAnimate from "@/components/ScrollAnimate";
+import BookNow from "@/components/BookNow";
+import Contact from "@/components/Contact";
 const platformItems = [
   {
     id: 1,
+    type: "Lead Management",
     name: "Turn your Leads into Customers",
     summary: "An innovative, all access lead management solution",
     detail:
@@ -19,6 +22,7 @@ const platformItems = [
   },
   {
     id: 2,
+    type: "Customer Segments",
     name: "Understand your VIP’s, loyal, About to drop off and Dorment customers with RFM",
     summary: "Customers jump segments, capture them real time",
     detail:
@@ -28,6 +32,7 @@ const platformItems = [
   },
   {
     id: 3,
+    type: "E-Commerce Website",
     name: "Build your online visibility - Digital transformation",
     summary: "And take your offline business to the next level",
     detail:
@@ -37,6 +42,7 @@ const platformItems = [
   },
   {
     id: 4,
+    type: "Omni Channel Campaigner",
     name: "Keep your customers coming back with Whatsapp",
     summary: "Be where your customers are- Whatsapp",
     detail:
@@ -92,6 +98,11 @@ const Luxury = () => {
       {/* ----------PARALLAX---SECTION--------- */}
       <div className="">
         <ScrollAnimate />
+      </div>
+
+      {/* ----------BOOK-NOW--SECTION--------- */}
+      <div className="">
+        <Contact />
       </div>
     </section>
   );

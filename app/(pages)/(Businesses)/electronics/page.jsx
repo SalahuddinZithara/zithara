@@ -11,6 +11,7 @@ const platformItems = [
   {
     id: 1,
     name: "Build customer loyalty",
+    type: "Rewards and Redemption",
     summary: "Reward program to match your image",
     detail:
       "Using Industry's most configurable Reward program, Strengthen your customer loyalty with a rewards program that reflects your image. With every visit, your customers earn points - and you learn a little more about their habits.",
@@ -20,6 +21,7 @@ const platformItems = [
   {
     id: 2,
     name: "Understand your VIP’s, loyal , About to drop off and Dorment customers with RFM",
+    type: "Customer Segments",
     summary: "Customers jump segments, capture them real time",
     detail:
       "With RFM Machine learning algorithm  that segments customers, so that  you can send tailored messages to customers  who are your VIP’s, Loyal or who've forgotten about you. Automatic reminders or one-off whatsapp campaigns - the choice is yours. Keep them coming back for more with targeted promotions!",
@@ -29,6 +31,7 @@ const platformItems = [
   {
     id: 3,
     name: "Build your online visibility - Digital transformation",
+    type: "E-Commerce Website",
     summary: "And take your offline business to the next level",
     detail:
       "With the Zithara.AI, You can instantly create your online presence via the ecommerce website  to generate a maximum number of customer repats on the platform of your choice Instore or online. Be accessible to yourcustomers in between the store purchases, nudge them to  buy more with you. Boost your online visibility and generate much more sales.",
@@ -38,6 +41,7 @@ const platformItems = [
   {
     id: 4,
     name: "Keep your customers coming back with Whatsapp",
+    type: "Omni Channel Campaigner",
     summary: "Be where your customers are - Whatsapp",
     detail:
       "You can use your customer database to send automated reminders (depending on the stage of the customer journey) or one-off campaigns. The enriched database enables you to target your campaigns as effectively as possible, so you can send the right message to the right person at the right time. Use our message templates to create tailor-made loyalty campaigns on SMS/ WhatsApp/ Email with proven effectiveness.",

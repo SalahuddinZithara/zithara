@@ -11,6 +11,7 @@ const platformItems = [
   {
     id: 1,
     name: "Build customer loyalty",
+    type: "Rewards and Redemption",
     summary: "Reward program to match your image",
     detail:
       "Using Industry's most configurable Reward program, Strengthen your customer loyalty with a rewards program that reflects your image. With every visit, your customers earn points - and you learn a little more about their habits",
@@ -20,6 +21,7 @@ const platformItems = [
   {
     id: 2,
     name: "Keep them coming back with Whatsapp messages",
+    type: "Omni Channel Campaigner",
     summary: "Our well-targeted campaigns are more effective than ever",
     detail:
       "Use the information collected to launch Whatsapp campaigns tailored to each profile. Win back dormant customers, celebrate birthdays, reward regulars, drive experiences.",
@@ -29,6 +31,7 @@ const platformItems = [
   {
     id: 3,
     name: "Boost your Google reviews",
+    type: "Feedback",
     summary: "Maintain higher NPS score",
     detail:
       "Ensure you ask the Feedback at the right time using the right medium  - Whatsapp! see that boost your Google reviews. It's accessible via a link, which you can turn into a QR code and display everywhere: on the counter, in front of customers during appointments, on social networks.",
@@ -38,6 +41,7 @@ const platformItems = [
   {
     id: 4,
     name: "Understand your VIP’s, loyal, About to drop off and Dorment customers with RFM",
+    type: "Customer Segments",
     summary: "Customers jump segments, capture them real time",
     detail:
       "With RFM Machine learning algorithm  that segments customers, so that  you can send tailored messages to customers  who are your VIP’s, Loyal or who've forgotten about you. Automatic reminders or one-off whatsapp campaigns - the choice is yours. Keep them coming back for more with targeted promotions!",

@@ -19,7 +19,7 @@ const Engagement = ({ items, category }) => {
     <section className=" w-full h-auto md:h-auto rounded-md">
       <div className="flex flex-col mt-12 w-full">
         {items.map((item, index) => {
-          const { id, name, summary, img, path, list, detail } = item;
+          const { id, name, summary, img, path, list, detail, type } = item;
           return (
             <div
               key={id}
@@ -43,8 +43,13 @@ const Engagement = ({ items, category }) => {
                   />
                 </div>
                 <div className=" flex flex-col gap-6 w-full h-auto lg:h-full lg:w-[50%] bg-white items-start justify-center py-5 pt-10 px-5 lg:pt-10 lg:px-10 max-w-2xl ">
-                  <h3 className=" text-2xl md:text-3xl font-bold text-left">
+                  <h3 className=" relative text-2xl md:text-3xl font-bold text-left">
                     {name}
+                    {category === "business" && (
+                      <p className=" absolute left-0 -top-6 text-xs font-semibold text-gray-400 border px-1 py-0.5 rounded-sm">
+                        {type}
+                      </p>
+                    )}
                   </h3>
                   <p className=" font-medium text-left max-w-md">{summary}</p>
                   {category === "business" ? (

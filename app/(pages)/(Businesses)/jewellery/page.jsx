@@ -11,6 +11,7 @@ const platformItems = [
   {
     id: 1,
     name: "Turn your Leads into customers",
+    type: "Lead Management",
     summary: "An innovative, all access lead management solution",
     detail:
       "As a Jeweller,  we understand the huge lead time to convert a lead to a customer. We empower your sales personnel to enter lead details using a frictionles app. buying interest, product category, customer data, .. Our retail Lead management solution puts real marketing leverage in your hands as your traverse the lead journey of your customer.",
@@ -20,6 +21,7 @@ const platformItems = [
   {
     id: 2,
     name: "Engage your visitor flow with a QR Code",
+    type: "",
     summary: "Generate customer data and sales",
     detail:
       "Capture customer data on your customers and occasional visitors. Re-use this data to activate marketing levers effortlessly. Zithara helps you deploy link or QR code, share it wherever you want: in-store, on social networks, on your communications... With each Scan/click, Give reward points,  ask for Referral, follow you on Instagram, subscribe to Whatsapp channel, Email Newsletter and more.",
@@ -29,6 +31,7 @@ const platformItems = [
   {
     id: 3,
     name: "Keep your customers coming back with Whatsapp",
+    type: "Omni Channel Campaigner",
     summary: "Be where your customers are - Whatsapp",
     detail:
       "You can use your customer database to send automated reminders (depending on the stage of the customer journey) or one-off campaigns. The enriched database enables you to target your campaigns as effectively as possible, so you can send the right message to the right person at the right time. Use our message templates to create tailor-made loyalty campaigns on SMS/ WhatsApp/ Email with proven effectiveness.",
@@ -38,6 +41,7 @@ const platformItems = [
   {
     id: 4,
     name: "Build your online visibility - Digital transformation",
+    type: "E-Commerce Website",
     summary: "Take your offline business to the next level",
     detail:
       "With the Zithara.AI, You can instantly create your online presence via the ecommerce website  to generate a maximum number of customer repats on the platform of your choice Instore or online. Be accessible to yourcustomers in between the store purchases, nudge them to  buy more with you. Boost your online visibility and generate much more sales",
