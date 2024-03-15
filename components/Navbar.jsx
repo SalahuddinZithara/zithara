@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -225,10 +225,16 @@ const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const router = useRouter();
 
+  // useEffect(() => {
+  //   if (prefetch) {
+  //     router.prefetch(href);
+  //   }
+  // }, []);
+
   const handleLinkClick = (e, path) => {
-    e.preventDefault();
     router.push(path);
     setOpenMenu(false);
+    // router.push(href);
   };
 
   return (
@@ -238,7 +244,10 @@ const Sidebar = () => {
       } duration-200 w-full flex flex-col shadow-md lg:justify-center py-2.5`}
     >
       <div className=" w-full flex items-center justify-between px-5 md:px-8 lg:px-12 2xl:px-28">
-        <Link href={"/"} className="">
+        <span
+          onClick={(e) => handleLinkClick(e, "/")}
+          className=" cursor-pointer"
+        >
           <Image
             src="/logo.png"
             alt="logo"
@@ -247,7 +256,7 @@ const Sidebar = () => {
             className=" w-[150px] lg:w-[150px] lg:h-[35px] object-cover"
             priority
           />
-        </Link>
+        </span>
 
         <div className="hidden lg:flex items-center">
           <NavigationMenu>
@@ -320,13 +329,14 @@ const Sidebar = () => {
                   {items.map((i) => {
                     const { id, name, icon, path } = i;
                     return (
-                      <span
+                      <Link
                         key={id}
-                        onClick={(e) => handleLinkClick(e, path)}
+                        href={path}
+                        // onClick={(e) => e.preventDefault()}
                         className=" flex items-center gap-2"
                       >
                         {name}
-                      </span>
+                      </Link>
                     );
                   })}
                 </AccordionContent>
