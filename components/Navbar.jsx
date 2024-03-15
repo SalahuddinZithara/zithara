@@ -271,16 +271,18 @@ const Sidebar = () => {
                         {items.map((i) => {
                           const { id, name, icon, path } = i;
                           return (
-                            <NavigationMenuLink
-                              key={id}
-                              onClick={(e) => handleLinkClick(e, path)}
-                              className=" flex items-center
+                            <NavigationMenuLink key={id}>
+                              <Link
+                                href={path}
+                                onClick={(e) => handleLinkClick(e, path)}
+                                className=" flex items-center
                          gap-1.5 cursor-pointer"
-                            >
-                              <span className=" w-8 h-8 rounded-full flex items-center justify-center bg-blue-800 text-white">
-                                {icon}
-                              </span>
-                              <span className="">{name}</span>
+                              >
+                                <span className=" w-8 h-8 rounded-full flex items-center justify-center bg-blue-800 text-white">
+                                  {icon}
+                                </span>
+                                <span className="">{name}</span>
+                              </Link>
                             </NavigationMenuLink>
                           );
                         })}
@@ -332,7 +334,7 @@ const Sidebar = () => {
                       <Link
                         key={id}
                         href={path}
-                        // onClick={(e) => e.preventDefault()}
+                        onClick={(e) => handleLinkClick(e, path)}
                         className=" flex items-center gap-2"
                       >
                         {name}
