@@ -298,7 +298,7 @@ const Sidebar = () => {
           )}
         </span>
       </div>
-
+      {/* ------------MOBILE---MENU------------ */}
       <div
         className={`${
           openMenu ? "h-[90vh]" : "h-0 opacity-0"
@@ -314,9 +314,14 @@ const Sidebar = () => {
                   {items.map((i) => {
                     const { id, name, icon, path } = i;
                     return (
-                      <span key={id} className=" flex items-center gap-2">
+                      <Link
+                        onClick={() => setOpenMenu(false)}
+                        href={path}
+                        key={id}
+                        className=" flex items-center gap-2"
+                      >
                         {name}
-                      </span>
+                      </Link>
                     );
                   })}
                 </AccordionContent>
