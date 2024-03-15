@@ -49,6 +49,8 @@ import { IoCartOutline } from "react-icons/io5";
 import { IoIosGitNetwork } from "react-icons/io";
 import { BsDatabaseCheck } from "react-icons/bs";
 import { useRouter } from "next/navigation";
+import { VscFeedback } from "react-icons/vsc";
+
 const sidebarItems = [
   {
     id: 1,
@@ -58,50 +60,57 @@ const sidebarItems = [
         id: 1,
         name: "Customer Segmentation",
         summary: "Understand, interact, and engage with every customer",
-        icon: <TbBrandGoogleAnalytics className=" text-lg" />,
+        icon: <TbBrandGoogleAnalytics className="" />,
         path: "/customer-segments",
       },
       {
         id: 2,
         name: "Customer Journey Automation",
         summary: "Understand, interact, and engage with every customer",
-        icon: <TbSettingsAutomation className=" text-lg" />,
+        icon: <TbSettingsAutomation className="" />,
         path: "/journey-automation",
       },
       {
         id: 3,
         name: "Lead Management",
         summary: "Understand, interact, and engage with every customer",
-        icon: <RiUserSettingsLine className=" text-lg" />,
+        icon: <RiUserSettingsLine className="" />,
         path: "/lead-management",
       },
       {
         id: 4,
         name: "E-Commerce Website",
         summary: "Understand, interact, and engage with every customer",
-        icon: <IoCartOutline className=" text-lg" />,
+        icon: <IoCartOutline className="" />,
         path: "/ecommerce-website",
       },
       {
         id: 5,
         name: "Rewards and Redemption",
         summary: "Understand, interact, and engage with every customer",
-        icon: <CiGift className=" text-lg" />,
+        icon: <CiGift className="" />,
         path: "/rewards",
       },
       {
         id: 6,
         name: "Omnichannel Campaigner",
         summary: "Understand, interact, and engage with every customer",
-        icon: <IoIosGitNetwork className=" text-lg" />,
+        icon: <IoIosGitNetwork className="" />,
         path: "/omnichannel-campaigner",
       },
       {
         id: 7,
         name: "Customer Data Platform",
         summary: "Understand, interact, and engage with every customer",
-        icon: <BsDatabaseCheck className=" text-lg" />,
+        icon: <BsDatabaseCheck className="" />,
         path: "/cdp",
+      },
+      {
+        id: 8,
+        name: "Feedback",
+        summary: "Understand, interact, and engage with every customer",
+        icon: <VscFeedback className="" />,
+        path: "/feedback",
       },
     ],
   },
@@ -112,25 +121,25 @@ const sidebarItems = [
       {
         id: 1,
         name: "Jewellery",
-        icon: <GiHeartNecklace className=" text-lg" />,
+        icon: <GiHeartNecklace className=" " />,
         path: "/jewellery",
       },
       {
         id: 2,
         name: "Electronics",
-        icon: <BsPlugin className=" text-lg" />,
+        icon: <BsPlugin className=" " />,
         path: "/electronics",
       },
       {
         id: 3,
         name: "Wellness",
-        icon: <MdOutlineHealthAndSafety className="text-lg" />,
+        icon: <MdOutlineHealthAndSafety className="" />,
         path: "/wellness",
       },
       {
         id: 4,
-        name: "Luxury",
-        icon: <BsHouses className="text-lg" />,
+        name: "Luxury Retail",
+        icon: <BsHouses className="" />,
         path: "/luxury",
       },
     ],
@@ -142,19 +151,19 @@ const sidebarItems = [
       {
         id: 1,
         name: "Overall Landing Page",
-        icon: <PiAlignCenterHorizontalLight className="text-lg" />,
+        icon: <PiAlignCenterHorizontalLight className="" />,
         path: "/",
       },
       {
         id: 2,
         name: "Case Studies",
-        icon: <TbCalendarSearch className="text-lg" />,
+        icon: <TbCalendarSearch className="" />,
         path: "/",
       },
       {
         id: 3,
         name: "Testimonials",
-        icon: <FaUsers className="text-lg" />,
+        icon: <FaUsers className="" />,
         path: "/",
       },
     ],
@@ -166,31 +175,31 @@ const sidebarItems = [
       {
         id: 1,
         name: "About Us",
-        icon: <GoInfo className="text-lg" />,
+        icon: <GoInfo className="" />,
         path: "/",
       },
       {
         id: 2,
         name: "Media",
-        icon: <IoVideocamOutline className="text-lg" />,
+        icon: <IoVideocamOutline className="" />,
         path: "/",
       },
       {
         id: 3,
         name: "Careers",
-        icon: <PiGraduationCapLight className="text-lg" />,
+        icon: <PiGraduationCapLight className="" />,
         path: "/",
       },
       {
         id: 4,
         name: "Contact Us",
-        icon: <RiContactsLine className="text-lg" />,
+        icon: <RiContactsLine className="" />,
         path: "/",
       },
       {
         id: 5,
         name: "Partners",
-        icon: <HiOutlineUsers className="text-lg" />,
+        icon: <HiOutlineUsers className="" />,
         path: "/",
       },
     ],
@@ -208,13 +217,13 @@ const sidebarItems = [
       {
         id: 2,
         name: "E-Books",
-        icon: <PiNotebookLight className=" text-lg" />,
+        icon: <PiNotebookLight className="" />,
         path: "/",
       },
       {
         id: 3,
         name: "Videos",
-        icon: <IoVideocamOutline className=" text-lg" />,
+        icon: <IoVideocamOutline className="" />,
         path: "/",
       },
     ],
@@ -232,10 +241,7 @@ const Sidebar = () => {
       } duration-200 w-full flex flex-col shadow-md lg:justify-center py-2.5`}
     >
       <div className=" w-full flex items-center justify-between px-5 md:px-8 lg:px-12 2xl:px-28">
-        <span
-          onClick={(e) => handleLinkClick(e, "/")}
-          className=" cursor-pointer"
-        >
+        <span onClick={() => router.push("/")} className=" cursor-pointer">
           <Image
             src="/logo.png"
             alt="logo"

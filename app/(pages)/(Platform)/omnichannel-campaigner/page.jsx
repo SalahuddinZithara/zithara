@@ -10,23 +10,21 @@ import Solutions from "@/components/Solutions";
 const platformItems = [
   {
     id: 1,
-    name: "Go Beyond Touch Points",
-    summary: "Enabling B2B and B2C Leads to Script Their Own Success Saga",
+    name: "Drip Marketing Game with Omni channel  Magic",
+    summary:
+      "Drip by Drip, Craft Your Brand’s Epic Saga with WhatsApp, SMS, or EMAIL",
     list: [
       {
         id: 1,
-        listData:
-          "Tailored Experiences: Craft personalized experiences for customers",
+        listData: "Crafting Compelling WhatsApp Promotions",
       },
       {
         id: 2,
-        listData:
-          "Flexible Promotions: Adapt to changing market dynamics with ease",
+        listData: "Nurturing Customer Loyalty through Whatsapp Drip Campaigns",
       },
       {
         id: 3,
-        listData:
-          "Ever Lasting Connections: Build enduring brand-customer relationships",
+        listData: "Elevating Customer Satisfaction through Strategic Messaging",
       },
     ],
     path: "/contact",
@@ -34,22 +32,21 @@ const platformItems = [
   },
   {
     id: 2,
-    name: "Crafting Loyalty, Crafted for You",
-    summary: "Your Leads with Our Unified Platform",
+    name: "Craft Moments, Not Just Messages",
+    summary: "Breaking the B2C Boundaries for Dynamic Conversations",
     list: [
       {
         id: 1,
-        listData: "Loyalty Tailored to You: Creating Personal Connections",
+        listData: "Reconnect with Authentic Conversations",
       },
       {
         id: 2,
         listData:
-          "Keeping the Joy Alive: Tailored Experiences for Ongoing Delight",
+          "Experience Zithara’s WhatsApp for Business Connect on a Personal Level",
       },
       {
         id: 3,
-        listData:
-          "Present and Future United: Loyalty Programs That Speak to Your Customers",
+        listData: "Rediscover Authentic  Customer Engagement",
       },
     ],
     path: "/contact",
@@ -57,21 +54,24 @@ const platformItems = [
   },
   {
     id: 3,
-    name: "Flexible Promotions, Endless Possibilities",
-    summary: "",
+    name: "Your E-Commerce Playground on WhatsApp",
+    summary: "Take Your Store to WhatsApp – Where Your Shoppers Hang Out",
     list: [
       {
         id: 1,
-        listData: "Unleash Your Imagination: Our Loyalty System Opens Doors",
+        listData: "Artistic Product Catalogues: Your Digital Storefront",
       },
       {
         id: 2,
-        listData:
-          "Campaigns That Spark Excitement: Crafting Memorable Customer Experiences",
+        listData: "Bringing Your Store to Where Shoppers Are: WhatsApp",
       },
       {
         id: 3,
-        listData: "Leaving a Mark: Unconventional Loyalty That Stays with You",
+        listData: "WhatsApp: Your E-commerce Store’s New Home",
+      },
+      {
+        id: 4,
+        listData: "Payment Magic: Seamlessly, Securely, Swiftly",
       },
     ],
     path: "/contact",
@@ -79,23 +79,24 @@ const platformItems = [
   },
   {
     id: 4,
-    name: "Personalisation for Impact",
-    summary: "",
+    name: "Fusing Human Touch with Automation",
+    summary: "All-in-One Hub for Smoother B2C Conversations",
     list: [
       {
         id: 1,
-        listData:
-          "Deeper Connections: Personalization that Wows Loyal Customers",
+        listData: "The Perfect Blend: Human and Bot Support",
       },
       {
         id: 2,
-        listData:
-          "Speaking Their Language: Rewards that Truly Understand and Delight",
+        listData: "24/7 Customer Support That Never Takes a Bow",
       },
       {
         id: 3,
-        listData:
-          "Magic of a Personal Touch: Boosting Loyalty and Engagement with Care",
+        listData: "Live Chat with Multiple Agents",
+      },
+      {
+        id: 4,
+        listData: "Crafting Moments that Make Every Customer Feel Special",
       },
     ],
     path: "/contact",
@@ -109,7 +110,7 @@ const Rewards = () => {
       {/* ----------HERO---SECTION--------- */}
       <div className=" w-full min-h-[65vh] lg:min-h-[90vh] flex flex-col lg:items-center justify-center gap-3 bg-[#fbfbfb] px-5">
         <h1 className=" font-bold text-[28px] leading-[37px] lg:text-5xl lg:text-center lg:max-w-5xl text-slate-800">
-          Building Ever-Lasting Relationships Beyond Touch Points
+          New Era of Customer Engagement
         </h1>
         {/* <p className=" text-gray-800 font-medium lg:text-center lg:text-xl">
           Derive value from all PPC Campaigns: Realize instant ROI with
@@ -138,7 +139,7 @@ const Rewards = () => {
       </div>
 
       {/* ----------EXPLAINATION---SECTION--------- */}
-      <div className=" w-full bg-[#f9f9f9] flex flex-col gap-5 py-8 lg:py-16">
+      <div className=" w-full bg-[#f9f9f9] flex flex-col gap-5 pt-8 lg:pt-16">
         <h1 className=" font-bold text-2xl lg:text-4xl lg:text-center px-5">
           Why our segmentation engine is{" "}
           <span className=" text-blue-800">PREMIUM</span> choice?

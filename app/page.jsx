@@ -27,11 +27,9 @@ export default function Home() {
             platform for Visionary Retailers!
           </h2>
           <p className=" mt-1 lg:mt-0">
-            Harness the power of Zithara’s All-In-One engagement platform to
-            unify customer data, gain valuable insights, and personalize
-            marketing communications across SMS, Email, Whatsapp, and Instagram.
-            Delight your loyal customers with seamless, personalized
-            interactions across their preferred channels.
+            Harness Zithara’s All-In-One engagement platform to unify customer
+            data, gain insights, and personalize marketing across SMS, Email,
+            Whatsapp, and Instagram, delighting loyal customers.
           </p>
 
           <div className=" w-full flex items-center gap-3 md:gap-4 mt-3 lg:mt-3">

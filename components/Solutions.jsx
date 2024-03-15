@@ -1,9 +1,11 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { GiDoubleNecklace } from "react-icons/gi";
 import { FaSpa } from "react-icons/fa";
 import { BsPlugin } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const solutions = [
   {
@@ -48,6 +50,12 @@ const solutions = [
 ];
 
 const Solutions = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+    });
+  }, []);
+
   return (
     <section className=" w-full flex flex-col items-center gap-5 py-14 px-5 lg:px-16 bg-[#f5f5f5]">
       <h1 className="font-bold text-2xl lg:text-4xl text-center max-w-5xl lg:text-center text-slate-800">
@@ -70,6 +78,7 @@ const Solutions = () => {
           return (
             <div
               key={id}
+              data-aos="fade-up"
               className={`w-full sticky rounded-md shadow-md bg-white ${
                 id === 1
                   ? "top-32"

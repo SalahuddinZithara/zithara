@@ -68,7 +68,7 @@ export default function ScrollAnimate() {
   }, [height]);
 
   return (
-    <main className=" w-full h-auto lg:min-h-screen flex flex-col gap-5 py-5 md:p-4">
+    <main className=" w-full h-auto lg:min-h-screen flex flex-col gap-5 py-5 md:p-4 lg:pt-12">
       <section
         className=" relative w-full h-auto lg:h-[650vh] rounded-md lg:p-5"
         ref={targetRef}

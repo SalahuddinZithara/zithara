@@ -29,7 +29,7 @@ const platformItems = [
     id: 2,
     name: "Omnichannel Lead management",
     summary:
-      "Never lose a lead! Curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more. Derive value from all PPC Campaigns: Realize instant ROI with Zithara’s Lead Management Platform.",
+      "Never lose a lead!  curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more.",
     icon: <RiUserSettingsLine className=" text-lg" />,
     path: "/lead-management",
     img: img2,
@@ -38,7 +38,7 @@ const platformItems = [
     id: 3,
     name: "AI-powered Omni channel campaigner",
     summary:
-      "Unleash the potential of multimode communications with  EMAIL, SMS or Whatsapp. uncover the pulse of your campaigns, and supercharge your engagement with AI-driven insights. Our AI capabilities enable you to pinpoint your top-performing campaigns and optimize them instantly and drive ROI higher.",
+      "Unleash the potential of Omni Channel communications with  EMAIL, SMS or Whatsapp. uncover the pulse of your campaigns, and supercharge your engagement with AI-driven insights to pinpoint your top-performing campaigns.",
     icon: <UserRoundCog size={20} strokeWidth={2} />,
     path: "/omnichannel-campaigner",
     img: img3,
@@ -47,7 +47,7 @@ const platformItems = [
     id: 4,
     name: "Ecommerce website for your Offline business",
     summary:
-      "Zithara.AI’s no-code visual builder lets you easily create and E-cmmerce website and see it track the movement of your customers from Offline  to Online, to finally target  each customer according to their preferences, affinities, and behavior on each channel.",
+      "Zithara.AI’s no-code visual builder lets you easily create and E-cmmerce website and see it track the movement of your customers from Offline to Online.",
     icon: <BsCart2 className=" text-lg" />,
     path: "/ecommerce-website",
     img: img4,
@@ -56,7 +56,7 @@ const platformItems = [
     id: 5,
     name: "Customer Journey Automation",
     summary:
-      "Craft seamless omnichannel experiences with our AI-powered journey orchestration and optimization platform. Tailor unique experiences based on your customers' interactions with your brand to ensure they engage at the right time and on the right channel.",
+      "Craft seamless omnichannel experiences with our AI-powered journey orchestration and optimization platform. Tailor unique experiences based on your customer's interactions with your brand to ensure they engage at the right time and on the right channel.",
     icon: <TbSettingsAutomation className=" text-lg" />,
     path: "/journey-automation",
     img: img5,
@@ -65,7 +65,7 @@ const platformItems = [
     id: 6,
     name: "Rewards and Redemption",
     summary:
-      "Revolutionize customer loyalty with the industry's most configurable system, designed to craft programs that delight customers. A decade ago, customers were content with fewer options and willing to wait for rewards. Today, in an era of endless choices, they crave instant gratification. Zithara.AI's rewards program is tailored for the customers of today and tomorrow",
+      "Transform customer loyalty with with the industry's most configurable system,, crafting instant-reward programs for today's and tomorrow's customers.",
     icon: <IoGiftOutline className=" text-lg" />,
     path: "/rewards",
     img: img1,
@@ -74,7 +74,7 @@ const platformItems = [
     id: 7,
     name: "Customer Data Plaform",
     summary:
-      "Zithara.AI is the ultimate retail-focused CDP powerhouse, offering seamless personalization. Everything you need is in one platform, providing an end-to-end CDP solution designed specifically for retail. Zithara.AI maximizes customer understanding, enables personalized marketing campaigns, and drives repeat sales.",
+      "Zithara.AI is the ultimate retail-focused CDP powerhouse, offering seamless personalization. Everything you need is in one platform, providing an end-to-end CDP solution designed specifically for retail.",
     icon: <Layers2 size={20} strokeWidth={2} />,
     path: "/cdp",
     img: img2,

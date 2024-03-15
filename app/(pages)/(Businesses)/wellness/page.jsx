@@ -10,95 +10,38 @@ import ScrollAnimate from "@/components/ScrollAnimate";
 const platformItems = [
   {
     id: 1,
-    name: "Go Beyond Touch Points",
-    summary: "Enabling B2B and B2C Leads to Script Their Own Success Saga",
-    list: [
-      {
-        id: 1,
-        listData:
-          "Tailored Experiences: Craft personalized experiences for customers",
-      },
-      {
-        id: 2,
-        listData:
-          "Flexible Promotions: Adapt to changing market dynamics with ease",
-      },
-      {
-        id: 3,
-        listData:
-          "Ever Lasting Connections: Build enduring brand-customer relationships",
-      },
-    ],
-    path: "/contact",
+    name: "Build customer loyalty",
+    summary: "Reward program to match your image",
+    detail:
+      "Using Industry's most configurable Reward program, Strengthen your customer loyalty with a rewards program that reflects your image. With every visit, your customers earn points - and you learn a little more about their habits",
+    path: "/rewards",
     img: img1,
   },
   {
     id: 2,
-    name: "Crafting Loyalty, Crafted for You",
-    summary: "Your Leads with Our Unified Platform",
-    list: [
-      {
-        id: 1,
-        listData: "Loyalty Tailored to You: Creating Personal Connections",
-      },
-      {
-        id: 2,
-        listData:
-          "Keeping the Joy Alive: Tailored Experiences for Ongoing Delight",
-      },
-      {
-        id: 3,
-        listData:
-          "Present and Future United: Loyalty Programs That Speak to Your Customers",
-      },
-    ],
-    path: "/contact",
+    name: "Keep them coming back with Whatsapp messages",
+    summary: "Our well-targeted campaigns are more effective than ever",
+    detail:
+      "Use the information collected to launch Whatsapp campaigns tailored to each profile. Win back dormant customers, celebrate birthdays, reward regulars, drive experiences.",
+    path: "/omnichannel-campaigner",
     img: img2,
   },
   {
     id: 3,
-    name: "Flexible Promotions, Endless Possibilities",
-    summary: "",
-    list: [
-      {
-        id: 1,
-        listData: "Unleash Your Imagination: Our Loyalty System Opens Doors",
-      },
-      {
-        id: 2,
-        listData:
-          "Campaigns That Spark Excitement: Crafting Memorable Customer Experiences",
-      },
-      {
-        id: 3,
-        listData: "Leaving a Mark: Unconventional Loyalty That Stays with You",
-      },
-    ],
-    path: "/contact",
+    name: "Boost your Google reviews",
+    summary: "Maintain higher NPS score",
+    detail:
+      "Ensure you ask the Feedback at the right time using the right medium  - Whatsapp! see that boost your Google reviews. It's accessible via a link, which you can turn into a QR code and display everywhere: on the counter, in front of customers during appointments, on social networks.",
+    path: "/feedback",
     img: img3,
   },
   {
     id: 4,
-    name: "Personalisation for Impact",
-    summary: "",
-    list: [
-      {
-        id: 1,
-        listData:
-          "Deeper Connections: Personalization that Wows Loyal Customers",
-      },
-      {
-        id: 2,
-        listData:
-          "Speaking Their Language: Rewards that Truly Understand and Delight",
-      },
-      {
-        id: 3,
-        listData:
-          "Magic of a Personal Touch: Boosting Loyalty and Engagement with Care",
-      },
-    ],
-    path: "/contact",
+    name: "Understand your VIP’s, loyal, About to drop off and Dorment customers with RFM",
+    summary: "Customers jump segments, capture them real time",
+    detail:
+      "With RFM Machine learning algorithm  that segments customers, so that  you can send tailored messages to customers  who are your VIP’s, Loyal or who've forgotten about you. Automatic reminders or one-off whatsapp campaigns - the choice is yours. Keep them coming back for more with targeted promotions!",
+    path: "/customer-segments",
     img: img4,
   },
 ];
@@ -137,13 +80,13 @@ const Wellness = () => {
       </div>
 
       {/* ----------EXPLAINATION---SECTION--------- */}
-      <div className=" w-full bg-[#f9f9f9] flex flex-col gap-5 py-8 lg:py-16">
+      <div className=" w-full bg-[#f9f9f9] flex flex-col gap-5 pt-8 lg:pt-16">
         <h1 className=" font-bold text-2xl lg:text-4xl lg:text-center px-5">
-          Why our segmentation engine is{" "}
-          <span className=" text-blue-800">PREMIUM</span> choice?
+          Why our platform is <span className=" text-blue-800">PREMIUM</span>{" "}
+          choice?
         </h1>
 
-        <Engagement items={platformItems} />
+        <Engagement items={platformItems} category="business" />
       </div>
 
       {/* ----------PARALLAX---SECTION--------- */}
