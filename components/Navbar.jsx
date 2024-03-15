@@ -48,7 +48,7 @@ import { CgMenuRight } from "react-icons/cg";
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosGitNetwork } from "react-icons/io";
 import { BsDatabaseCheck } from "react-icons/bs";
-
+import { useRouter } from "next/navigation";
 const sidebarItems = [
   {
     id: 1,
@@ -223,6 +223,13 @@ const sidebarItems = [
 
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const router = useRouter();
+
+  const handleLinkClick = (e, path) => {
+    e.preventDefault();
+    router.push(path);
+    setOpenMenu(false);
+  };
 
   return (
     <div
@@ -257,15 +264,14 @@ const Sidebar = () => {
                           return (
                             <NavigationMenuLink
                               key={id}
+                              onClick={(e) => handleLinkClick(e, path)}
                               className=" flex items-center
-                         gap-1.5"
+                         gap-1.5 cursor-pointer"
                             >
                               <span className=" w-8 h-8 rounded-full flex items-center justify-center bg-blue-800 text-white">
                                 {icon}
                               </span>
-                              <Link className=" " href={path}>
-                                {name}
-                              </Link>
+                              <span className="">{name}</span>
                             </NavigationMenuLink>
                           );
                         })}
@@ -314,14 +320,13 @@ const Sidebar = () => {
                   {items.map((i) => {
                     const { id, name, icon, path } = i;
                     return (
-                      <Link
-                        onClick={() => setOpenMenu(false)}
-                        href={path}
+                      <span
                         key={id}
+                        onClick={(e) => handleLinkClick(e, path)}
                         className=" flex items-center gap-2"
                       >
                         {name}
-                      </Link>
+                      </span>
                     );
                   })}
                 </AccordionContent>
