@@ -8,6 +8,7 @@ import img4 from "@/public/eng/cl5.webp";
 import Engagement from "@/components/Engagement";
 import ScrollAnimate from "@/components/ScrollAnimate";
 import Contact from "@/components/Contact";
+import BookDemo from "@/components/BookDemo";
 const platformItems = [
   {
     id: 1,
@@ -102,7 +103,7 @@ const Electronics = () => {
 
       {/* ----------BOOK-NOW--SECTION--------- */}
       <div className="">
-        <Contact />
+        <BookDemo />
       </div>
     </section>
   );

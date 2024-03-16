@@ -2,14 +2,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-const Contact = () => {
+const BookDemo = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [workEmail, setWorkEmail] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [phone, setPhone] = useState("");
   const [country, setCountry] = useState("");
-  const [message, setMessage] = useState("");
+  const [terms, setTerms] = useState("");
 
   const formData = {
     firstName: firstName,
@@ -18,7 +18,7 @@ const Contact = () => {
     companyName: companyName,
     phone: phone,
     country: country,
-    message: message,
+    terms: terms,
   };
 
   const handleSubmit = (e) => {
@@ -30,15 +30,12 @@ const Contact = () => {
     <div className=" w-full flex justify-between md:py-7 lg:py-12 px- md:px-8 lg:px-16 bg-gray-100 h-auto">
       <div className=" hidden lg:flex w-full flex-col gap-4 h-full">
         <h5 className=" text-lg font-medium">CONTACT US</h5>
-        <h1 className=" font-bold text-5xl max-w-lg text-blue-950">
+        <h1 className=" font-bold text-4xl max-w-sm text-blue-950">
           We would love to connect with you!
         </h1>
-        {/* <img src="/connect.webp" className=" w-72" alt="" /> */}
       </div>
-      <div className=" w-full lg:w-[75%] h-auto flex flex-col items-center px-6 py-8 bg-white shadow-md rounded-md">
-        <h3 className=" font-bold mb-7 text-xl text-blue-950">
-          Connect With Us
-        </h3>
+      <div className=" w-full lg:w-[70%] h-auto flex flex-col items-center px-6 py-8 bg-white shadow-md rounded-md">
+        <h3 className=" font-bold mb-5 text-xl">Book A Demo</h3>
         <form
           action=""
           onSubmit={(e) => handleSubmit(e)}
@@ -59,13 +56,14 @@ const Contact = () => {
           </span>
           <span className=" w-full flex flex-col gap-1">
             <label htmlFor="last-name" className=" font-semibold text-sm">
-              Last Name
+              Last Name<sup>*</sup>
             </label>
             <input
               type="text"
               id="last-name"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
+              required
               className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
             />
           </span>
@@ -83,18 +81,6 @@ const Contact = () => {
             />
           </span>
           <span className=" w-full flex flex-col gap-1">
-            <label htmlFor="phone" className=" font-semibold text-sm">
-              Phone Number
-            </label>
-            <input
-              type="text"
-              id="phone"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
-            />
-          </span>
-          <span className=" w-full flex flex-col gap-1 lg:col-span-2">
             <label htmlFor="company-name" className=" font-semibold text-sm">
               Company Name<sup>*</sup>
             </label>
@@ -107,21 +93,41 @@ const Contact = () => {
               className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
             />
           </span>
-          <span className=" w-full flex flex-col gap-1 lg:col-span-2">
-            <label htmlFor="message" className=" font-semibold text-sm">
-              Message
+          <span className=" w-full flex flex-col gap-1">
+            <label htmlFor="phone" className=" font-semibold text-sm">
+              Phone Number
             </label>
-            <textarea
-              id="message"
-              rows={3}
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1 py-2"
-            ></textarea>
+            <input
+              type="text"
+              id="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
+            />
           </span>
-          <span className=" flex items-center gap-2.5 lg:col-span-2 mt-3">
+          <span className=" w-full flex flex-col gap-1">
+            <label htmlFor="country" className=" font-semibold text-sm">
+              Country<sup>*</sup>
+            </label>
+            <input
+              type="text"
+              id="company-name"
+              value={country}
+              onChange={(e) => setCountry(e.target.value)}
+              required
+              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1 py-2"
+            />
+          </span>
+          <span className=" flex items-center gap-2.5 lg:col-span-2 mt-5">
+            <input
+              value={terms}
+              onChange={(e) => setTerms(e.target.checked)}
+              type="checkbox"
+              id="terms"
+              className=""
+            />
             <p className="text-xs font-semibold break-words">
-              By Submitting this form you agree to{" "}
+              I agree to{" "}
               <Link href="/" className=" text-blue-800 underline">
                 Zithara&apos;s Terms of Service
               </Link>{" "}
@@ -136,7 +142,7 @@ const Contact = () => {
             type="submit"
             className=" bg-blue-800 text-white font-semibold text-sm lg:col-span-2 px-2 py-2 rounded-md"
           >
-            Submit
+            Book Demo
           </button>
         </form>
       </div>
@@ -144,4 +150,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default BookDemo;

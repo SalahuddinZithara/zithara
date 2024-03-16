@@ -7,8 +7,9 @@ import img3 from "@/public/eng/cl4.webp";
 import img4 from "@/public/eng/cl5.webp";
 import Engagement from "@/components/Engagement";
 import ScrollAnimate from "@/components/ScrollAnimate";
-import BookNow from "@/components/BookNow";
+import BookNow from "@/components/BookDemo";
 import Contact from "@/components/Contact";
+import BookDemo from "@/components/BookDemo";
 const platformItems = [
   {
     id: 1,
@@ -102,7 +103,7 @@ const Luxury = () => {
 
       {/* ----------BOOK-NOW--SECTION--------- */}
       <div className="">
-        <Contact />
+        <BookDemo />
       </div>
     </section>
   );
