@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" w-full flex items-center justify-between py-7 lg:py-12 px-5 md:px-8 lg:px-16 bg-[#edf8ff] h-auto">
+    <div className=" w-full flex items-center justify-between md:py-7 lg:py-12 px- md:px-8 lg:px-16 bg-[#edf8ff] h-auto">
       <div className=" hidden lg:block w-full h-full text-2xl font-bold border">
         Content
       </div>
@@ -115,7 +115,7 @@ const Contact = () => {
               className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1 py-2"
             />
           </span>
-          <span className=" flex items-center gap-2.5 col-span-2 mt-5">
+          <span className=" flex items-center gap-2.5 lg:col-span-2 mt-5">
             <input
               value={terms}
               onChange={(e) => setTerms(e.target.checked)}
@@ -137,7 +137,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className=" bg-blue-800 text-white font-semibold text-sm col-span-2 px-2 py-2 rounded-md"
+            className=" bg-blue-800 text-white font-semibold text-sm lg:col-span-2 px-2 py-2 rounded-md"
           >
             Book Demo
           </button>

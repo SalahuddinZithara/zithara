@@ -42,7 +42,7 @@ const Engagement = ({ items, category }) => {
                     alt={name}
                   />
                 </div>
-                <div className=" flex flex-col gap-6 w-full h-auto lg:h-full lg:w-[50%] bg-white items-start justify-center py-5 pt-10 px-5 lg:pt-10 lg:px-10 max-w-2xl ">
+                <div className=" flex flex-col gap-6 w-full h-auto lg:h-full lg:w-[50%] bg-white items-start justify-center py-9 lg:py-5 pt-10 px-5 lg:pt-10 lg:px-10 max-w-2xl ">
                   <h3 className=" relative text-2xl md:text-3xl font-bold text-left">
                     {name}
                     {category === "business" && (

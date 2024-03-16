@@ -7,6 +7,7 @@ import img3 from "@/public/eng/cl4.webp";
 import img4 from "@/public/eng/cl5.webp";
 import Engagement from "@/components/Engagement";
 import ScrollAnimate from "@/components/ScrollAnimate";
+import Contact from "@/components/Contact";
 const platformItems = [
   {
     id: 1,
@@ -96,6 +97,11 @@ const Wellness = () => {
       {/* ----------PARALLAX---SECTION--------- */}
       <div className="">
         <ScrollAnimate />
+      </div>
+
+      {/* ----------BOOK-NOW--SECTION--------- */}
+      <div className="">
+        <Contact />
       </div>
     </section>
   );
