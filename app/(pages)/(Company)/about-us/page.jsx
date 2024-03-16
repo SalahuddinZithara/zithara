@@ -100,7 +100,7 @@ const AboutUs = () => {
       </section>
 
       {/* ----------ABOUT--SECTION--------- */}
-      <section className=" w-full flex flex-col-reverse gap-9 lg:flex-row items-center justify-between px-5 md:px-8 lg:px-16 py-7">
+      <section className=" w-full lg:min-h-screen flex flex-col-reverse gap-9 lg:flex-row items-center justify-between px-5 md:px-8 lg:px-16 py-7">
         <div className=" w-full lg:w-[50%] flex flex-col gap-5">
           <h1 className=" text-5xl font-bold text-blue-950">Our Story</h1>
           <p className=" font-medium">
