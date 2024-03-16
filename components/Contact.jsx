@@ -33,7 +33,7 @@ const Contact = () => {
         <h1 className=" font-bold text-5xl max-w-lg text-blue-950">
           We would love to connect with you!
         </h1>
-        {/* <img src="/connect.webp" className=" w-72" alt="" /> */}
+        <img src="/about-us/sam.png" className=" w-[400px]" alt="" />
       </div>
       <div className=" w-full lg:w-[75%] h-auto flex flex-col items-center px-6 py-8 bg-white shadow-md rounded-md">
         <h3 className=" font-bold mb-7 text-xl text-blue-950">

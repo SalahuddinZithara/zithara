@@ -8,7 +8,7 @@ function TeamModal({ item, setOpenModal }) {
     <div>
       <div className="justify-center items-center flex mx-3 fixed inset-0 z-50">
         <div className="relative w-auto my-6 mx-auto max-w-6xl">
-          <div className=" w-[90vw] lg:w-[70vw] min-h-52 border-0 rounded-lg shadow-lg relative flex flex-col bg-white">
+          <div className=" w-[90vw] lg:w-[60vw] min-h-52 border-0 rounded-lg shadow-lg relative flex flex-col bg-white">
             <div className="flex items-center justify-end px-5 py-3 border-b border-solid border-slate-200 rounded-t">
               <IoMdClose
                 className="text-2xl cursor-pointer"
@@ -22,7 +22,7 @@ function TeamModal({ item, setOpenModal }) {
                 <h3 className=" font-bold ">{name}</h3>
                 <h5 className=" font-medium text-sm">{position}</h5>
               </div>
-              <div className=" flex-1">
+              <div className=" flex-1 lg:p-5">
                 <p className=" text-center lg:text-left">{info}</p>
               </div>
             </div>
