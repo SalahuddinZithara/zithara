@@ -24,7 +24,7 @@ const platformItems = [
       "Understand your customers with RFM segmentation, Keep them hooked for life with the industry's one-of-a-kind platform that effortlessly analyzes data from every source, all at once.",
     icon: <TbBrandGoogleAnalytics className="text-lg" />,
     path: "/customer-segments",
-    img: img6,
+    img: "/eng/par1.png",
   },
   {
     id: 2,
