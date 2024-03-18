@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import Autoplay from "embla-carousel-autoplay";
 const carouselItems = [
   {

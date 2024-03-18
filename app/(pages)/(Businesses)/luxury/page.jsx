@@ -10,6 +10,7 @@ import ScrollAnimate from "@/components/ScrollAnimate";
 import BookNow from "@/components/BookDemo";
 import Contact from "@/components/Contact";
 import BookDemo from "@/components/BookDemo";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 const platformItems = [
   {
     id: 1,
@@ -99,6 +100,14 @@ const Luxury = () => {
       {/* ----------PARALLAX---SECTION--------- */}
       <div className="">
         <ScrollAnimate />
+      </div>
+
+      {/* ----------TESTIMONIAL--CAROUSEL---SECTION--------- */}
+      <div className="py-16 bg-gray-50 flex flex-col gap-10 px-5 md:px-8 lg:px-20">
+        <h1 className=" text-2xl lg:text-4xl font-bold text-blue-950">
+          What our customers say about us
+        </h1>
+        <TestimonialCarousel />
       </div>
 
       {/* ----------BOOK-NOW--SECTION--------- */}

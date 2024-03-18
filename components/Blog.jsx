@@ -102,7 +102,7 @@ const Blog = () => {
             {blogs.map(({ id, name, img, category, path, date, duration }) => (
               <CarouselItem
                 key={id}
-                className=" basis-[100%] md:basis-1/3 lg:basis-1/3 2xl:basis-1/4 flex mx-1"
+                className=" basis-[100%] md:basis-1/3 lg:basis-1/3 2xl:basis-1/4 flex lg:mx-1"
               >
                 <div>
                   <Card

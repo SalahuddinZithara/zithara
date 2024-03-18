@@ -127,7 +127,7 @@ const Feedback = () => {
                   }}
                   className=" font-semibold flex items-center gap-1 text-blue-900 text-sm absolute lg:bottom-3 top-3 sm:top-auto right-3 cursor-pointer"
                 >
-                  Video <FaRegCirclePlay className=" text-xl" />
+                  Watch Video <FaRegCirclePlay className=" text-xl" />
                 </p>
               )}
               {openModal && (
