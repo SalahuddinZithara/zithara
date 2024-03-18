@@ -15,6 +15,7 @@ import img2 from "@/public/eng/cl3.webp";
 import img3 from "@/public/eng/cl4.webp";
 import img4 from "@/public/eng/cl5.webp";
 import img5 from "@/public/eng/cl1.webp";
+import img6 from "@/public/eng/par1.png";
 const platformItems = [
   {
     id: 1,
@@ -23,7 +24,7 @@ const platformItems = [
       "Understand your customers with RFM segmentation, Keep them hooked for life with the industry's one-of-a-kind platform that effortlessly analyzes data from every source, all at once.",
     icon: <TbBrandGoogleAnalytics className="text-lg" />,
     path: "/customer-segments",
-    img: img1,
+    img: img6,
   },
   {
     id: 2,

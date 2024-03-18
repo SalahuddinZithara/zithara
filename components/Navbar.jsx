@@ -313,31 +313,33 @@ const Sidebar = () => {
           openMenu ? "h-[90vh]" : "h-0 opacity-0"
         } bg-white duration-200 lg:hidden w-full flex flex-col justify-between px-5 md:px-8`}
       >
-        <Accordion type="single" collapsible className="w-full mt-3">
-          {sidebarItems.map((item) => {
-            const { id, name, items } = item;
-            return (
-              <AccordionItem key={id} value={id}>
-                <AccordionTrigger>{name}</AccordionTrigger>
-                <AccordionContent className="w-full flex flex-col gap-2">
-                  {items.map((i) => {
-                    const { id, name, icon, path } = i;
-                    return (
-                      <Link
-                        key={id}
-                        href={path}
-                        onClick={() => setOpenMenu(false)}
-                        className=" flex items-center gap-2"
-                      >
-                        {name}
-                      </Link>
-                    );
-                  })}
-                </AccordionContent>
-              </AccordionItem>
-            );
-          })}
-        </Accordion>
+        {openMenu && (
+          <Accordion type="single" collapsible className="w-full mt-3">
+            {sidebarItems.map((item) => {
+              const { id, name, items } = item;
+              return (
+                <AccordionItem key={id} value={id}>
+                  <AccordionTrigger>{name}</AccordionTrigger>
+                  <AccordionContent className="w-full flex flex-col gap-2">
+                    {items.map((i) => {
+                      const { id, name, icon, path } = i;
+                      return (
+                        <Link
+                          key={id}
+                          href={path}
+                          onClick={() => setOpenMenu(false)}
+                          className=" flex items-center gap-2"
+                        >
+                          {name}
+                        </Link>
+                      );
+                    })}
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
+          </Accordion>
+        )}
 
         <div className="w-full">
           <Button className="w-full">Book A Demo</Button>

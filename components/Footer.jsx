@@ -1,23 +1,21 @@
 import Image from "next/image";
-import React from "react";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { RiUserSettingsLine } from "react-icons/ri";
-import { FaAmazonPay } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { CiGift } from "react-icons/ci";
-import { LuUsers } from "react-icons/lu";
 import { GiHeartNecklace } from "react-icons/gi";
 import { BsPlugin } from "react-icons/bs";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { BsHouses } from "react-icons/bs";
 import { PiAlignCenterHorizontalLight } from "react-icons/pi";
 import { TbCalendarSearch } from "react-icons/tb";
-import { FaUsers } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitterSquare,
+  FaUsers,
+} from "react-icons/fa";
 import { GoInfo } from "react-icons/go";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { PiGraduationCapLight } from "react-icons/pi";
@@ -25,6 +23,13 @@ import { RiContactsLine } from "react-icons/ri";
 import { IoVideocamOutline } from "react-icons/io5";
 import { FaBold } from "react-icons/fa6";
 import { PiNotebookLight } from "react-icons/pi";
+import { TbSettingsAutomation } from "react-icons/tb";
+import { CgMenuRight } from "react-icons/cg";
+import { IoCartOutline } from "react-icons/io5";
+import { IoIosGitNetwork } from "react-icons/io";
+import { BsDatabaseCheck } from "react-icons/bs";
+import { useRouter } from "next/navigation";
+import { VscFeedback } from "react-icons/vsc";
 const footerItems = [
   {
     id: 1,
@@ -32,52 +37,59 @@ const footerItems = [
     items: [
       {
         id: 1,
-        name: "Customer segments & Insightful Analytics",
+        name: "Customer Segmentation",
         summary: "Understand, interact, and engage with every customer",
-        icon: <TbBrandGoogleAnalytics className=" text-lg" />,
-        path: "/",
+        icon: <TbBrandGoogleAnalytics className="" />,
+        path: "/customer-segments",
       },
       {
         id: 2,
-        name: "Marketing Automation",
+        name: "Customer Journey Automation",
         summary: "Understand, interact, and engage with every customer",
-        icon: <RiUserSettingsLine className=" text-lg" />,
-        path: "/",
+        icon: <TbSettingsAutomation className="" />,
+        path: "/journey-automation",
       },
       {
         id: 3,
         name: "Lead Management",
         summary: "Understand, interact, and engage with every customer",
-        icon: <RiUserSettingsLine className=" text-lg" />,
-        path: "/",
+        icon: <RiUserSettingsLine className="" />,
+        path: "/lead-management",
       },
       {
         id: 4,
-        name: " WhatsApp for Business API",
+        name: "E-Commerce Website",
         summary: "Understand, interact, and engage with every customer",
-        icon: <FaWhatsapp className=" text-lg" />,
-        path: "/",
+        icon: <IoCartOutline className="" />,
+        path: "/ecommerce-website",
       },
       {
         id: 5,
-        name: "Rewards and Loyalty",
+        name: "Rewards and Redemption",
         summary: "Understand, interact, and engage with every customer",
-        icon: <CiGift className=" text-lg" />,
-        path: "/",
+        icon: <CiGift className="" />,
+        path: "/rewards",
       },
       {
         id: 6,
-        name: "Referrals and Feedback",
+        name: "Omnichannel Campaigner",
         summary: "Understand, interact, and engage with every customer",
-        icon: <LuUsers className=" text-lg" />,
-        path: "/",
+        icon: <IoIosGitNetwork className="" />,
+        path: "/omnichannel-campaigner",
       },
       {
         id: 7,
-        name: "Nex-Gen UPI Tech",
+        name: "Customer Data Platform",
         summary: "Understand, interact, and engage with every customer",
-        icon: <FaAmazonPay className=" text-lg" />,
-        path: "/",
+        icon: <BsDatabaseCheck className="" />,
+        path: "/cdp",
+      },
+      {
+        id: 8,
+        name: "Feedback",
+        summary: "Understand, interact, and engage with every customer",
+        icon: <VscFeedback className="" />,
+        path: "/feedback",
       },
     ],
   },
@@ -88,26 +100,26 @@ const footerItems = [
       {
         id: 1,
         name: "Jewellery",
-        icon: <GiHeartNecklace className=" text-lg" />,
-        path: "/",
+        icon: <GiHeartNecklace className=" " />,
+        path: "/jewellery",
       },
       {
         id: 2,
         name: "Electronics",
-        icon: <BsPlugin className=" text-lg" />,
-        path: "/",
+        icon: <BsPlugin className=" " />,
+        path: "/electronics",
       },
       {
         id: 3,
         name: "Wellness",
-        icon: <MdOutlineHealthAndSafety className="text-lg" />,
-        path: "/",
+        icon: <MdOutlineHealthAndSafety className="" />,
+        path: "/wellness",
       },
       {
         id: 4,
-        name: "Luxury",
-        icon: <BsHouses className="text-lg" />,
-        path: "/",
+        name: "Luxury Retail",
+        icon: <BsHouses className="" />,
+        path: "/luxury",
       },
     ],
   },
@@ -118,19 +130,19 @@ const footerItems = [
       {
         id: 1,
         name: "Overall Landing Page",
-        icon: <PiAlignCenterHorizontalLight className="text-lg" />,
+        icon: <PiAlignCenterHorizontalLight className="" />,
         path: "/",
       },
       {
         id: 2,
         name: "Case Studies",
-        icon: <TbCalendarSearch className="text-lg" />,
+        icon: <TbCalendarSearch className="" />,
         path: "/",
       },
       {
         id: 3,
         name: "Testimonials",
-        icon: <FaUsers className="text-lg" />,
+        icon: <FaUsers className="" />,
         path: "/",
       },
     ],
@@ -142,32 +154,32 @@ const footerItems = [
       {
         id: 1,
         name: "About Us",
-        icon: <GoInfo className="text-lg" />,
-        path: "/",
+        icon: <GoInfo className="" />,
+        path: "/about-us",
       },
       {
         id: 2,
         name: "Media",
-        icon: <IoVideocamOutline className="text-lg" />,
-        path: "/",
+        icon: <IoVideocamOutline className="" />,
+        path: "/media",
       },
       {
         id: 3,
         name: "Careers",
-        icon: <PiGraduationCapLight className="text-lg" />,
-        path: "/",
+        icon: <PiGraduationCapLight className="" />,
+        path: "/careers",
       },
       {
         id: 4,
         name: "Contact Us",
-        icon: <RiContactsLine className="text-lg" />,
-        path: "/",
+        icon: <RiContactsLine className="" />,
+        path: "/contact-us",
       },
       {
         id: 5,
         name: "Partners",
-        icon: <HiOutlineUsers className="text-lg" />,
-        path: "/",
+        icon: <HiOutlineUsers className="" />,
+        path: "/partners",
       },
     ],
   },
@@ -184,13 +196,13 @@ const footerItems = [
       {
         id: 2,
         name: "E-Books",
-        icon: <PiNotebookLight className=" text-lg" />,
+        icon: <PiNotebookLight className="" />,
         path: "/",
       },
       {
         id: 3,
         name: "Videos",
-        icon: <IoVideocamOutline className=" text-lg" />,
+        icon: <IoVideocamOutline className="" />,
         path: "/",
       },
     ],

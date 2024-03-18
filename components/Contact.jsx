@@ -33,7 +33,11 @@ const Contact = () => {
         <h1 className=" font-bold text-5xl max-w-lg text-blue-950">
           We would love to connect with you!
         </h1>
-        <img src="/about-us/sam.png" className=" w-[400px]" alt="" />
+        <img
+          src="/about-us/sam.png"
+          className=" w-[400px] hidden lg:block"
+          alt=""
+        />
       </div>
       <div className=" w-full lg:w-[75%] h-auto flex flex-col items-center px-6 py-8 bg-white shadow-md rounded-md">
         <h3 className=" font-bold mb-7 text-xl text-blue-950">
@@ -42,7 +46,7 @@ const Contact = () => {
         <form
           action=""
           onSubmit={(e) => handleSubmit(e)}
-          className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-4"
+          className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-4 z-20"
         >
           <span className=" w-full flex flex-col gap-1">
             <label htmlFor="first-name" className=" font-semibold text-sm">
@@ -54,7 +58,7 @@ const Contact = () => {
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               required
-              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
+              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2.5 lg:py-2"
             />
           </span>
           <span className=" w-full flex flex-col gap-1">
@@ -66,7 +70,7 @@ const Contact = () => {
               id="last-name"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
+              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2.5 lg:py-2"
             />
           </span>
           <span className=" w-full flex flex-col gap-1">
@@ -79,7 +83,7 @@ const Contact = () => {
               value={workEmail}
               onChange={(e) => setWorkEmail(e.target.value)}
               required
-              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
+              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2.5 lg:py-2"
             />
           </span>
           <span className=" w-full flex flex-col gap-1">
@@ -91,7 +95,7 @@ const Contact = () => {
               id="phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
+              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2.5 lg:py-2"
             />
           </span>
           <span className=" w-full flex flex-col gap-1 lg:col-span-2">
@@ -104,7 +108,7 @@ const Contact = () => {
               value={companyName}
               onChange={(e) => setCompanyName(e.target.value)}
               required
-              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2"
+              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1.5 py-2.5 lg:py-2"
             />
           </span>
           <span className=" w-full flex flex-col gap-1 lg:col-span-2">
@@ -116,7 +120,7 @@ const Contact = () => {
               rows={3}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1 py-2"
+              className=" w-full rounded-sm border text-xs outline-none border-gray-400 px-1 py-2.5 lg:py-2"
             ></textarea>
           </span>
           <span className=" flex items-center gap-2.5 lg:col-span-2 mt-3">
