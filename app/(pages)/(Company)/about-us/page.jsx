@@ -93,10 +93,12 @@ const AboutUs = () => {
     <div className=" w-full flex flex-col">
       {/* ----------HERO--SECTION--------- */}
       <section className=" w-full min-h-[90vh] bg-[#f9f9f9] flex flex-col items-center justify-center p-5">
-        <h1 className=" text-3xl lg:text-6xl text-blue-950 font-bold lg:text-center max-w-4xl ">
+        <h1 className=" text-3xl md:text-5xl lg:text-5xl text-blue-950 font-bold lg:text-center max-w-4xl ">
           We’re on a journey to build customer relationships that last a
           lifetime
         </h1>
+
+        <img src="/about-us/sam.png" className=" lg:w-96" alt="" />
       </section>
 
       {/* ----------ABOUT--SECTION--------- */}

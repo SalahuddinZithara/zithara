@@ -7,6 +7,12 @@ import { PiHandsPrayingLight } from "react-icons/pi";
 import { FaHandBackFist } from "react-icons/fa6";
 import { IoBulbOutline } from "react-icons/io5";
 import { FaUserCheck } from "react-icons/fa6";
+import { GrTechnology } from "react-icons/gr";
+import { FaBookReader } from "react-icons/fa";
+import { GiTeamIdea } from "react-icons/gi";
+import { VscLayersActive } from "react-icons/vsc";
+import { RiTeamFill } from "react-icons/ri";
+import { VscMilestone } from "react-icons/vsc";
 
 const numbers = [
   {
@@ -69,10 +75,77 @@ const values = [
     icon: <IoBulbOutline />,
   },
 ];
+const benefits = [
+  {
+    id: 1,
+    name: "Cutting-Edge Technology",
+    summary:
+      "Work at the forefront of innovation where Technology meets Impact. Harness cutting-edge technology to propel top brands’ revenue and be part of an endeavour to great significance.",
+    icon: <GrTechnology />,
+  },
+  {
+    id: 2,
+    name: "Learn, Thrive, Progress!",
+    summary:
+      "Embark on a journey that offers extensive exposure and the freedom to innovate, experiment and take calculated risks, empowering you to spot and solve challenges.",
+    icon: <FaBookReader />,
+  },
+  {
+    id: 3,
+    name: "Compassionate Workspace",
+    summary:
+      "Explore a Caring Workplace: Embrace tailored benefits across locations, Career Growth, Flexibility and a supportive community with an empowering work culture.",
+    icon: <GiTeamIdea />,
+  },
+  {
+    id: 4,
+    name: "Lively Workplace",
+    summary:
+      "Explore our “Best Place to Work” rewarded workplace, where we champion fun alongside work, celebrating and recognizing individuals for their contributions.",
+    icon: <VscLayersActive />,
+  },
+  {
+    id: 5,
+    name: "Exceptional Team & Co-Workers",
+    summary:
+      "Join a vibrant team & experience a collaborative culture, forge lifelong connections, and seize fantastic learning opportunities.",
+    icon: <RiTeamFill />,
+  },
+  {
+    id: 6,
+    name: "Competitive Reward Structure",
+    summary:
+      "Drive growth with our competitive, regionally-aligned reward strategy that is compliant with industry standards, emphasising pay-for-performance and fostering a culture of meritocracy.",
+    icon: <VscMilestone />,
+  },
+];
+const jobPositions = [
+  {
+    id: 1,
+    name: "Engineering",
+    img: "/careers/engg.png",
+  },
+  {
+    id: 2,
+    name: "Sales",
+    img: "/careers/sales.png",
+  },
+  {
+    id: 3,
+    name: "Marketing",
+    img: "/careers/marketing.png",
+  },
+  {
+    id: 4,
+    name: "Customer Success",
+    img: "/careers/cs.png",
+  },
+];
 
 const Careers = () => {
   return (
     <div className=" w-full flex flex-col">
+      {/* ----------HERO__SECTION---------- */}
       <section className=" w-full flex flex-col lg:flex-row items-center lg:min-h-[90vh] py-5 lg:py-0 lg:justify-between px-5 md:px-8 lg:px-16 justify-center">
         <div className=" w-full lg:w-[50%] flex flex-col gap-7">
           <h1 className=" text-3xl lg:text-6xl font-bold text-blue-950">
@@ -99,8 +172,9 @@ const Careers = () => {
         </div>
       </section>
 
+      {/* ----------NUMBERS__SECTION---------- */}
       <section className=" w-full flex flex-col gap-14 px-5 md:px-8 lg:px-16 lg:min-h-[55vh] pt-7 pb-14 lg:py-10 bg-gray-100/65">
-        <h1 className=" font-bold text-2xl text-center lg:text-5xl text-blue-950">
+        <h1 className=" font-bold text-2xl text-center lg:text-4xl text-blue-950">
           Built to Handle Massive Scale
         </h1>
 
@@ -122,6 +196,7 @@ const Careers = () => {
         </div>
       </section>
 
+      {/* ----------VALUES__SECTION---------- */}
       <section className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-7 pb-14 lg:py-16 px-5 md:px-8 lg:px-16">
         {values.map((item) => {
           const { id, name, summary, icon } = item;
@@ -138,6 +213,54 @@ const Careers = () => {
             </div>
           );
         })}
+      </section>
+
+      {/* ----------BENEFITS__SECTION---------- */}
+      <section className=" w-full flex flex-col gap-12 pt-7 pb-14 lg:py-16 px-5 md:px-8 lg:px-16 bg-gray-100/65">
+        <h1 className=" font-bold text-2xl lg:text-4xl text-blue-950">
+          Why Join Us ?
+        </h1>
+        <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {benefits.map((item) => {
+            const { id, name, summary, icon } = item;
+            return (
+              <div
+                key={id}
+                className=" w-full flex flex-col lg:flex-row items-start gap-5 shadow-md p-4 lg:py-7  rounded-sm bg-white"
+              >
+                <span className=" text-3xl text-blue-900 p-2 rounded-md border shadow-md">
+                  {icon}
+                </span>
+                <div className=" w-full flex flex-col gap-3">
+                  <h4 className="text-lg font-bold text-blue-950">{name}</h4>
+                  <p className=" text-sm">{summary}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* ----------JOBS__SECTION---------- */}
+      <section className=" w-full flex flex-col items-center gap-14 pt-7 pb-14 lg:py-16 px-5 md:px-8 lg:px-16">
+        <h1 className=" font-bold text-2xl lg:text-4xl text-blue-950 ">
+          See where you fit in
+        </h1>
+        <div className=" w-full max-w-screen-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {jobPositions.map((item) => {
+            const { id, name, img } = item;
+            return (
+              <div key={id} className=" flex flex-col items-center gap-3.5">
+                <img
+                  src={img}
+                  alt={name}
+                  className=" w-32 md:w-32 md:h-32 lg:h-40 lg:w-40 h-32 rounded-full object-cover border"
+                />
+                <h3 className=" font-semibold underline">{name}</h3>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </div>
   );

@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className}`}>
-        <header className=" w-full sticky top-0 left-0 z-[100] bg-white">
+        <header className=" w-full sticky top-0 left-0 z-50 bg-white">
           <Navbar />
         </header>
         <main className=" w-full min-h-[90vh]">{children}</main>
