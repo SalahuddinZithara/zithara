@@ -51,7 +51,7 @@ const Engagement = ({ items, category }) => {
                       </p>
                     )}
                   </h3>
-                  <p className=" font-medium text-left max-w-md">{summary}</p>
+                  <p className=" font-[450] text-left max-w-md">{summary}</p>
                   {category === "business" ? (
                     <p className=" text-sm text-gray-700">{detail}</p>
                   ) : (
