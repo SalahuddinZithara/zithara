@@ -71,7 +71,7 @@ export const platformItems = [
     id: 4,
     name: "Know your customers",
     summary:
-      "A Zithara.AI CDP centralizes customer data, serving as a valuable source for assessing the impact and effectiveness of your marketing efforts to help you prove a hunch, nail a pitch. or predict future and more. It is like having customer  data on tap – so you can easily dip in when you need to back up your decisions",
+      "A Zithara.AI CDP centralizes customer data, serving as a valuable source for assessing the impact and effectiveness of your marketing efforts to help you prove a hunch, nail a pitch. or predict future and more.",
     list: [
       {
         id: 1,
