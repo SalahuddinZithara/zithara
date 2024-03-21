@@ -80,7 +80,7 @@ const TestimonialCarousel = () => {
           delay: 2000,
         }),
       ]}
-      className=" mx-auto cursor-grab"
+      className="mx-auto cursor-grab"
     >
       <CarouselContent>
         {testimonials.map(
@@ -113,8 +113,8 @@ const TestimonialCarousel = () => {
           )
         )}
       </CarouselContent>
-      {/* <CarouselPrevious className="hidden" />
-      <CarouselNext className="hidden" /> */}
+      <CarouselPrevious className="hidden lg:flex" />
+      <CarouselNext className="hidden lg:flex" />
     </Carousel>
   );
 };

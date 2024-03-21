@@ -7,22 +7,13 @@ export const platformItems = [
   {
     id: 1,
     name: "Collect your Customer  Data",
-    summary: "Enabling B2B and B2C Leads to Script Their Own Success Saga",
+    summary:
+      "A CDP is your company's data command center, where every piece of customer information is stored and accessible. It's like having a personal dossier for each customer.",
     list: [
       {
         id: 1,
         listData:
-          "Tailored Experiences: Craft personalized experiences for customers",
-      },
-      {
-        id: 2,
-        listData:
-          "Flexible Promotions: Adapt to changing market dynamics with ease",
-      },
-      {
-        id: 3,
-        listData:
-          "Ever Lasting Connections: Build enduring brand-customer relationships",
+          "First party data collection from any source like In store, Via QR Code or URL,On your website, On Instagram , POS system and more.",
       },
     ],
     path: "/contact",
@@ -30,22 +21,23 @@ export const platformItems = [
   },
   {
     id: 2,
-    name: "Crafting Loyalty, Crafted for You",
-    summary: "Your Leads with Our Unified Platform",
+    name: "Sync your Customer  Data",
+    summary:
+      "Once your CDP consolidates all your company’s data and establishes customer identities, Zithara.AI helps - ",
     list: [
       {
         id: 1,
-        listData: "Loyalty Tailored to You: Creating Personal Connections",
+        listData: "Unify these identities across devices",
       },
       {
         id: 2,
         listData:
-          "Keeping the Joy Alive: Tailored Experiences for Ongoing Delight",
+          "Connecting identity details from known customers (like email addresses and phone numbers)",
       },
       {
         id: 3,
         listData:
-          "Present and Future United: Loyalty Programs That Speak to Your Customers",
+          "Assimilate  anonymous data they might have shared before becoming customers (such as cookies and mobile device IDs) from offline and online channels.",
       },
     ],
     path: "/contact",
@@ -53,21 +45,23 @@ export const platformItems = [
   },
   {
     id: 3,
-    name: "Flexible Promotions, Endless Possibilities",
-    summary: "",
+    name: "Synthesize  your customer Data",
+    summary: "With CDP create a  fully unified customer profile.",
     list: [
       {
         id: 1,
-        listData: "Unleash Your Imagination: Our Loyalty System Opens Doors",
+        listData:
+          "Develop the profile of each customer: first name, birthday, favorite product, preferences, Know your  customers and their habits Offer your customers an experience as unique as your brand",
       },
       {
         id: 2,
         listData:
-          "Campaigns That Spark Excitement: Crafting Memorable Customer Experiences",
+          "Activate that data for real-time personalization on choice channels like whatsapp, Email, and SMS with the right message.",
       },
       {
         id: 3,
-        listData: "Leaving a Mark: Unconventional Loyalty That Stays with You",
+        listData:
+          "Turn them into loyal customers using Loyalty programs , as they were invented to keep your customers coming back for more.",
       },
     ],
     path: "/contact",
@@ -75,23 +69,25 @@ export const platformItems = [
   },
   {
     id: 4,
-    name: "Personalisation for Impact",
-    summary: "",
+    name: "Know your customers",
+    summary:
+      "A Zithara.AI CDP centralizes customer data, serving as a valuable source for assessing the impact and effectiveness of your marketing efforts to help you prove a hunch, nail a pitch. or predict future and more. It is like having customer  data on tap – so you can easily dip in when you need to back up your decisions",
     list: [
       {
         id: 1,
-        listData:
-          "Deeper Connections: Personalization that Wows Loyal Customers",
+        listData: "To gain insights",
       },
       {
         id: 2,
-        listData:
-          "Speaking Their Language: Rewards that Truly Understand and Delight",
+        listData: "Segment customers",
       },
       {
         id: 3,
-        listData:
-          "Magic of a Personal Touch: Boosting Loyalty and Engagement with Care",
+        listData: "Create look a like audiences",
+      },
+      {
+        id: 4,
+        listData: "Track ROI",
       },
     ],
     path: "/contact",
