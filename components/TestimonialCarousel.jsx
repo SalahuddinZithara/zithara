@@ -80,17 +80,17 @@ const TestimonialCarousel = () => {
           delay: 2000,
         }),
       ]}
-      className="mx-auto cursor-grab"
+      className="mx-auto cursor-grab overflow-hidden max-w-[95vw] md:max-w-auto"
     >
-      <CarouselContent>
+      <CarouselContent className="">
         {testimonials.map(
           ({ id, name, role, brandLogo, story, video, img }) => (
             <CarouselItem
               key={id}
-              className=" basis-[100%] md:basis-1/2 lg:basis-1/3 flex items-center gap-5"
+              className=" basis-[100%] overflow-hidden md:basis-1/2 lg:basis-1/3 flex items-center gap-5"
             >
               <div>
-                <Card className="flex items-center border shadow-md p-5 bg-white">
+                <Card className="flex max-w-[90vw] md:max-w-auto items-center border shadow-md p-5 bg-white overflow-hidden">
                   <CardContent className="p-0 flex flex-col gap-4 border-0">
                     <div>
                       <Image
@@ -101,7 +101,7 @@ const TestimonialCarousel = () => {
                         height={80}
                       />
                     </div>
-                    <p className=" text-sm">{story}.</p>
+                    <p className=" text-sm break-words">{story}.</p>
                     <span className="">
                       <p className=" font-medium text-sm">{name}:</p>
                       <p className=" text-sm">{role}</p>
