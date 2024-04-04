@@ -99,6 +99,7 @@ const TestimonialCarousel = () => {
                         src={brandLogo}
                         width={100}
                         height={80}
+                        alt="brand-image"
                       />
                     </div>
                     <p className=" text-sm break-words">{story}.</p>
