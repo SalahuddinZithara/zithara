@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -17,6 +18,7 @@ const solutions = [
     img: "/solutions/ecommerce.webp",
     path: "/",
     logo: "/solutions/jewels.jpg",
+    to: "jewelleryRef",
   },
   {
     id: 2,
@@ -26,6 +28,7 @@ const solutions = [
     img: "/solutions/subscription.webp",
     path: "/",
     logo: "/solutions/jewels.jpg",
+    to: "wellnessRef",
   },
   {
     id: 3,
@@ -36,6 +39,7 @@ const solutions = [
     img: "/solutions/fs.webp",
     path: "/",
     logo: "/solutions/jewels.jpg",
+    to: "electronicsRef",
   },
   {
     id: 4,
@@ -46,6 +50,7 @@ const solutions = [
     img: "/solutions/gaming.webp",
     path: "/",
     logo: "/solutions/jewels.jpg",
+    to: "luxuryRetailRef",
   },
 ];
 
@@ -65,16 +70,21 @@ const Solutions = () => {
       <div className=" relative w-full flex flex-col mt-3 h-fit lg:h-[400vh]">
         <div className=" sticky left-0 top-24 w-full flex items-center gap-5 flex-wrap lg:gap-28 my-5 justify-center">
           {solutions.map((item) => {
-            const { id, name, path } = item;
+            const { id, name, to } = item;
             return (
-              <Link key={id} href={path} className=" font-semibold text-sm">
+              <Link
+                key={id}
+                href={"/"}
+                duration={500}
+                className="font-semibold text-sm"
+              >
                 {name}
               </Link>
             );
           })}
         </div>
         {solutions.map((item) => {
-          const { id, name, path, img, hero, summary, logo } = item;
+          const { id, name, path, img, hero, summary, logo, to } = item;
           return (
             <div
               key={id}

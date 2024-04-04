@@ -4,18 +4,20 @@ import { Button } from "@/components/ui/button";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { TbProgressCheck } from "react-icons/tb";
-import hero from "@/public/hero.svg";
 import ScrollAnimate from "@/components/ScrollAnimate";
 import HeroCarousel from "@/components/HeroCarousel";
 import EngageParallax from "@/components/EngageParallax";
 import Link from "next/link";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import Feedback from "@/components/Feedback";
 import Blog from "@/components/Blog";
 import Solutions from "@/components/Solutions";
 import ModalVideo from "react-modal-video";
+import { useState } from "react";
+import BookDemoModal from "@/components/BookDemoModal";
 
 export default function Home() {
+  const [openBookModal, setOpenBookModal] = useState(false);
+
   return (
     <main className="flex flex-col min-h-screen w-full">
       {/* -----------HERO---SECTION------------- */}
@@ -33,25 +35,35 @@ export default function Home() {
           </p>
 
           <div className=" w-full flex items-center gap-3 md:gap-4 mt-3 lg:mt-3">
-            <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 flex w-[50%] md:w-[150px] items-center gap-1 text-white rounded-sm ">
-              <CiBookmarkCheck className=" text-xl" />
-              <p className="font-semibold ">Book A Demo</p>
-            </Button>
-            <Button className=" bg-black flex md:w-[150px] w-[50%] items-center gap-1.5 text-white rounded-sm ">
-              <IoCallOutline className=" text-lg" />
-              <p className="font-semibold ">Talk to Us</p>
-            </Button>
+            <span onClick={() => setOpenBookModal(true)}>
+              <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 flex w-[50%] md:w-[150px] items-center gap-1 text-white rounded-sm ">
+                <CiBookmarkCheck className=" text-xl" />
+                <p className="font-semibold ">Book A Demo</p>
+              </Button>
+            </span>
+            <Link href={"/contact"}>
+              <Button className=" bg-black flex md:w-[150px] w-[50%] items-center gap-1.5 text-white rounded-sm ">
+                <IoCallOutline className=" text-lg" />
+                <p className="font-semibold ">Talk to Us</p>
+              </Button>
+            </Link>
           </div>
         </div>
-        <div className=" w-full md:w-[60%] lg:w-[40%] mt-3">
-          <Image src={hero} width={400} height={400} />
+        <div className=" w-full md:w-[60%] lg:w-[40%] h-auto mt-3">
+          <Image
+            alt="hero-image"
+            src="/home/Hero.webp"
+            className=" w-auto h-auto"
+            width={400}
+            height={400}
+          />
         </div>
       </div>
 
       {/* -----------HORIZONTAL---SCROLL---SECTION------------- */}
       <div className=" w-full flex flex-col gap-3 py-7 md:px-5 lg:px-28 bg-gray-100">
         <div className=" w-full flex flex-col items-center gap-2">
-          <h2 className=" px-5 lg:px-0 text-left lg:text-left font-bold text-2xl md:text-3xl leading-8 lg:text-3xl">
+          <h2 className=" px-5 lg:px-0 text-blue-950 text-left lg:text-left font-bold text-2xl md:text-3xl leading-8 lg:text-3xl">
             Where Founders and Marketers Unite
           </h2>
           <h4 className=" px-5 lg:px-0 font-medium text-left mt-2 text-sm lg:text-base lg:text-left">
@@ -122,6 +134,7 @@ export default function Home() {
       <Blog />
 
       {/* <ModalVideo /> */}
+      <BookDemoModal openModal={openBookModal} closeModal={setOpenBookModal} />
     </main>
   );
 }

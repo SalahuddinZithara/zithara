@@ -106,7 +106,7 @@ const Blog = () => {
               >
                 <div>
                   <Card
-                    onclick={() => router.push(path)}
+                    onClick={() => router.push(path)}
                     className="w-full cursor-pointer flex flex-col gap-5 bg-transparent p-0 border-0"
                   >
                     <CardContent className=" w-[90%] lg:w-full flex flex-col gap-3 border-0 p-0">

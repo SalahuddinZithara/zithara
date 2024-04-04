@@ -24,7 +24,7 @@ const platformItems = [
       "Understand your customers with RFM segmentation, Keep them hooked for life with the industry's one-of-a-kind platform that effortlessly analyzes data from every source, all at once.",
     icon: <TbBrandGoogleAnalytics className="text-lg" />,
     path: "/customer-segments",
-    img: "/eng/ep1.png",
+    img: "/home/1.webp",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const platformItems = [
       "Never lose a lead!  curate and retarget  leads  from  Instagram, FB, Instore walk-ins, website visits, Referals, google ads, News paper ads and more.",
     icon: <RiUserSettingsLine className=" text-lg" />,
     path: "/lead-management",
-    img: img2,
+    img: "/home/2.webp",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const platformItems = [
       "Unleash the potential of Omni Channel communications with  EMAIL, SMS or Whatsapp. uncover the pulse of your campaigns, and supercharge your engagement with AI-driven insights to pinpoint your top-performing campaigns.",
     icon: <UserRoundCog size={20} strokeWidth={2} />,
     path: "/omnichannel-campaigner",
-    img: img3,
+    img: "/home/3.webp",
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const platformItems = [
       "Zithara.AI’s no-code visual builder lets you easily create and E-cmmerce website and see it track the movement of your customers from Offline to Online.",
     icon: <BsCart2 className=" text-lg" />,
     path: "/ecommerce-website",
-    img: img4,
+    img: "/home/4.webp",
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const platformItems = [
       "Craft seamless omnichannel experiences with our AI-powered journey orchestration and optimization platform. Tailor unique experiences based on your customer's interactions with your brand to ensure they engage at the right time and on the right channel.",
     icon: <TbSettingsAutomation className=" text-lg" />,
     path: "/journey-automation",
-    img: img5,
+    img: "/home/5.webp",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const platformItems = [
       "Transform customer loyalty with with the industry's most configurable system,, crafting instant-reward programs for today's and tomorrow's customers.",
     icon: <IoGiftOutline className=" text-lg" />,
     path: "/rewards",
-    img: img1,
+    img: "/home/6.webp",
   },
   {
     id: 7,
@@ -78,7 +78,7 @@ const platformItems = [
       "Zithara.AI is the ultimate retail-focused CDP powerhouse, offering seamless personalization. Everything you need is in one platform, providing an end-to-end CDP solution designed specifically for retail.",
     icon: <Layers2 size={20} strokeWidth={2} />,
     path: "/cdp",
-    img: img2,
+    img: "/home/7.webp",
   },
 ];
 
@@ -91,7 +91,7 @@ const EngageParallax = () => {
 
   return (
     <section className="w-full h-auto md:h-auto rounded-md">
-      <h1 className=" text-2xl md:text-3xl w-full lg:text-4xl font-bold text-left lg:text-center px-5 mb-3">
+      <h1 className=" text-2xl md:text-3xl text-blue-950 w-full lg:text-4xl font-bold text-left lg:text-center px-5 mb-3">
         Unlock Insights, Fuel growth
       </h1>
       <p className=" text-left lg:text-center w-full lg:max-w-4xl mb-10 mx-auto leading-7 px-5">

@@ -9,30 +9,26 @@
     "node_modules": true,
     "out": true,
     "yarn.lock": true,
-    "tailwind.config.js": true,
     "README.md": true,
-    "postcss.config.js": true,
     "package-lock.json": true,
     "next.config.mjs": true,
     "jsconfig.json": true,
     ".gitignore": true,
     ".eslintrc.json": true,
-    ".vscode": true,
-    ".next": true
+    ".next": true,
+    ".vscode": true
   },
   "hide-files.files": [
     "node_modules",
     "out",
     "yarn.lock",
-    "tailwind.config.js",
     "README.md",
-    "postcss.config.js",
     "package-lock.json",
     "next.config.mjs",
     "jsconfig.json",
     ".gitignore",
     ".eslintrc.json",
-    ".vscode",
-    ".next"
+    ".next",
+    ".vscode"
   ]
 }

@@ -137,8 +137,8 @@ const Feedback = () => {
       {/* ----------EXPLAINATION---SECTION--------- */}
       <div className=" w-full bg-[#f9f9f9] flex flex-col gap-5 pt-8 lg:pt-16">
         <h1 className=" font-bold text-2xl lg:text-4xl lg:text-center px-5">
-          Why our segmentation engine is{" "}
-          <span className=" text-blue-800">PREMIUM</span> choice?
+          Why our platform is <span className=" text-blue-800">PREMIUM</span>{" "}
+          choice?
         </h1>
 
         <Engagement items={platformItems} />

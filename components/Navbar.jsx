@@ -50,6 +50,7 @@ import { IoIosGitNetwork } from "react-icons/io";
 import { BsDatabaseCheck } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 import { VscFeedback } from "react-icons/vsc";
+import BookDemoModal from "./BookDemoModal";
 
 const sidebarItems = [
   {
@@ -150,21 +151,15 @@ const sidebarItems = [
     items: [
       {
         id: 1,
-        name: "Overall Landing Page",
-        icon: <PiAlignCenterHorizontalLight className="" />,
-        path: "/",
+        name: "Case Studies",
+        icon: <TbCalendarSearch className="" />,
+        path: "/case-studies",
       },
       {
         id: 2,
-        name: "Case Studies",
-        icon: <TbCalendarSearch className="" />,
-        path: "/",
-      },
-      {
-        id: 3,
         name: "Testimonials",
         icon: <FaUsers className="" />,
-        path: "/",
+        path: "/testimonials",
       },
     ],
   },
@@ -194,7 +189,7 @@ const sidebarItems = [
         id: 4,
         name: "Contact Us",
         icon: <RiContactsLine className="" />,
-        path: "/contact-us",
+        path: "/contact",
       },
       {
         id: 5,
@@ -212,19 +207,19 @@ const sidebarItems = [
         id: 1,
         name: "Blogs",
         icon: <FaBold className="" />,
-        path: "/",
+        path: "/blogs",
       },
       {
         id: 2,
         name: "E-Books",
         icon: <PiNotebookLight className="" />,
-        path: "/",
+        path: "/e-books",
       },
       {
         id: 3,
         name: "Videos",
         icon: <IoVideocamOutline className="" />,
-        path: "/",
+        path: "/videos",
       },
     ],
   },
@@ -232,13 +227,14 @@ const sidebarItems = [
 
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [openBookModal, setOpenBookModal] = useState(false);
   const router = useRouter();
 
   return (
     <div
       className={` ${
         openMenu ? "h-screen" : " h-auto"
-      } duration-200 w-full flex flex-col shadow-md lg:justify-center py-2.5`}
+      } duration-200 w-full flex flex-col shadow-md xl:justify-center py-2.5`}
     >
       <div className=" w-full flex items-center justify-between px-5 md:px-8 lg:px-12 2xl:px-28">
         <span onClick={() => router.push("/")} className=" cursor-pointer">
@@ -252,7 +248,7 @@ const Sidebar = () => {
           />
         </span>
 
-        <div className="hidden lg:flex items-center">
+        <div className="hidden xl:flex items-center">
           <NavigationMenu>
             <NavigationMenuList>
               {sidebarItems.map((item) => {
@@ -287,7 +283,7 @@ const Sidebar = () => {
           </NavigationMenu>
         </div>
 
-        <div className=" hidden lg:flex items-center gap-5">
+        <div className=" hidden xl:flex items-center gap-5">
           <Search className=" cursor-pointer" strokeWidth={1} />
           <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 flex w-[50%] md:w-[150px] items-center gap-1 text-white rounded-sm ">
             <p className="font-semibold ">Book A Demo</p>
@@ -298,7 +294,7 @@ const Sidebar = () => {
           onClick={() => {
             setOpenMenu(!openMenu);
           }}
-          className=" block lg:hidden"
+          className=" block xl:hidden"
         >
           {!openMenu ? (
             <CgMenuRight className="text-3xl" />
@@ -311,7 +307,7 @@ const Sidebar = () => {
       <div
         className={`${
           openMenu ? "h-[90vh]" : "h-0 opacity-0"
-        } bg-white duration-200 lg:hidden w-full flex flex-col justify-between px-5 md:px-8`}
+        } bg-white duration-200 xl:hidden w-full flex flex-col justify-between px-5 md:px-8`}
       >
         {openMenu && (
           <Accordion type="single" collapsible className="w-full mt-3">
@@ -342,9 +338,19 @@ const Sidebar = () => {
         )}
 
         <div className="w-full">
-          <Button className="w-full">Book A Demo</Button>
+          <span>
+            <Button
+              onClick={() => {
+                setOpenBookModal(true), console.log(openBookModal);
+              }}
+              className="w-full"
+            >
+              Book A Demo
+            </Button>
+          </span>
         </div>
       </div>
+      <BookDemoModal openModal={openBookModal} closeModal={setOpenBookModal} />
     </div>
   );
 };

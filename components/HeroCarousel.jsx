@@ -11,6 +11,11 @@ import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 const carouselItems = [
   {
+    id: 0,
+    name: "",
+    img: "/vc/1.png",
+  },
+  {
     id: 1,
     name: "",
     img: "/vc/2.png",
@@ -55,6 +60,16 @@ const carouselItems = [
     name: "",
     img: "/vc/10.png",
   },
+  {
+    id: 10,
+    name: "",
+    img: "/vc/11.png",
+  },
+  {
+    id: 11,
+    name: "",
+    img: "/vc/12.png",
+  },
 ];
 
 const HeroCarousel = () => {
@@ -80,7 +95,7 @@ const HeroCarousel = () => {
               <Card className="flex items-center border-0">
                 <CardContent className="p-0 flex items-center border-0">
                   <Image
-                    className=" bg-transparent"
+                    className=" bg-transparent w-auto h-auto"
                     key={id}
                     src={img}
                     width={120}
