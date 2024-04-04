@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 const caseStudyData = [
@@ -89,8 +88,6 @@ const caseStudyData = [
 ];
 
 const page = () => {
-  const router = useRouter();
-
   return (
     <div className=" w-full min-h-screen flex flex-col gap-10 px-5 md:px-8 lg:px-16 py-5 lg:py-7 bg-gray-50">
       <h1 className=" font-bold text-2xl lg:text-5xl text-blue-950 text-center">
