@@ -12,11 +12,43 @@ import Feedback from "@/components/Feedback";
 import Blog from "@/components/Blog";
 import Solutions from "@/components/Solutions";
 import ModalVideo from "react-modal-video";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BookDemoModal from "@/components/BookDemoModal";
 
 export default function Home() {
   const [openBookModal, setOpenBookModal] = useState(false);
+  const [videoScale, setVideoScale] = useState(1);
+
+  const lastScrollY = useRef(0);
+  const targetRef = useRef(null);
+  const [opacity, setOpacity] = useState(0);
+
+  const handleScroll = () => {
+    if (targetRef.current) {
+      const rect = targetRef.current.getBoundingClientRect();
+      const isVisible = rect.top <= 0 && rect.bottom >= 0;
+
+      if (isVisible) {
+        if (window.scrollY > lastScrollY.current) {
+          // Scrolling down
+          setVideoScale(videoScale + 0.1);
+        } else if (window.scrollY < lastScrollY.current) {
+          // Scrolling up
+          setVideoScale(videoScale - 0.1);
+        }
+      }
+    }
+
+    lastScrollY.current = window.scrollY; // Update the last scroll position
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [videoScale]);
 
   return (
     <main className="flex flex-col min-h-screen w-full">
@@ -62,6 +94,20 @@ export default function Home() {
           />
         </div>
       </div>
+
+      {/* -----------VIDEO---SECTION------------- */}
+      {/* <div
+        ref={targetRef}
+        className=" relative w-full min-h-screen h-[200vh] py-10 px-5 md:px-8 lg:px-16 2xl:px-40 "
+      >
+        <video
+          // style={{ scale: videoScale }}
+          src="/home/heroVid.mp4"
+          controls
+          poster="/home/vidPoster.png"
+          className=" sticky top-20 left-0 w-[80%] max-w-[100%] mx-auto duration-200 rounded-lg"
+        ></video>
+      </div> */}
 
       {/* -----------HORIZONTAL---SCROLL---SECTION------------- */}
       <div className=" w-full flex flex-col gap-3 py-7 md:px-5 lg:px-28 bg-gray-100">

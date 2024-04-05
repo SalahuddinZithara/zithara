@@ -2,6 +2,7 @@
 import Contact from "@/components/Contact";
 import TeamModal from "@/components/TeamModal";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { LuMoveRight } from "react-icons/lu";
@@ -98,7 +99,13 @@ const AboutUs = () => {
           lifetime
         </h1>
 
-        <img src="/about-us/sam.png" className=" lg:w-96" alt="" />
+        <Image
+          src="/about-us/sam.png"
+          width={500}
+          height={500}
+          className=" lg:w-96 h-auto"
+          alt="about-hero-img"
+        />
       </section>
 
       {/* ----------ABOUT--SECTION--------- */}
@@ -218,7 +225,13 @@ const AboutUs = () => {
                   key={id}
                   className=" w-full flex flex-col gap-5 p-4 rounded-md bg-white shadow-md"
                 >
-                  <img src={img} alt="news-img" className=" w-40" />
+                  <Image
+                    src={img}
+                    width={250}
+                    height={200}
+                    alt="news-img"
+                    className=" w-40 h-auto"
+                  />
                   <p className=" font-medium">{summary}</p>
                   <Link href={path}>
                     <LuMoveRight className=" text-xl" />

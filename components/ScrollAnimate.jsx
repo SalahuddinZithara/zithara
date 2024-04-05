@@ -40,7 +40,7 @@ export default function ScrollAnimate() {
       const isVisible = rect.top <= 0 && rect.bottom >= 0;
 
       if (isVisible) {
-        if (window.scrollY > lastScrollY.current && height < 500) {
+        if (window.scrollY > lastScrollY.current && height < 460) {
           // Scrolling down
           setHeight(height + 5); // Increase height
           if (height > 370) {
@@ -76,7 +76,7 @@ export default function ScrollAnimate() {
         <h1 className=" w-full lg:w-full mx-auto font-montserrat text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-20 lg:mb-28 max-w-3xl font-bold text-center">
           The Clever All-In-One Customer Engagement Platform
         </h1>
-        <div className="hidden lg:block sticky top-32 left-0 w-full mx-auto mb-5 lg:mb-20">
+        <div className="hidden lg:block sticky top-[120px] left-0 w-full mx-auto mb-5 lg:mb-20">
           <div
             className={` ${
               height > 450 ? "block py-5 px-1 bg-gray-100 rounded-xl" : " p-0"
