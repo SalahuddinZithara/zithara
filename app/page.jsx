@@ -35,14 +35,17 @@ export default function Home() {
           </p>
 
           <div className=" w-full flex items-center gap-3 md:gap-4 mt-3 lg:mt-3">
-            <span onClick={() => setOpenBookModal(true)}>
-              <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 flex w-[50%] md:w-[150px] items-center gap-1 text-white rounded-sm ">
-                <CiBookmarkCheck className=" text-xl" />
+            <span
+              className="w-[50%] md:w-[150px]"
+              onClick={() => setOpenBookModal(true)}
+            >
+              <Button className=" flex items-center gap-1 bg-blue-800 hover:bg-blue-900 duration-200 w-full text-white rounded-sm ">
+                <CiBookmarkCheck className=" text-lg" />
                 <p className="font-semibold ">Book A Demo</p>
               </Button>
             </span>
-            <Link href={"/contact"}>
-              <Button className=" bg-black flex md:w-[150px] w-[50%] items-center gap-1.5 text-white rounded-sm ">
+            <Link className="md:w-[150px] w-[50%]" href={"/contact"}>
+              <Button className="flex items-center gap-1.5 bg-black text-white rounded-sm w-full ">
                 <IoCallOutline className=" text-lg" />
                 <p className="font-semibold ">Talk to Us</p>
               </Button>

@@ -99,7 +99,7 @@ const Solutions = () => {
                   : id === 4
                   ? "top-[320px]"
                   : ""
-              } left-0 h-[40vh] lg:h-[80vh] gap-5 overflow-hidden border-t mb-5`}
+              } left-0 h-[50vh] md:h-[65vh] lg:h-[80vh] gap-5 overflow-hidden border-t mb-5`}
             >
               <div className=" w-full flex flex-col lg:flex-row h-full">
                 <div className=" w-full lg:w-[75%]">

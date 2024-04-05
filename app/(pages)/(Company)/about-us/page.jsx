@@ -228,7 +228,7 @@ const AboutUs = () => {
             })}
           </div>
 
-          <Link href="/news" className=" mx-auto">
+          <Link href="/media" className=" mx-auto">
             <Button className=" bg-blue-800 hover:bg-blue-900 duration-200 text-white rounded-sm flex items-center gap-2 ">
               View All <LuMoveRight className=" text-lg" />
             </Button>

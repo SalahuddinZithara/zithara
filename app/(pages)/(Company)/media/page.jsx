@@ -73,19 +73,31 @@ const news = [
 
 const Media = () => {
   return (
-    <div className=" w-full">
-      <section className=" w-full flex flex-col lg:flex-row min-h-screen news-bg py-7 lg:py-16 px-5 md:px-8 lg:px-16">
-        <div className=" w-full lg:w-[50%] flex flex-col gap-5">
-          <h1 className=" font-bold text-5xl text-blue-950">In The News</h1>
-          <p className="">
-            Read the latest press releases from Zithara - from awards,
-            recognitions, product updates, partnerships to new business wins.
-          </p>
+    <div className=" w-full flex flex-col">
+      <section className=" relative">
+        <video
+          src="/media/vid1.mp4"
+          autoPlay
+          playsInline
+          loop
+          muted
+          className=" absolute top-0 bottom-0 left-0 w-full"
+        ></video>
+        <div className="w-full flex bg-[rgba(0,0,0,0.7)] flex-col lg:flex-row xl:min-h-[80vh] py-7 lg:py-16 px-5 md:px-8 lg:px-16">
+          <div className=" z-10 w-full lg:w-[50%] flex flex-col gap-5 ">
+            <h1 className=" font-bold text-2xl md:text-4xl lg:text-5xl text-white">
+              In The News
+            </h1>
+            <p className=" text-white">
+              Read the latest press releases from Zithara - from awards,
+              recognitions, product updates, partnerships to new business wins.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* ----------IN--NEWS--SECTION--------- */}
-      <section className=" w-full flex flex-col gap-7 px-5 md:px-8 lg:px-16 py-7 lg:py-10 bg-gray-50">
+      <section className=" w-full flex flex-col gap-7 px-5 md:px-8 lg:px-16 py-7 lg:py-10 bg-gray-50 lg:mt-52">
         <h1 className=" text-2xl lg:text-4xl font-bold text-blue-950">
           In The News
         </h1>

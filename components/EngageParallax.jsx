@@ -113,9 +113,9 @@ const EngageParallax = () => {
               <div className=" w-full h-full relative flex flex-col lg:flex-row">
                 <div className=" w-full lg:w-[50%] md:h-[35vh] h-screen lg:h-screen sticky top-0">
                   <Image
-                    width="400"
+                    width="1500"
                     src={img}
-                    height="400"
+                    height="1500"
                     className=" mx-auto object-cover h-[50vh] md:h-[35vh] lg:h-[100vh] w-[100%] "
                     alt={name}
                   />
